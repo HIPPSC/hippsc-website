@@ -1,0 +1,58 @@
+.footer {
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-info-social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+
+.footer-info-social-media-item {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--secondary-text-color);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-info-social-media-item:hover {
+    color: var(--hippsc-green);
+    scale: 1.05;
+}
+
+.footer-info-license {
+    font-size: 0.8rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 1rem;
+}
+
+
+.footer-offerings-title, .footer-about-title, .footer-contact-title {
+    margin-bottom: 1rem;
+}
+
+.footer-item {
+    color: var(--primary-text-color);
+    font-size: 0.9rem;
+    font-weight: var(--title-weight-2);
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-item:hover {
+    color: var(--hippsc-green);
+    transform: translateX(10px);
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
 // css
@@ -9,12 +9,40 @@ import { BsArrowRight } from 'react-icons/bs';
 import banner from '../assets/home-banner.png';
 
 const HomeIntro = () => {
+
+    // animation for title
+    const text = "Precision in Every Cut, Shrink Fit Innovation for Modern Machining";
+    const words = text.split(' ');
+
+    useEffect(() => {
+        const letters = document.querySelectorAll('.letter');
+        let delay = 0;
+        
+        letters.forEach(letter => {
+          setTimeout(() => {
+            letter.classList.add('show-letter');
+          }, delay);
+          delay += 20; // 0.025 second delay for each letter
+        });
+    }, []);
+    
+    
+    
+    
+
+      
+
     return (
         <div className='home-intro'>
             <div className="home-title">
-                <div className="page-title-1">
-                    Precision in Every Cut, 
-                    Shrink Fit Innovation for Modern Machining 
+                <div className="page-title-1-bold">
+                    {words.map((word, wordIndex) => (
+                        <span key={wordIndex} className="word">
+                            {Array.from(word).map((letter, letterIndex) => (
+                            <span key={`${wordIndex}-${letterIndex}`} className="letter">{letter}</span>
+                            ))}
+                        </span>
+                    )).reduce((prev, curr) => [prev, <span key={Math.random()} className="letter">&nbsp;</span>, curr])}
                 </div>
             </div>
             <div className="home-banner">
