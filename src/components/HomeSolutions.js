@@ -1,4 +1,6 @@
 import React from 'react';
+import useTypingEffect from '../hooks/useTypingEffect'; 
+
 
 // css & assets
 import '../css/HomeSolutions.css';
@@ -8,6 +10,15 @@ import H6iPic from '../assets/H6i-pic.svg';
 import StoragePic from '../assets/storage-pic.svg';
 
 const HomeSolutions = () => {
+
+    // typing effects
+    const f15i_title_text = "F15i";
+    const h6i_title_text = "H6i";
+    const storage_title_text = "Coming Soon ...";
+
+    const [f15iTitle, invisibleF15iTitle, f15iTitleref] = useTypingEffect(f15i_title_text, 1, 100);
+    const [h6iTitle, invisibleH6iTitle, h6iTitleref] = useTypingEffect(h6i_title_text, 1, 100);
+    const [storageTitle, invisibleStorageTitle, storageTitleref] = useTypingEffect(storage_title_text, 1, 100);
 
 
     return (
@@ -37,8 +48,9 @@ const HomeSolutions = () => {
                 </div>
                 <div className="home-solutions-item-right">
                     <div className="home-solutions-item-title">
-                        <div className="page-title-1-xl">
-                            F15i
+                        <div className="page-title-1-xl" ref={f15iTitleref}>
+                            <span >{f15iTitle}</span>
+                            <span style={{color: 'transparent'}}>{invisibleF15iTitle}</span>
                         </div>
                         <div className="page-title-1-xl liquid-cooling-text">
                             Liquid Cooling
@@ -75,8 +87,9 @@ const HomeSolutions = () => {
                 </div>
                 <div className="home-solutions-item-right">
                     <div className="home-solutions-item-title">
-                        <div className="page-title-1-xl">
-                            H6i
+                        <div className="page-title-1-xl" ref={h6iTitleref}>
+                            <span >{h6iTitle}</span>
+                            <span style={{color: 'transparent'}}>{invisibleH6iTitle}</span>
                         </div>
                         <div className="page-title-1-xl air-cooling-text">
                             Air Cooling
@@ -113,8 +126,9 @@ const HomeSolutions = () => {
                         <div className="page-title-1-xl intelligent-storage-text">
                             Intelligent Tooling Storage
                         </div>
-                        <div className="page-title-2-gray">
-                            Coming Soon ...
+                        <div className="page-title-2-gray" ref={storageTitleref}>
+                            <span >{storageTitle}</span>
+                            <span style={{color: 'transparent'}}>{invisibleStorageTitle}</span>
                         </div>
                     </div>
                     <div className="page-link-btn home-solutions-btn">

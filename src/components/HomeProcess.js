@@ -1,4 +1,5 @@
 import React from 'react';
+import useTypingEffect from '../hooks/useTypingEffect'; 
 
 
 // css & assets
@@ -7,7 +8,19 @@ import ToolHolderIcon from '../assets/tool-holder-icon.svg';
 import PrecisionIcon from '../assets/precision-icon.svg';
 import IdeaIcon from '../assets/idea-icon.svg';
 
+
 const HomeProcess = () => {
+
+    // typing effects
+    const research_title_text = "Research & Design";
+    const precision_title_text = "Precision Testing";
+    const production_title_text = "Production";
+
+    const [researchTitle, invisibleResearchTitle, researchTitleref] = useTypingEffect(research_title_text);
+    const [precisionTitle, invisiblePrecisionTitle, precisionTitleref] = useTypingEffect(precision_title_text);
+    const [productionTitle, invisibleProductionTitle, productionTitleref] = useTypingEffect(production_title_text);
+
+
     return (
         <div className='home-process'>
             <div className="home-process-title">
@@ -34,8 +47,9 @@ const HomeProcess = () => {
                     <div className="home-process-item-number page-title-2-bold">
                         01 /
                     </div>
-                    <div className="home-process-item-title page-title-3-bold-gray">
-                        Research & Design
+                    <div className="home-process-item-title page-title-3-bold-gray" ref={researchTitleref}>
+                        <span >{researchTitle}</span>
+                        <span style={{color: 'transparent'}}>{invisibleResearchTitle}</span>
                     </div>
                     <div className="home-process-item-description page-text-1">
                         From the initial concept to the final product, 
@@ -58,8 +72,9 @@ const HomeProcess = () => {
                     <div className="home-process-item-number page-title-2-bold">
                         02 /
                     </div>
-                    <div className="home-process-item-title page-title-3-bold-gray">
-                        Precision Testing
+                    <div className="home-process-item-title page-title-3-bold-gray" ref={precisionTitleref}>
+                        <span >{precisionTitle}</span>
+                        <span style={{color: 'transparent'}}>{invisiblePrecisionTitle}</span>
                     </div>
                     <div className="home-process-item-description page-text-1">
                         Our precision testing process includes real-world simulations, 
@@ -84,8 +99,9 @@ const HomeProcess = () => {
                     <div className="home-process-item-number page-title-2-bold">
                         03 /
                     </div>
-                    <div className="home-process-item-title page-title-3-bold-gray">
-                        Production
+                    <div className="home-process-item-title page-title-3-bold-gray" ref={productionTitleref}>
+                        <span >{productionTitle}</span>
+                        <span style={{color: 'transparent'}}>{invisibleProductionTitle}</span>
                     </div>
                     <div className="home-process-item-description page-text-1">
                         Operating within a state-of-the-art manufacturing facility, 

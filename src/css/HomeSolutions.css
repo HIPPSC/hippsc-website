@@ -1,6 +1,6 @@
 .home-solutions {
     margin-top: 2rem;
-    padding-bottom: 10rem;
+    padding-bottom: 6rem;
     border-bottom: 0.5px solid var(--primary-text-color);
 }
 
@@ -26,7 +26,7 @@
 }
 
 .home-solutions-item-left {
-    width: 62%;
+    width: 52%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +35,7 @@
 }
 
 .home-solutions-item-right {
-    width: 38%;
+    width: 35%;
 }
 
 .home-solutions-item-pic {
@@ -53,11 +53,11 @@
 }
 
 .home-solutions-item-left .home-solutions-btn {
-    width: 30%;
+    width: 15rem;
 }
 
-.home-solutions-item-right  .home-solutions-btn {
-    width: 70%;
+.home-solutions-item-right .home-solutions-btn {
+    width: 25rem;
 }
 
 .home-solutions-btn .page-link-btn-text {

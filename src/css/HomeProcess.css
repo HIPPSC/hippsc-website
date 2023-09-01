@@ -30,7 +30,7 @@
 }
 
 .home-process-item-left {
-    width: 62%;
+    width: 52%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +38,7 @@
 }
 
 .home-process-item-right {
-    width: 38%;
+    width: 35%;
 }
 
 .home-process-item-pic {

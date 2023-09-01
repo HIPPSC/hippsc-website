@@ -12,7 +12,11 @@ const Footer = () => {
             <div className="footer-info">
                 <div className="footer-info-social-media">
                     <div className="footer-info-social-media-item">
-                        <AiOutlineLinkedin />
+                        <a  href="https://www.linkedin.com/company/hippsc/" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            <AiOutlineLinkedin />
+                        </a>
                     </div>
                     <div className="footer-info-social-media-item">
                         <AiOutlineYoutube />
@@ -76,19 +80,7 @@ const Footer = () => {
                     Contact Form
                 </div>
                 <div className="footer-item">
-                    Dongguan, China
-                </div>
-                <div className="footer-item">
-                    Shenzhen, China
-                </div>
-                <div className="footer-item">
-                    Shanghai, China
-                </div>
-                <div className="footer-item">
-                    California, US
-                </div>
-                <div className="footer-item">
-                    Texas, US
+                    Branches
                 </div>
             </div>
         </div>

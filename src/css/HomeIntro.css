@@ -4,7 +4,7 @@
 }
 
 .home-title {
-    width: 40%;
+    width: 50%;
     margin-bottom: 2rem;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .home-description-1 {
-    width: 60%;
+    width: 50%;
     border-top: 0.5px solid var(--primary-text-color);
     padding-top: 2rem;
 }
@@ -43,13 +43,13 @@
 }
 
 .home-description-left {
-    width: 60%;
+    width: 50%;
     margin-left: 3rem;
     margin-right: 1rem;
 }
 
 .home-description-right {
-    width: 40%;
+    width: 50%;
 }
 
 .home-description-text {
@@ -59,50 +59,3 @@
 
 
 
-/* button */
-.page-link-btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 0.5px solid var(--primary-text-color);
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden; /* Hide the overflow to make the border vanish effect work */
-}
-
-.page-link-btn::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.5px; /* Match the border thickness */
-    background: var(--primary-text-color);
-    transition: all 0.3s ease;
-}
-
-.page-link-btn-text {
-    width: 60%;
-}
-
-.page-link-btn-text, .page-link-btn-icon {
-    /* Transition for smooth effect */
-    transition: all 0.3s ease;
-}
-
-.page-link-btn:hover .page-link-btn-text {
-    color: gray;
-}
-
-.page-link-btn:hover .page-link-btn-icon {
-    transform: translateX(10px); /* Move right */
-    color: gray;
-}
-
-.page-link-btn:hover::after {
-    border: none;
-    left: 100%;
-}

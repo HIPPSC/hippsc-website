@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import useTypingEffect from '../hooks/useTypingEffect'; 
 
 
 // css
@@ -10,39 +11,21 @@ import banner from '../assets/home-banner.png';
 
 const HomeIntro = () => {
 
-    // animation for title
-    const text = "Precision in Every Cut, Shrink Fit Innovation for Modern Machining";
-    const words = text.split(' ');
+    // typing effects
+    const home_title_text = "Precision in Every Cut, Shrink Fit Innovation for Modern Machining";
+    const intro_title_text = "Revolutionizing Precision Engineering — from automotive assembly lines to aerospace manufacturing.";
+    
+    const [homeTitle, invisibleHomeTitle, homeTitleref] = useTypingEffect(home_title_text);
+    const [introTitle, invisibleIntroTitle, introTitleref] = useTypingEffect(home_title_text);
 
-    useEffect(() => {
-        const letters = document.querySelectorAll('.letter');
-        let delay = 0;
-        
-        letters.forEach(letter => {
-          setTimeout(() => {
-            letter.classList.add('show-letter');
-          }, delay);
-          delay += 20; // 0.025 second delay for each letter
-        });
-    }, []);
     
-    
-    
-    
-
-      
 
     return (
         <div className='home-intro'>
-            <div className="home-title">
-                <div className="page-title-1-bold">
-                    {words.map((word, wordIndex) => (
-                        <span key={wordIndex} className="word">
-                            {Array.from(word).map((letter, letterIndex) => (
-                            <span key={`${wordIndex}-${letterIndex}`} className="letter">{letter}</span>
-                            ))}
-                        </span>
-                    )).reduce((prev, curr) => [prev, <span key={Math.random()} className="letter">&nbsp;</span>, curr])}
+            <div className="home-title" ref={homeTitleref}>
+                <div className="page-title-1-xxl">
+                    <span >{homeTitle}</span>
+                    <span style={{color: 'transparent'}}>{invisibleHomeTitle}</span>
                 </div>
             </div>
             <div className="home-banner">
@@ -51,10 +34,10 @@ const HomeIntro = () => {
                      alt="banner" />
             </div>
             <div className="home-description">
-                <div className="home-description-1">
+                <div className="home-description-1" ref={introTitleref}>
                     <div className="page-title-2">
-                        Revolutionizing Precision Engineering 
-                        — from automotive assembly lines to aerospace manufacturing.
+                        <span >{introTitle}</span>
+                        <span style={{color: 'transparent'}}>{invisibleIntroTitle}</span>
                     </div>
                 </div>
                 <div className="home-description-2">

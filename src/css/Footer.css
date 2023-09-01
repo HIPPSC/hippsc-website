@@ -20,7 +20,7 @@
 }
 
 .footer-info-social-media-item {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-right: 1rem;
     color: var(--secondary-text-color);
     cursor: pointer;
@@ -33,7 +33,7 @@
 }
 
 .footer-info-license {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--secondary-text-color);
     margin-bottom: 1rem;
 }
@@ -45,7 +45,7 @@
 
 .footer-item {
     color: var(--primary-text-color);
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: var(--title-weight-2);
     cursor: pointer;
     margin-bottom: 0.5rem;

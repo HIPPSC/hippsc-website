@@ -17,6 +17,11 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 :root {
   --primary-text-color: #2C2C2C;
@@ -24,6 +29,7 @@ code {
   --light-gray-text-color: #a8a8a8;
   --hippsc-green: #8CD600;
 
+  --title-size-xxl: 3rem;
   --title-size-xl: 2.3rem;
   --title-size-1: 2rem;
   --title-size-2: 1.7rem;
@@ -32,7 +38,7 @@ code {
   --text-size-2: 0.8rem;
   --btn-text-size-1: 1rem;
 
-  --title-weight-1: 200;
+  --title-weight-1: 400;
   --title-weight-2: 400;
   --title-weight-3: 600;
   --btn-text-weight-1: 400;
@@ -47,6 +53,12 @@ code {
 
 .page-title-1-xl {
   font-size: var(--title-size-xl);
+  color: var(--primary-text-color);
+  font-weight: var(--title-weight-1);
+}
+
+.page-title-1-xxl {
+  font-size: var(--title-size-xxl);
   color: var(--primary-text-color);
   font-weight: var(--title-weight-1);
 }
@@ -71,7 +83,7 @@ code {
 
 .page-title-2-gray {
   font-size: var(--title-size-2);
-  color: var(--secondary-text-color);
+  color: var(--light-gray-text-color);
   font-weight: var(--title-weight-1);
 }
 
@@ -100,7 +112,7 @@ code {
 }
 
 .page-text-2 {
-  font-size: var(--text-size-2);
+  font-size: var(--text-size-1);
   color: var(--light-gray-text-color);
   font-weight: var(--title-weight-2);
 }
@@ -114,6 +126,88 @@ code {
 
 
 
+/* btn */
+/* button */
+.page-link-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 0.5px solid var(--primary-text-color);
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; /* Hide the overflow to make the border vanish effect work */
+}
+
+.page-link-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5px; /* Match the border thickness */
+  background: var(--primary-text-color);
+  transition: all 0.3s ease;
+}
+
+.page-link-btn-text {
+  width: 60%;
+}
+
+.page-link-btn-text, .page-link-btn-icon {
+  /* Transition for smooth effect */
+  transition: all 0.3s ease;
+}
+
+.page-link-btn:hover .page-link-btn-text {
+  color: gray;
+}
+
+.page-link-btn:hover .page-link-btn-icon {
+  transform: translateX(10px); /* Move right */
+  color: gray;
+}
+
+.page-link-btn:hover::after {
+  border: none;
+  left: 100%;
+}
+
+
+.rectangle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 12rem;
+  color: var(--primary-text-color);
+  border: 1px solid var(--primary-text-color);
+  font-size: var(--btn-text-size-1);
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.rectangle-btn, .rectangle-btn-icon {
+  margin-left: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.rectangle-btn:hover {
+  background-color: var(--primary-text-color);
+  color: white;
+}
+
+.rectangle-btn:hover .rectangle-btn-icon {
+  transform: translateX(10px); /* Move right */
+  color: white;
+}
+
+
+
+/* letter animation */
 .word, .space {
   display: inline-block;
 }
