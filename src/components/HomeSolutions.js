@@ -5,9 +5,9 @@ import useTypingEffect from '../hooks/useTypingEffect';
 // css & assets
 import '../css/HomeSolutions.css';
 import { BsArrowRight } from 'react-icons/bs';
-import F15iPic from '../assets/F15i-pic.svg';
-import H6iPic from '../assets/H6i-pic.svg';
-import StoragePic from '../assets/storage-pic.svg';
+import F15iPic from '../assets/svg/F15i-pic.svg';
+import H6iPic from '../assets/svg/H6i-pic.svg';
+import StoragePic from '../assets/svg/storage-pic.svg';
 
 const HomeSolutions = () => {
 

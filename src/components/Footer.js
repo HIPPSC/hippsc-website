@@ -32,7 +32,7 @@ const Footer = () => {
 
                 </div>
             </div>
-            <div className="footer-offerings">
+            <div className="footer-offerings footer-section">
                 <div className="footer-offerings-title page-text-2">
                     OFFERINGS
                 </div>
@@ -52,7 +52,7 @@ const Footer = () => {
                     Intelligent Tool Storage
                 </div>
             </div>
-            <div className="footer-about">
+            <div className="footer-about footer-section">
                 <div className="footer-about-title page-text-2">
                     COMPANY
                 </div>
@@ -72,9 +72,9 @@ const Footer = () => {
                     Sustainability
                 </div>
             </div>
-            <div className="footer-contact">
+            <div className="footer-contact footer-section">
                 <div className="footer-contact-title page-text-2">
-                    COMPANY
+                    CONTACT
                 </div>
                 <div className="footer-item">
                     Contact Form

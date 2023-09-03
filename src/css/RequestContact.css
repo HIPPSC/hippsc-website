@@ -18,3 +18,13 @@
     display: flex;
     align-items: center;
 }
+
+/* Media queries */
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .request-contact {
+        margin-bottom: 5rem;
+    }
+
+}

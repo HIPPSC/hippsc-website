@@ -33,8 +33,8 @@ a {
   --title-size-xl: 2.3rem;
   --title-size-1: 2rem;
   --title-size-2: 1.7rem;
-  --title-size-3: 1.2rem;
-  --text-size-1: 1rem;
+  --title-size-3: 1.4rem;
+  --text-size-1: 1.1rem;
   --text-size-2: 0.8rem;
   --btn-text-size-1: 1rem;
 
@@ -101,7 +101,7 @@ a {
 
 .page-title-3-bold-gray {
   font-size: var(--title-size-3);
-  color: var(--secondary-text-color);
+  color: var(--light-gray-text-color);
   font-weight: var(--title-weight-2);
 }
 
@@ -229,3 +229,90 @@ a {
   }
 }
 
+
+
+/* Media queries */
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+
+  .page-title-1 {
+    font-size: calc(var(--title-size-1) * 0.8);
+  }
+
+  .page-title-1-xl {
+    font-size: calc(var(--title-size-xl) * 0.8);
+  }
+
+  .page-title-1-xxl {
+    font-size: calc(var(--title-size-xxl) * 0.6);
+  }
+
+  .page-title-2 {
+    font-size: calc(var(--title-size-2) * 0.8);
+  }
+  
+  .page-title-2-bold {
+    font-size: calc(var(--title-size-2) * 0.8);
+    font-weight: var(--title-weight-2) !important;
+  }
+  
+  .page-title-2-gray {
+    font-size: calc(var(--title-size-2) * 0.8);
+    color: var(--light-gray-text-color);
+    font-weight: var(--title-weight-1);
+  }
+  
+  .page-title-2-bold-green {
+    font-size: calc(var(--title-size-2) * 0.8);
+    color: var(--hippsc-green);
+    font-weight: var(--title-weight-3);
+  }
+  
+  .page-title-3 {
+    font-size: calc(var(--title-size-3) * 0.8);
+  }
+  
+  .page-title-3-bold-gray {
+    font-size: calc(var(--title-size-3) * 0.8);
+    color: var(--light-gray-text-color);
+    font-weight: var(--title-weight-2);
+  }
+  
+  .page-text-1 {
+    font-size: calc(var(--text-size-1) * 0.8);
+  }
+  
+  .page-text-2 {
+    font-size: calc(var(--text-size-1) * 0.8);
+  }
+  
+  .btn-text-1 {
+    font-size: calc(var(--btn-text-size-1) * 0.8);
+  }
+
+  .rectangle-btn {
+    width: 10rem;
+    height: 2rem;
+    font-size: calc(var(--btn-text-size-1) * 0.8);
+  }
+
+  .page-link-btn {
+    width: 95%;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* For screens smaller than 576px */
+@media only screen and (max-width: 576px) {
+  .page-title-1 {
+    font-size: calc(var(--title-size-1) * 0.6);
+  }
+
+  .rectangle-btn {
+    width: 8rem;
+    height: 1.8rem;
+    font-size: calc(var(--btn-text-size-1) * 0.7);
+  }
+}

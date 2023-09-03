@@ -16,7 +16,7 @@ const HomeIntro = () => {
     const intro_title_text = "Revolutionizing Precision Engineering — from automotive assembly lines to aerospace manufacturing.";
     
     const [homeTitle, invisibleHomeTitle, homeTitleref] = useTypingEffect(home_title_text);
-    const [introTitle, invisibleIntroTitle, introTitleref] = useTypingEffect(home_title_text);
+    const [introTitle, invisibleIntroTitle, introTitleref] = useTypingEffect(intro_title_text);
 
     
 

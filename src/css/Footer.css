@@ -56,3 +56,43 @@
     color: var(--hippsc-green);
     transform: translateX(10px);
 }
+
+
+
+/* Media queries */
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .footer-section {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .footer-info {
+        margin-bottom: 2rem;
+    }
+
+    .footer-info-social-media {
+        justify-content: flex-end;
+    }
+
+    .footer-info-social-media-item {
+        font-size: 2rem;
+        margin-right: 0.7rem;
+    }
+
+    .footer-info-license {
+        font-size: 0.8rem;
+    }
+
+    .footer-item {
+        font-size: 0.8rem;
+    }
+}

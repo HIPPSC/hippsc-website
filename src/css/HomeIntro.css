@@ -8,7 +8,6 @@
     margin-bottom: 2rem;
 }
 
-
 /* banner */
 .home-banner{
     width: 100%;
@@ -39,7 +38,6 @@
     flex-direction: row;
     margin-top: 4rem;
     padding-bottom: 4rem;
-    border-bottom: 0.5px solid var(--primary-text-color);
 }
 
 .home-description-left {
@@ -58,4 +56,40 @@
 
 
 
+/* Media queries */
 
+@media only screen and (max-width: 890px) {
+    .home-title {
+        width: 80%;
+    }
+}
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .home-title {
+        width: 80%;
+    }
+
+    .home-description-1 {
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    .home-description-2 {
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    .home-description-left {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .home-description-right {
+        width: 100%;
+    }
+
+}

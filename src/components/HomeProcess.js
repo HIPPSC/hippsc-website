@@ -4,9 +4,9 @@ import useTypingEffect from '../hooks/useTypingEffect';
 
 // css & assets
 import '../css/HomeProcess.css';
-import ToolHolderIcon from '../assets/tool-holder-icon.svg';
-import PrecisionIcon from '../assets/precision-icon.svg';
-import IdeaIcon from '../assets/idea-icon.svg';
+import ToolHolderIcon from '../assets/svg/tool-holder-icon.svg';
+import PrecisionIcon from '../assets/svg/precision-icon.svg';
+import IdeaIcon from '../assets/svg/idea-icon.svg';
 
 
 const HomeProcess = () => {
