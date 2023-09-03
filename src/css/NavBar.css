@@ -1,0 +1,36 @@
+.nav-bar-upper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5%;
+}
+
+.nav-bar-right{
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+}
+
+.nav-bar-lower{
+  display: flex;
+  flex: row;
+  gap: 5%;
+  margin: 5%;
+}
+
+.nav-bar-contact-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  color: black;
+  width: 150px;
+  height: 40px;
+}
+
+.nav-bar-expand-btn{
+  border: 1px solid black;
+  width: 50px;
+  height: 40px;
+}
+
