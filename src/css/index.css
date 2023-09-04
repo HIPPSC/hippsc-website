@@ -273,7 +273,7 @@ a {
   }
 
   .page-title-2 {
-    font-size: calc(var(--title-size-2) * 0.7);
+    font-size: calc(var(--title-size-2) * 0.8);
   }
   
   .page-title-2-bold {
@@ -288,7 +288,7 @@ a {
   }
   
   .page-title-2-bold-green {
-    font-size: calc(var(--title-size-2) * 0.7);
+    font-size: calc(var(--title-size-2) * 0.8);
     color: var(--hippsc-green);
     font-weight: var(--title-weight-3);
   }
