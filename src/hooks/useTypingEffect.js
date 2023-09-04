@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-const useTypingEffect = (fullText, threshold = 1, speed = 20) => {
+const useTypingEffect = (fullText, threshold = 1, speed = 20, triggerOnce = true) => {
   const [visibleText, setVisibleText] = useState('');
   const [invisibleText, setInvisibleText] = useState(fullText);
   const [textIndex, setTextIndex] = useState(0);
   const [ref, inView] = useInView({
     threshold: threshold,
-    triggerOnce: true,
+    triggerOnce: triggerOnce,
   });
 
   useEffect(() => {

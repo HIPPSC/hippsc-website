@@ -2,6 +2,10 @@
   margin: 2rem;
 }
 
+.App-Body {
+  padding-top: 10rem;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

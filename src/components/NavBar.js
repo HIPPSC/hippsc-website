@@ -1,61 +1,83 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+// components
+import NavPage from './NavPage';
 
 //css
 import '../css/NavBar.css'
+import logo from '../assets/logo.jpg'
+import { BsArrowRight } from 'react-icons/bs';
+import { CiMenuBurger } from 'react-icons/ci';
+import { RxCross1 } from 'react-icons/rx';
+
+
 
 const NavBar = () => {
+    const [isNavOpen, setNavOpen] = useState(false);
+
+    const openNavPage = () => {
+        // toggle nav page
+        setNavOpen(!isNavOpen);
+
+        // disable scrolling
+        if (!isNavOpen) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    };
+    
 
     return (
         <div className="nav-bar">
 
             {/* NAV_BAR_UPPER */}
             <div className="nav-bar-upper">
-                
                 {/* LEFT PART */}
                 <div className="nav-bar-left">
                     {/* LOGO */}
-                    <div className="logo">
-                        HIPPSC
+                    <div className="nav-bar-logo">
+                        <img src={logo} alt="logo" />
                     </div>
                 </div>
-                
                 
                 {/* RIGHT PART */}
                 <div className="nav-bar-right">
                     {/* CONTACT */}
-                    <div className="nav-bar-contact-btn">
+                    <div className={`nav-bar-contact-btn rectangle-btn ${isNavOpen ? 'active' : ''}`}>
                         Contact Us
+                        <BsArrowRight className='nav-bar-contact-btn-icon rectangle-btn-icon' />
                     </div>
 
                     {/* EXPAND */}
-                    <div className="nav-bar-expand-btn">
-
+                    <div className={isNavOpen ? "full-page-nav active" : "full-page-nav"}>
+                        <NavPage key={Date.now()} />
                     </div>
 
+                    <div className={`nav-bar-expand-btn rectangle-btn ${isNavOpen ? 'active' : ''}`}
+                        onClick={openNavPage}
+                    >
+                        <CiMenuBurger className='nav-bar-expand-icon' />
+                        <RxCross1 className='nav-bar-close-icon' />
+                    </div>
                 </div>
-                
             </div>
 
             {/* NAV_BAR_LOWER */}
             <div className="nav-bar-lower">
 
                 {/* PRODUCTS */}
-                <div className="nav-bar-products">
+                <div className="nav-bar-item page-text-2">
                     Products
                 </div>
 
                 {/* SERVICES */}
-                <div className="nav-bar-services">
+                <div className="nav-bar-item page-text-2">
                     Services
                 </div>
 
-                {/* NEWS */}
-                <div className="nav-bar-news">
-                    News
-                </div>
-
                 {/* ABOUT */}
-                <div className="nav-bar-about">
+                <div className="nav-bar-item page-text-2">
                     About
                 </div>
             </div>

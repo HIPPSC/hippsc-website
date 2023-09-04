@@ -112,12 +112,6 @@ const HomeProcess = () => {
                         Our robust supply chain management, coupled with real-time monitoring and predictive analytics, 
                         allows us to meet customers’ demand and adjust production schedules proactively.
                     </div>
-                    <div className="home-process-item-description page-text-1">
-                        Our commitment to timely delivery extends to every aspect of our operation, 
-                        from raw material sourcing to final product shipment, 
-                        all orchestrated to meet and exceed our customers' expectations.  
-                    </div>
-
                 </div>
             </div>
             
