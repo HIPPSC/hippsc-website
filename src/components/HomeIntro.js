@@ -54,10 +54,6 @@ const HomeIntro = () => {
                             Our company recognizes our customers' critical need to utilize shrink fit technology for precise, 
                             reliable cutting — and to excel in the competitive manufacturing landscape.
                         </div>
-                        <div className="page-text-1 home-description-text">
-                            Industries cannot afford to compromise on quality. 
-                            Bring precision engineering to the core of everything that matters most to your production.
-                        </div>
                         
                         <div className="page-link-btn">
                             <div className="page-link-btn-text btn-text-1 ">

@@ -19,7 +19,11 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className="footer-info-social-media-item">
-                        <AiOutlineYoutube />
+                        <a  href="https://www.youtube.com/@HIPPSC" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            <AiOutlineYoutube />
+                        </a>
                     </div>
                     <div className="footer-info-social-media-item">
                         <AiOutlineInstagram />

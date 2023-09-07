@@ -340,3 +340,10 @@ a {
     font-size: calc(var(--btn-text-size-1) * 0.7);
   }
 }
+
+/* For screens smaller than 576px */
+@media only screen and (max-width: 405px) {
+  .page-title-2, .page-title-2-bold-green {
+    font-size: calc(var(--title-size-2) * 0.7);
+  }
+}
