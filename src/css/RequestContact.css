@@ -1,0 +1,30 @@
+.request-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+}
+
+.request-contact-title {
+    display: flex;
+    align-items: center;
+}
+
+.request-contact-btn-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Media queries */
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .request-contact {
+        margin-bottom: 5rem;
+    }
+
+}

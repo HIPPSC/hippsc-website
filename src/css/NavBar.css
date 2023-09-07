@@ -1,0 +1,224 @@
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1430px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 16px;
+  z-index: 100;
+  background-color: white;
+}
+
+.nav-bar-upper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* logo */
+.nav-bar-left {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+}
+
+.nav-bar-logo {
+  width: 8rem
+}
+
+.nav-bar-logo img {
+  width: 100%;
+}
+
+
+
+/* nav bar btn */
+.nav-bar-right{
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.nav-bar-contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  color: black;
+  width: 10rem;
+  height: 2rem;
+  position: relative; /* Add this line */
+  z-index: 1000;   /* Ensure it stays above the full-page nav */
+}
+
+.nav-bar-expand-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 2.5rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  position: relative; /* Add this line */
+  z-index: 1000;   /* Ensure it stays above the full-page nav */
+}
+
+.full-page-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--primary-text-color);
+  display: none;
+  justify-content: center;
+  z-index: 999; /* Ensure it's on top of other content */
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-100%); /* Starts hidden */
+}
+
+.full-page-nav.active {
+  display: flex; /* Display the nav */
+  transform: translateY(0); /* Bring to view */
+}
+
+.nav-bar-expand-btn.active {
+  background-color: white;
+}
+
+.nav-bar-expand-icon {
+  display: block; /* Default to show */
+  z-index: 2; /* It's okay to use z-index here */
+}
+
+.nav-bar-close-icon {
+  display: none;
+  color: var(--primary-text-color); /* or any color you want */
+  z-index: 2; /* It's okay to use z-index here */
+}
+
+.nav-bar-expand-btn.active .nav-bar-expand-icon {
+  display: none;
+}
+
+.nav-bar-expand-btn.active .nav-bar-close-icon {
+  display: block;
+}
+
+.nav-bar-contact-btn.active, .nav-bar-expand-btn.active {
+  border: 0.5px solid white;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* nav bar item */
+.nav-bar-lower{
+  display: flex;
+  flex: row;
+  gap: 3%;
+  margin-top: 2rem;
+}
+
+.nav-bar-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-gray-text-color);
+  cursor: pointer;
+  padding-bottom: 1rem;
+  transition: all 0.2s ease;
+}
+
+.nav-bar-item:hover {
+  color:  var(--primary-text-color);
+}
+
+.nav-bar-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-gray-text-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative; /* Relative positioning for the pseudo-element */
+}
+
+.nav-bar-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1.5px; /* Height of the bottom line */
+  background-color: var(--hippsc-green);
+  transition: all 0.3s ease; /* Transition for the width */
+}
+
+.nav-bar-item:hover {
+  color: var(--primary-text-color);
+}
+
+.nav-bar-item:hover::before {
+  width: 50%; /* Make it appear only to the half of the div */
+}
+
+
+
+
+/* Media queries */
+
+/* For screens smaller than 500px */
+@media only screen and (max-width: 500px) {
+  .nav-bar-left {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+  }
+
+  .nav-bar-logo {
+    width: 6rem
+  }
+  
+  .nav-bar-logo img {
+    width: 100%;
+  }
+}
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    margin-bottom: 4rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-bar-lower{
+    gap: 5%;
+  }
+
+  .nav-bar-contact-btn {
+    width: 8rem;
+  }
+
+}
+
+
+/* For screens smaller than 1400px */
+@media only screen and (max-width: 1400px) {
+  .nav-bar {
+    margin-bottom: 4rem;
+    padding: 1.5rem 1.5rem;
+  }
+}

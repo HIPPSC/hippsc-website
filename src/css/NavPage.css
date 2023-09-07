@@ -1,0 +1,147 @@
+.nav-page {
+    margin: 8rem 2rem 0 2rem;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1400px;
+    scrollbar-width: none; /* for Firefox */
+    -ms-overflow-style: none;  /* for Internet Explorer and Edge */
+}
+
+.nav-page::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.nav-page-title {
+    font-size: var(--text-size-2);
+    color: var(--light-gray-text-color);
+    font-weight: var(--title-weight-1);
+    margin-bottom: 3rem;
+}
+
+.nav-page-left, .nav-page-middle, .nav-page-right {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    border-top: 0.5px solid white;
+    margin-right: 2rem;
+}
+
+.nav-page-left {
+    width: 40%;
+}
+
+.nav-page-middle {
+    width: 30%;
+}
+
+.nav-page-right {
+    width: 30%;
+}
+
+.nav-page-left-item {
+    font-size: var(--title-size-2);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: moveUpFadeIn 0.5s forwards;
+    animation-play-state: paused;
+}
+
+.nav-page-left-item:hover {
+    color: var(--secondary-text-color);
+}
+
+
+/* nav page middle (news) */
+.nav-page-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: moveUpFadeIn 0.7s forwards;
+    animation-play-state: paused;
+}
+
+.nav-page-card-date {
+    font-size: var(--text-size-2);
+    color: white;
+    font-weight: var(--title-weight-1);
+    margin-bottom: 0.5rem;
+}
+
+.nav-page-card-img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.nav-page-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-page-card-title {
+    font-size: var(--text-size-1) * 0.8;
+    color: white;
+    font-weight: var(--title-weight-1);
+}
+
+
+
+
+/* Media queries */
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .nav-page {
+        margin: 8rem 2rem 0 2rem;
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 1400px;
+        overflow-y: auto;
+        scrollbar-width: none; /* for Firefox */
+        -ms-overflow-style: none;  /* for Internet Explorer and Edge */
+    }
+
+    .nav-page::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+    }
+    
+
+
+    .nav-page-left, .nav-page-middle, .nav-page-right {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.5rem;
+        border-top: 0.5px solid white;
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .nav-page-left {
+        width: 100%;
+    }
+
+    .nav-page-middle {
+        width: 100%;
+    }
+
+    .nav-page-right {
+        width: 100%;
+    }
+
+  
+}

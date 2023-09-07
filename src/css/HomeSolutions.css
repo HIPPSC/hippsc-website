@@ -1,0 +1,174 @@
+.home-solutions {
+    margin-top: 2rem;
+    padding-bottom: 6rem;
+    border-bottom: 0.5px solid var(--primary-text-color);
+}
+
+
+.home-solutions-title {
+    width: 50%;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.home-solutions-title .page-title-2-bold-green {
+    margin-right: 0.5rem;
+}
+
+
+/* home solutions item  */
+.home-solutions-item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8rem;
+    margin-bottom: 15rem;
+}
+
+.home-solutions-item-left {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.home-solutions-item-right {
+    width: 35%;
+}
+
+.home-solutions-item-pic {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.home-solutions-item-pic img {
+    width: 70%;
+}
+
+.home-solutions-item-left .home-solutions-btn {
+    width: 15rem;
+}
+
+.home-solutions-item-right .home-solutions-btn {
+    width: 90%;
+}
+
+.home-solutions-btn .page-link-btn-text {
+    width: 80%;
+}
+
+.home-solutions-item-title {
+    margin-bottom: 4rem;
+}
+
+.home-solutions-item-description {
+    margin-bottom: 1rem;
+    padding-right: 0.5rem;
+}
+
+
+
+/* special text */
+.liquid-cooling-text {
+    background: linear-gradient(45deg, #045e9e, #cdeaff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.air-cooling-text {
+    background: linear-gradient(45deg, #7C4DB9, #E2A5FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.intelligent-storage-text {
+    background: linear-gradient(45deg, #678f10, #c3eab7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+
+/* special pic */
+.intelligent-storage-pic img{
+    width: 100%;
+}
+
+
+
+
+
+/* Media queries */
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .home-solutions {
+        padding-bottom: 5rem;
+    }
+
+    .home-solutions-title {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .home-solutions-item {
+        margin-top: 4rem;
+        margin-bottom: 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-solutions-item-left {
+        width: 70%;
+        margin-right: 0;
+    }
+
+    .home-solutions-item-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin-top: 3rem;
+    }
+
+    .home-solutions-item-pic {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .home-solutions-item-left .home-solutions-btn {
+        width: 15rem;
+    }
+
+    .home-solutions-item-right .home-solutions-btn {
+        width: 70%;
+    }
+
+    .home-solutions-btn .page-link-btn-text {
+        width: 80%;
+    }
+
+    .home-solutions-item-title {
+        margin-bottom: 2rem;
+    }
+
+    .home-solutions-item-description {
+        margin-bottom: 1rem;
+        padding-right: 0.5rem;
+    }
+
+}
