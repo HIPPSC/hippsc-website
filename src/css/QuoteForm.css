@@ -1,0 +1,56 @@
+.quote-form {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Distribute space between content and button */
+    height: 100%; /* Take up the full height of the container */
+}
+
+.quote-form-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow the items to wrap to the next line */
+    gap: 20px; /* Optional: Set gap between items */
+}
+
+.quote-form-item {
+    flex: 1; /* Allow the items to grow and fill the available space */
+    min-width: calc(50% - 10px); /* Items take 50% width minus half the gap, if any */
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.quote-form-item input {
+    flex: 1; 
+    padding: 10px; 
+    font-size: 1rem;
+    font-family: 'Noto Sans', sans-serif;
+    border: none;
+    border-bottom: 0.5px solid var(--primary-text-color);
+}
+.quote-form-item textarea {
+    flex: 1; 
+    padding: 10px; 
+    font-size: 1rem;
+    font-family: 'Noto Sans', sans-serif;
+    min-height: 10rem;
+    border: none;
+    border-bottom: 0.5px solid var(--primary-text-color);
+}
+
+
+.quote-form-btn {
+    width: 100%; /* Set the button width to 100% */
+    margin-top: 2rem; 
+}
+
+.quote-form-btn .rectangle-btn {
+    margin-left: 0;
+    margin-top: 2rem; 
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 767px) {
+    .quote-form-item {
+        min-width: 100%; /* Items take full width on smaller screens */
+    }
+}

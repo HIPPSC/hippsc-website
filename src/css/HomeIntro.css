@@ -14,7 +14,7 @@
     overflow: hidden; /* Hide any overflow */
 }
 
-.banner-image{
+.banner-image {
     width: 100%;
     object-fit: cover;
 }

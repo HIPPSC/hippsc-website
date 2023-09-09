@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // css & assets
 import '../css/Footer.css';
@@ -80,12 +81,16 @@ const Footer = () => {
                 <div className="footer-contact-title page-text-2">
                     CONTACT
                 </div>
-                <div className="footer-item">
-                    Contact Form
-                </div>
-                <div className="footer-item">
-                    Branches
-                </div>
+                <Link to="/request_quote">
+                    <div className="footer-item">
+                        Request for Quote
+                    </div>
+                </Link>
+                <Link to="/contact">
+                    <div className="footer-item">
+                        Locations
+                    </div>
+                </Link>
             </div>
         </div>
     );

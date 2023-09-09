@@ -1,5 +1,6 @@
 import React from 'react';
 import useTypingEffect from '../hooks/useTypingEffect'; 
+import { Link } from 'react-router-dom';
 
 
 // css & assets
@@ -10,7 +11,7 @@ import { BsArrowRight } from 'react-icons/bs';
 const RequestContact = () => {
 
     // typing effects
-    const request_title_text = "Request Sample";
+    const request_title_text = "Request a Quote";
     const [requestTitle, invisibleRequestTitle, requestTitleref] = useTypingEffect(request_title_text, 1, 50);
 
 
@@ -21,10 +22,10 @@ const RequestContact = () => {
                 <span style={{color: 'transparent'}}>{invisibleRequestTitle}</span>
             </div>
             <div className="request-contact-btn-container">
-                <div className="request-contact-btn rectangle-btn">
+                <Link to="/request_quote" className="request-contact-btn rectangle-btn">
                     Get Started
                     <BsArrowRight className='rectangle-btn-icon' />
-                </div>
+                </Link>
             </div>
         </div>
     );
