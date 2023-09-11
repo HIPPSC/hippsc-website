@@ -17,11 +17,18 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    margin-bottom: 3rem;
+}
+
+.quote-form-item input, textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+    caret-color: var(--primary-text-color);
 }
 
 .quote-form-item input {
     flex: 1; 
-    padding: 10px; 
+    padding: 10px 0px;  
     font-size: 1rem;
     font-family: 'Noto Sans', sans-serif;
     border: none;
@@ -29,14 +36,26 @@
 }
 .quote-form-item textarea {
     flex: 1; 
-    padding: 10px; 
+    padding: 10px 0px; 
     font-size: 1rem;
     font-family: 'Noto Sans', sans-serif;
-    min-height: 10rem;
     border: none;
     border-bottom: 0.5px solid var(--primary-text-color);
 }
 
+.quote-form-item select {
+    flex: 1; 
+    padding: 10px 0px; 
+    font-size: 1rem;
+    font-family: 'Noto Sans', sans-serif;
+    border: none;
+    border-bottom: 0.5px solid var(--primary-text-color);
+}
+
+::placeholder {
+    color: #bfbfbf;  
+    opacity: 1;  
+}
 
 .quote-form-btn {
     width: 100%; /* Set the button width to 100% */
@@ -52,5 +71,12 @@
 @media (max-width: 767px) {
     .quote-form-item {
         min-width: 100%; /* Items take full width on smaller screens */
+    }
+
+    .quote-form-btn .rectangle-btn {
+        width: 50%;
+        height: 3rem;
+        font-size: 1rem;
+        margin-top: 0rem;
     }
 }
