@@ -20,6 +20,12 @@
     margin-bottom: 3rem;
 }
 
+.quote-form-item span {
+    font-size: 1rem;
+    color: red;
+    margin-bottom: 0.5rem;
+}
+
 .quote-form-item input, textarea:focus {
     outline: none;
     border-color: #ffffff;
@@ -55,6 +61,18 @@
 ::placeholder {
     color: #bfbfbf;  
     opacity: 1;  
+}
+
+.quote-form-alert {
+    font-size: 1rem;
+    color: rgb(168, 2, 2);
+    margin-bottom: 0.5rem;
+}
+
+.quote-form-notification {
+    font-size: 1rem;
+    color: var(--primary-text-color);
+    margin-bottom: 0.5rem;
 }
 
 .quote-form-btn {

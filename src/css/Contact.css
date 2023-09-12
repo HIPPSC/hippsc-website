@@ -1,5 +1,5 @@
 .contact {
-    border-bottom: 0.5px solid var(--primary-text-color);
+    
 }
 .contact-header {
     border-bottom: 0.5px solid var(--primary-text-color);
@@ -28,7 +28,7 @@
 
 .contact-locations {
     padding-top: 2rem;
-    margin-bottom: 6rem;
+    border-bottom: 0.5px solid var(--primary-text-color);
 }
 
 .contact-locations-title {
