@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
+// effects
+import useSequentialEffect from '../hooks/useSequentialEffect';
 
 // components
 import NavPage from './NavPage';
@@ -15,6 +17,8 @@ import { RxCross1 } from 'react-icons/rx';
 
 
 const NavBar = () => {
+
+    // nav page handler
     const [isNavOpen, setNavOpen] = useState(false);
 
     const openNavPage = () => {
@@ -38,6 +42,11 @@ const NavBar = () => {
         // disable scrolling
         document.body.classList.remove('no-scroll');
     };
+
+
+    // sequential effects
+    const dropdownRef = useRef(null);
+    useSequentialEffect(dropdownRef, '.nav-bar-dropdown-item', 100);
     
 
     return (
@@ -79,8 +88,13 @@ const NavBar = () => {
             <div className="nav-bar-lower">
 
                 {/* PRODUCTS */}
-                <div className="nav-bar-item page-text-2">
+                <div className="nav-bar-item dropdown page-text-2">
                     Products
+                    <div className="nav-bar-dropdown-content" ref={dropdownRef}>
+                        <div className='nav-bar-dropdown-item page-text-2'>Shrink Fit Holders</div>
+                        <div className='nav-bar-dropdown-item page-text-2'>Shrink Fit Machines</div>
+                        <div className='nav-bar-dropdown-item page-text-2'>Tool Setting Machine</div>
+                    </div>
                 </div>
 
                 {/* SERVICES */}

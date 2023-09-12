@@ -128,6 +128,12 @@ a {
   font-weight: var(--title-weight-2);
 }
 
+.page-text-3 {
+  font-size: var(--text-size-3);
+  color: var(--primary-text-color);
+  font-weight: var(--title-weight-1);
+}
+
 
 .btn-text-1 {
   font-size: var(--btn-text-size-1);
