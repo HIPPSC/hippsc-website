@@ -1,0 +1,80 @@
+.contact {
+    
+}
+.contact-header {
+    border-bottom: 0.5px solid var(--primary-text-color);
+    padding-bottom: 4rem;
+}
+
+.contact-title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.contact-banner {
+    width: 100%;
+    height: 40vw;
+    max-height: 30rem;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-banner img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+.contact-locations {
+    padding-top: 2rem;
+    border-bottom: 0.5px solid var(--primary-text-color);
+}
+
+.contact-locations-title {
+    margin-bottom: 4rem;
+}
+
+
+/* location list */
+.contact-locations-list {
+    display: flex;
+    flex-wrap: wrap; /* This will allow the items to wrap onto the next line if they run out of space */
+    justify-content: flex-start; /* This will space the items evenly across the main axis */
+    gap: 10%; /* Space between rows and columns */
+    margin-bottom: 6rem;
+}
+
+.contact-locations-list-item {
+    flex: 0 0 calc(25% - 2%); /* Flex basis set to one third minus the gap. This assumes you want 3 per row. */
+    box-sizing: border-box;
+    margin-bottom: 4rem;
+    /* Additional styling for each location can go here, like padding, borders, etc. */
+}
+
+.contact-locations-list-item-title {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-locations-list-item-addres {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-locations-list-item-name {
+    margin-top: 0.5rem;
+}
+
+
+
+/* Tablet size */
+@media (max-width: 768px) {
+    .contact-locations-list {
+        gap: 2%;
+    }
+
+    .contact-locations-list-item {
+        flex: 0 0 calc(50% - 2%); /* Two per row and accounting for the gap */
+    }
+}

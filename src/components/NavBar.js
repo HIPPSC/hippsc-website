@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 // components
 import NavPage from './NavPage';
@@ -26,6 +28,16 @@ const NavBar = () => {
             document.body.classList.remove('no-scroll');
         }
     };
+
+    const closeNavPage = () => {
+        if (!isNavOpen) return;
+
+        // toggle nav page
+        setNavOpen(false);
+
+        // disable scrolling
+        document.body.classList.remove('no-scroll');
+    };
     
 
     return (
@@ -36,22 +48,22 @@ const NavBar = () => {
                 {/* LEFT PART */}
                 <div className="nav-bar-left">
                     {/* LOGO */}
-                    <div className="nav-bar-logo">
+                    <Link to="/" className="nav-bar-logo">
                         <img src={logo} alt="logo" />
-                    </div>
+                    </Link>
                 </div>
                 
                 {/* RIGHT PART */}
                 <div className="nav-bar-right">
                     {/* CONTACT */}
-                    <div className={`nav-bar-contact-btn rectangle-btn ${isNavOpen ? 'active' : ''}`}>
+                    <Link to="/contact" className={`nav-bar-contact-btn rectangle-btn ${isNavOpen ? 'active' : ''}`} onClick={() => closeNavPage()}>
                         Contact Us
                         <BsArrowRight className='nav-bar-contact-btn-icon rectangle-btn-icon' />
-                    </div>
+                    </Link>
 
                     {/* EXPAND */}
                     <div className={isNavOpen ? "full-page-nav active" : "full-page-nav"}>
-                        <NavPage key={Date.now()} />
+                        <NavPage key={Date.now()} closeNav={() => openNavPage()} />
                     </div>
 
                     <div className={`nav-bar-expand-btn rectangle-btn ${isNavOpen ? 'active' : ''}`}
