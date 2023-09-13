@@ -41,17 +41,19 @@ const Footer = () => {
                 <div className="footer-offerings-title page-text-2">
                     OFFERINGS
                 </div>
+                <Link to='/product/holders'>
+                    <div className="footer-item">
+                        Shrink Fit Holders
+                    </div>
+                </Link>
                 <div className="footer-item">
-                    Shrink Fit Tool Holders
+                    F15i Shrink Fit Machine
                 </div>
                 <div className="footer-item">
-                    F15i Liquid Cooling Machine
+                    H6i Shrink Fit Machine
                 </div>
                 <div className="footer-item">
-                    H6i Air Cooling Machine
-                </div>
-                <div className="footer-item">
-                    Laser Tool Setting Machine
+                    Laser Presetting Machine
                 </div>
                 <div className="footer-item">
                     Intelligent Tool Storage

@@ -32,7 +32,6 @@ const NavBar = () => {
             document.body.classList.remove('no-scroll');
         }
     };
-
     const closeNavPage = () => {
         if (!isNavOpen) return;
 
@@ -41,6 +40,18 @@ const NavBar = () => {
 
         // disable scrolling
         document.body.classList.remove('no-scroll');
+    };
+
+    
+
+    // dropdown handler
+    const [dropdownVisible, setDropdownVisible] = useState(true);
+    const handleDropdownItemClick = () => {
+        setDropdownVisible(false); // Hide the dropdown when an item is clicked
+        // wait for 0.5s
+        setTimeout(() => {
+            setDropdownVisible(true); // Show the dropdown again
+        }, 500);
     };
 
 
@@ -90,10 +101,26 @@ const NavBar = () => {
                 {/* PRODUCTS */}
                 <div className="nav-bar-item dropdown page-text-2">
                     Products
-                    <div className="nav-bar-dropdown-content" ref={dropdownRef}>
-                        <div className='nav-bar-dropdown-item page-text-2'>Shrink Fit Holders</div>
-                        <div className='nav-bar-dropdown-item page-text-2'>Shrink Fit Machines</div>
-                        <div className='nav-bar-dropdown-item page-text-2'>Tool Setting Machine</div>
+                    <div className={`nav-bar-dropdown-content ${!dropdownVisible ? 'nav-bar-dropdown-content-hidden' : ''}`}
+                        ref={dropdownRef}
+                        onMouseEnter={() => setDropdownVisible(true)}>
+                        <Link to="/product/holders" 
+                            className='nav-bar-dropdown-item page-text-2'
+                            onClick={handleDropdownItemClick}>
+                                Shrink Fit Holders
+                        </Link>
+                        <Link className='nav-bar-dropdown-item page-text-2'
+                            onClick={handleDropdownItemClick}>
+                                H6i Shrink Fit Machine
+                        </Link>
+                        <Link className='nav-bar-dropdown-item page-text-2'
+                            onClick={handleDropdownItemClick}>
+                                F15i Shrink Fit Machine
+                        </Link>
+                        <Link className='nav-bar-dropdown-item page-text-2'
+                            onClick={handleDropdownItemClick}>
+                                Laser Presetting Machine
+                        </Link>
                     </div>
                 </div>
 

@@ -197,6 +197,11 @@
   padding-left: 1.5rem;
   padding-bottom: 1rem;
 }
+
+.nav-bar-dropdown-content-hidden {
+  display: none !important;  /* Use !important to override the hover effect */
+}
+
 /* Show the dropdown content when hovering over the dropdown */
 .dropdown:hover .nav-bar-dropdown-content {
   display: block;

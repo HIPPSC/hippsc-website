@@ -48,9 +48,9 @@ const NavPage = ({ closeNav }) => {
                 <div className="nav-page-left-item">
                     Our Offerings
                 </div>
-                <div className="nav-page-left-item">
+                <Link to='/product/holders' className="nav-page-left-item" onClick={() => closeNav()}>
                     ↳ Shrink Fit Holders
-                </div>
+                </Link>
                 <div className="nav-page-left-item">
                     ↳ H6i
                 </div>
@@ -58,7 +58,7 @@ const NavPage = ({ closeNav }) => {
                     ↳ F15i
                 </div>
                 <div className="nav-page-left-item">
-                    ↳ Tool Setting Macine
+                    ↳ Laser Presetting Machine
                 </div>
                 <div className="nav-page-left-item">
                     ↳ Intelligent Tooling Storage
