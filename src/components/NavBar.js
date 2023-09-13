@@ -79,9 +79,9 @@ const NavBar = () => {
                 </div>
 
                 {/* ABOUT */}
-                <div className="nav-bar-item page-text-2">
+                <Link to="/about" className="nav-bar-item page-text-2">
                     About
-                </div>
+                </Link>
             </div>
         </div>
     );

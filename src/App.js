@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import RequestQuote from './pages/RequestQuote';
+import About from './pages/About';
 
 
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/request_quote" element={<RequestQuote />} />
+            <Route path="/about" element={<About />} />
             {/* <Route path="*" element={<NotFound />} /> 404 Page */}
           </Routes>
         </div>

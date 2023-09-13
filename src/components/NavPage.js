@@ -1,4 +1,5 @@
 import React, {useRef} from 'react';
+import { Link } from 'react-router-dom';
 import useTypingEffect from '../hooks/useTypingEffect'; 
 import useSequentialEffect from '../hooks/useSequentialEffect';
 
@@ -40,9 +41,9 @@ const NavPage = () => {
                     <span >{navigationTitle}</span>
                     <span style={{color: 'transparent'}}>{invisibleNavigationTitle}</span>
                 </div>
-                <div className="nav-page-left-item">
+                <Link to="/about" className="nav-page-left-item">
                     About HIPPSC
-                </div>
+                </Link>
                 <div className="nav-page-left-item">
                     Our Offerings
                 </div>
