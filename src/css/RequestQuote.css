@@ -1,6 +1,10 @@
-
+.request-quote {
+    padding-bottom: 14rem;
+    margin-bottom: 4rem;
+    border-bottom: 0.5px solid var(--primary-text-color);
+}
 
 
 .request-quote-title {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }

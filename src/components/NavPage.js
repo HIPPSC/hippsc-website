@@ -7,13 +7,14 @@ import useSequentialEffect from '../hooks/useSequentialEffect';
 // css
 import '../css/NavPage.css';
 
+// assets
 import news1 from '../assets/sampleImgs/news1.jpg';
 import news2 from '../assets/sampleImgs/news2.jpg';
 import study1 from '../assets/sampleImgs/study1.png';
 import study2 from '../assets/sampleImgs/study2.png';
 
 
-const NavPage = () => {
+const NavPage = ({ closeNav }) => {
 
     // typing effects
     const navigation_title_text = "NAVIGATION";
@@ -62,9 +63,12 @@ const NavPage = () => {
                 <div className="nav-page-left-item">
                     ↳ Intelligent Tooling Storage
                 </div>
-                <div className="nav-page-left-item">
-                    Our Studies
-                </div>
+                <Link to="/contact" className="nav-page-left-item" onClick={() => closeNav()}>
+                    Contact Us
+                </Link>
+                <Link to="/request_quote" className="nav-page-left-item" onClick={() => closeNav()}>
+                    Request for Quote
+                </Link>
             </div>
 
             <div className="nav-page-middle" ref={navMiddleCardRef}>

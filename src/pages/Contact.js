@@ -1,6 +1,9 @@
 import React from 'react';
 import useTypingEffect from '../hooks/useTypingEffect';
 
+// components
+import RequestContact from '../components/RequestContact';
+
 // css & assets
 import '../css/Contact.css';
 import contactBanner from '../assets/contact-banner.jpg';
@@ -140,9 +143,10 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-
-
+            
+            <RequestContact />
         </div>
+        
     );
 };
 
