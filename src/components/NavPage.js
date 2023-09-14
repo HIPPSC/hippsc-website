@@ -51,9 +51,9 @@ const NavPage = ({ closeNav }) => {
                 <Link to='/product/holders' className="nav-page-left-item" onClick={() => closeNav()}>
                     ↳ Shrink Fit Holders
                 </Link>
-                <div className="nav-page-left-item">
+                <Link to='/product/h6i' className="nav-page-left-item">
                     ↳ H6i
-                </div>
+                </Link>
                 <div className="nav-page-left-item">
                     ↳ F15i
                 </div>

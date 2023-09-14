@@ -24,7 +24,7 @@ const ProductHolders = () => {
     const body_title_text = "Engineering Elegance: Unveiling Tomorrow's Tooling Solutions →"
     const [bodyTitle, invisibleBodyTitle, bodyTitleref] = useTypingEffect(body_title_text);
 
-    const footer_title_text = "Get Latest Catalog";
+    const footer_title_text = "Get Shrink Fit Catalog";
     const [footerTitle, invisibleFooterTitle, footerTitleref] = useTypingEffect(footer_title_text);
 
     const title1_text = "Advanced Surface Protection";

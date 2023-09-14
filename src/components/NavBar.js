@@ -109,7 +109,8 @@ const NavBar = () => {
                             onClick={handleDropdownItemClick}>
                                 Shrink Fit Holders
                         </Link>
-                        <Link className='nav-bar-dropdown-item page-text-2'
+                        <Link to='/product/h6i'
+                            className='nav-bar-dropdown-item page-text-2'
                             onClick={handleDropdownItemClick}>
                                 H6i Shrink Fit Machine
                         </Link>

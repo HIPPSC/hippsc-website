@@ -15,7 +15,7 @@ import Contact from './pages/Contact';
 import RequestQuote from './pages/RequestQuote';
 
 import ProductHolders from './pages/product/ProductHolders';
-
+import ProductH6i from './pages/product/ProductH6i';
 
 
 function App() {
@@ -30,6 +30,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/request_quote" element={<RequestQuote />} />
             <Route path="/product/holders" element={<ProductHolders />} />
+            <Route path="/product/h6i" element={<ProductH6i />} />
             {/* <Route path="*" element={<NotFound />} /> 404 Page */}
           </Routes>
         </div>
