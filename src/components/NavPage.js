@@ -42,7 +42,7 @@ const NavPage = ({ closeNav }) => {
                     <span >{navigationTitle}</span>
                     <span style={{color: 'transparent'}}>{invisibleNavigationTitle}</span>
                 </div>
-                <Link to="/about" className="nav-page-left-item">
+                <Link to="/about" className="nav-page-left-item" onClick={() => closeNav()}>
                     About HIPPSC
                 </Link>
                 <div className="nav-page-left-item">

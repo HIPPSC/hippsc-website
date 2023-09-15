@@ -1,11 +1,19 @@
-.about{
+.about {
   font-size: 4rem;
   margin-bottom: 2rem;
+}
+
+.about-intro {
+  margin-bottom: 20%;
 }
 
 .about-header {
   border-bottom: 0.5px solid var(--primary-text-color);
   padding-bottom: 4rem;
+}
+
+.about-title{
+  margin-bottom: 2rem;
 }
 
 .about-banner {
@@ -20,4 +28,70 @@
   width: 100%;
   object-fit: cover;
   height: 100%;
+}
+
+.about-intro-title {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.page-title-2-bold-green {
+  margin-right: 0.5rem;
+}
+
+
+/* about intro item */
+.about-intro-item {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8rem;
+}
+
+.about-intro-item-left {
+  width: 52%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.about-intro-item-right {
+  width: 35%;
+}
+
+.about-intro-item-pic {
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-intro-item-pic img {
+  height: 60%;
+}
+
+.about-intro-item-title {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-intro-item-description {
+  margin-bottom: 1rem;
+  padding-right: 0.5rem;
+}
+
+.about-intro-item-last {
+  border-bottom: 0.5px solid var(--primary-text-color);
+  padding-bottom: 4rem;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  .about-title{
+    margin-bottom: 1rem;
+  }
 }
