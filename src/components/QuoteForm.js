@@ -64,7 +64,7 @@ const QuoteForm = () => {
 
         // send email
         try {
-            const response = await fetch('http://localhost:3001/send-email', {
+            const response = await fetch('https://hippsc-email-sender.vercel.app/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -76,10 +76,12 @@ const QuoteForm = () => {
             } else {
                 console.log("Error sending email.");
                 setNotification("Error sending email.");
+                return
             }
         } catch (error) {
             console.error("There was an error sending the email:", error);
             setNotification("There was an error sending the email.");
+            return
         }
 
         // display success message
