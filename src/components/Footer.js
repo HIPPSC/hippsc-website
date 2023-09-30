@@ -51,12 +51,16 @@ const Footer = () => {
                         H6i Shrink Fit Machine
                     </div>
                 </Link>
-                <div className="footer-item">
-                    F15i Shrink Fit Machine
-                </div>
-                <div className="footer-item">
-                    Laser Presetting Machine
-                </div>
+                <Link to='/product/f15i'>
+                    <div className="footer-item">
+                        F15i Shrink Fit Machine
+                    </div>
+                </Link>
+                <Link to='/product/tool_presetting'>
+                    <div className="footer-item">
+                        Laser Presetting Machine
+                    </div>
+                </Link>
                 <div className="footer-item">
                     Intelligent Tool Storage
                 </div>

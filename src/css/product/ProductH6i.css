@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 10%;
 }
 
 /* title */
@@ -47,7 +48,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 4rem;
+    margin-bottom: 5%;
 }
 
 .product-h6i-features-item {
@@ -56,6 +57,7 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 30%;
+    margin-bottom: 5%;
 }
 
 .product-h6i-features-item-title {

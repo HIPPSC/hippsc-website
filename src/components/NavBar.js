@@ -114,11 +114,13 @@ const NavBar = () => {
                             onClick={handleDropdownItemClick}>
                                 H6i Shrink Fit Machine
                         </Link>
-                        <Link className='nav-bar-dropdown-item page-text-2'
+                        <Link to='/product/f15i'
+                            className='nav-bar-dropdown-item page-text-2'
                             onClick={handleDropdownItemClick}>
                                 F15i Shrink Fit Machine
                         </Link>
-                        <Link className='nav-bar-dropdown-item page-text-2'
+                        <Link to='/product/tool_presetting'
+                            className='nav-bar-dropdown-item page-text-2'
                             onClick={handleDropdownItemClick}>
                                 Laser Presetting Machine
                         </Link>
