@@ -1,0 +1,22 @@
+{
+  "navbar" : {
+    "c": "Contact Us",
+    "p": "Product",
+    "s": "Services",
+    "a": "About",
+    "l": "Language"
+  },
+
+
+  "about" : {
+    "titleA": "About HIPPSC",
+    "titleS": "Shrink Fit",
+    "titleG": "Global Collaboration",
+    "titleP": "Product Breakthrough",
+    "titleT": "Technological Edge",
+    "titleM": "Market Acumen",
+    "titleC": "Customer-centric Approach"
+  }
+}
+
+

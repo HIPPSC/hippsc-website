@@ -12,10 +12,21 @@ import { BsArrowRight } from 'react-icons/bs';
 import { CiMenuBurger } from 'react-icons/ci';
 import { RxCross1 } from 'react-icons/rx';
 
+//multilangual
+import { useTranslation } from 'react-i18next';
+
 
 
 const NavBar = () => {
     const [isNavOpen, setNavOpen] = useState(false);
+
+    //--------mutilingual part --------
+    const {t, i18n} = useTranslation("global");
+
+    const switchLanguage = (lng) => {
+        i18n.changeLanguage(lng=="en" ? "cn" : "en");
+    };
+    //---------------------------------
 
     const openNavPage = () => {
         // toggle nav page
@@ -57,7 +68,7 @@ const NavBar = () => {
                 <div className="nav-bar-right">
                     {/* CONTACT */}
                     <Link to="/contact" className={`nav-bar-contact-btn rectangle-btn ${isNavOpen ? 'active' : ''}`} onClick={() => closeNavPage()}>
-                        Contact Us
+                        {t("navbar.c")}
                         <BsArrowRight className='nav-bar-contact-btn-icon rectangle-btn-icon' />
                     </Link>
 
@@ -78,20 +89,30 @@ const NavBar = () => {
             {/* NAV_BAR_LOWER */}
             <div className="nav-bar-lower">
 
-                {/* PRODUCTS */}
-                <div className="nav-bar-item page-text-2">
-                    Products
-                </div>
+                <div className="nav-bar-left">
+                    {/* PRODUCTS */}
+                    <div className="nav-bar-item page-text-2">
+                        {t("navbar.p")}
+                    </div>
 
-                {/* SERVICES */}
-                <div className="nav-bar-item page-text-2">
-                    Services
-                </div>
+                    {/* SERVICES */}
+                    <div className="nav-bar-item page-text-2">
+                        {t("navbar.s")}
+                    </div>
 
-                {/* ABOUT */}
-                <Link to="/about" className="nav-bar-item page-text-2">
-                    About
-                </Link>
+                    {/* ABOUT */}
+                    <Link to="/about" className="nav-bar-item page-text-2">
+                        {t("navbar.a")}
+                    </Link>
+                </div>
+                
+                {/* SWITCH LANGUAGE */}
+                <div className="nav-bar-right">
+                    <div className="nav-bar-item page-text-2 " onClick={() => switchLanguage("en")}>
+                        {t("navbar.l")}
+                    </div>
+                </div>
+                
             </div>
         </div>
     );

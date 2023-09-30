@@ -10,15 +10,25 @@ import {MdOutlineLeaderboard} from 'react-icons/md';
 import {MdInsights} from 'react-icons/md';
 import {RiCustomerService2Line} from 'react-icons/ri';
 
+//multilangual
+import { useTranslation } from 'react-i18next';
+
+
+
 const About = () => {
+
+    //--------mutilingual part --------
+    const {t, i18n} = useTranslation("global");
+    //---------------------------------
     
     //typing effect
-    const about_title_text = "About HIPPSC";
-    const collabor_title_text = "Global Collaboration";
-    const product_title_text = "Product Breakthrough";
-    const tech_title_text = "Technological Edge";
-    const market_title_text = "Market Acumen";
-    const customer_title_text = "Customer-centric Approach";
+    const about_title_text = t("about.titleA");
+    const collabor_title_text = t("about.titleG");
+    const product_title_text = t("about.titleP");
+    const tech_title_text = t("about.titleT");
+    const market_title_text = t("about.titleM");
+    const customer_title_text = t("about.titleC");
+    
 
     const [aboutTitle, invisibleAboutTitle, aboutTitleref] = useTypingEffect(about_title_text, 1, 30);
     const [collaborTitle, invisibleCollaborTitle, collaborTitleref] = useTypingEffect(collabor_title_text);

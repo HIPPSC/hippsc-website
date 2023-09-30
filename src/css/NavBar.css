@@ -18,6 +18,13 @@
   align-items: center;
 }
 
+.nav-bar-lower{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* logo */
 .nav-bar-left {
   display: flex;
@@ -32,8 +39,6 @@
 .nav-bar-logo img {
   width: 100%;
 }
-
-
 
 /* nav bar btn */
 .nav-bar-right{
