@@ -18,7 +18,7 @@ import { useTranslation } from 'react-i18next';
 const About = () => {
 
     //--------mutilingual part --------
-    const {t, i18n} = useTranslation("global");
+    const {t/*, i18n*/} = useTranslation("global");
     //---------------------------------
     
     //typing effect
