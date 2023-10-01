@@ -21,10 +21,15 @@ const NavBar = () => {
     const [isNavOpen, setNavOpen] = useState(false);
 
     //--------mutilingual part --------
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
     const {t, i18n} = useTranslation("global");
 
+    const toggleDropdown = () => {
+        setDropdownOpen(prev => !prev);
+    }
+
     const switchLanguage = (lng) => {
-        i18n.changeLanguage(lng=="en" ? "cn" : "en");
+        i18n.changeLanguage(lng);
     };
     //---------------------------------
 
@@ -108,9 +113,17 @@ const NavBar = () => {
                 
                 {/* SWITCH LANGUAGE */}
                 <div className="nav-bar-right">
-                    <div className="nav-bar-item page-text-2 " onClick={() => switchLanguage("en")}>
+                    <div className="nav-bar-item page-text-2 " onClick={toggleDropdown}>
                         {t("navbar.l")}
                     </div>
+
+                    {/* Language Dropdown */}
+                    {isDropdownOpen && (
+                        <div className="language-dropdown">
+                            <div className="nav-bar-item dropdown-item" onClick={() => switchLanguage('en')}>English</div>
+                            <div className="nav-bar-item dropdown-item" onClick={() => switchLanguage('cn')}>Chinese</div>
+                        </div>
+                    )}
                 </div>
                 
             </div>

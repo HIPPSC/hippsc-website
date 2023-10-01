@@ -119,9 +119,25 @@
 }
 
 
+/* switch language dropdown */
+.language-dropdown {
+  position: absolute;
+  right: 0;
+  top: 90%;
+  border: 1px solid #ccc;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;  /* Ensures dropdown is above other elements */
+}
 
+.dropdown-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
 
-
+.dropdown-item:hover {
+  background-color: #f7f7f7;
+}
 
 
 
@@ -179,6 +195,7 @@
 .nav-bar-item:hover::before {
   width: 50%; /* Make it appear only to the half of the div */
 }
+
 
 
 

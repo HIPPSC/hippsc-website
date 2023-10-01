@@ -61,7 +61,7 @@ const About = () => {
                                 HIPPSC
                             </div>
                             <div className="page-title-2">
-                                Shrink Fit
+                                {t("about.titleS")}
                             </div>
                         </div>
                         
@@ -81,10 +81,10 @@ const About = () => {
                                     <span style={{color: 'transparent'}}>{invisibleCollaborTitle}</span>
                                 </div>
                                 <div className="about-intro-item-description page-text-1">
-                                    HIPPSC's profound collaboration with Germany highlights the importance of a globalized strategy. As a leader in advanced manufacturing, Germany offers specialized expertise in machinery, automation, and tooling technology, providing invaluable support to HIPPSC. 
+                                    {t("about.p1G")}
                                 </div>
                                 <div className="about-intro-item-description page-text-1">
-                                    Such international partnerships can help businesses quickly grasp advanced technologies and market trends, accelerating their own pace of innovation.
+                                    {t("about.p2G")}
                                 </div>
                             </div>
                         </div>
@@ -105,10 +105,10 @@ const About = () => {
                                     <span style={{color: 'transparent'}}>{invisibleProductTitle}</span>
                                 </div>
                                 <div className="home-process-item-description page-text-1">
-                                    The brand has made breakthroughs in the development and application of shrink-fit tool holders and heat expansion machines, particularly with the introduction of a fully automatic intelligent heat expansion machine capable of heating both alloy steel and stainless steel tools.
+                                    {t("about.p1P")}
                                 </div>
                                 <div className="home-process-item-description page-text-1">
-                                    The advent of this technology has significantly improved efficiency and altered the industry's perceptions.
+                                    {t("about.p2P")}
                                 </div>
 
                             </div>
@@ -130,10 +130,10 @@ const About = () => {
                                     <span style={{color: 'transparent'}}>{invisibleTechTitle}</span>
                                 </div>
                                 <div className="home-process-item-description page-text-1">
-                                    Being awarded numerous international and domestic patents, the fully automatic intelligent heat expansion machine introduced by HIPPSC is a revolutionary innovation in the industry. 
+                                    {t("about.p1T")}
                                 </div>
                                 <div className="home-process-item-description page-text-1">
-                                    Not only does it enhance processing efficiency, but it also offers a more precise and stable tool installation method, which is crucial for high-precision machining.
+                                    {t("about.p2T")}
                                 </div>
                             </div>
                         </div>
@@ -154,10 +154,10 @@ const About = () => {
                                     <span style={{color: 'transparent'}}>{invisibleMarketTitle}</span>
                                 </div>
                                 <div className="home-process-item-description page-text-1">
-                                    HIPPSC's meticulous market insight and accurate judgment keep it ahead of industry trends. They don't just settle for existing products but continually engage in research and innovation based on market demand, ensuring their products always remain at the forefront of the industry.
+                                    {t("about.p1M")}
                                 </div>
                                 <div className="home-process-item-description page-text-1">
-                                    
+                                    {t("about.p2M")}
                                 </div>
                             </div>
                         </div>
@@ -178,10 +178,10 @@ const About = () => {
                                     <span style={{color: 'transparent'}}>{invisibleCustomerTitle}</span>
                                 </div>
                                 <div className="home-process-item-description page-text-1">
-                                    HIPPSC emphasizes offering excellent CNC tooling solutions for its vast clientele, indicating a customer-first mindset. By providing customized solutions to clients, HIPPSC establishes a robust customer base, ensuring the market position of its products.
+                                    {t("about.p1C")}
                                 </div>
                                 <div className="home-process-item-description page-text-1">
-                                    
+                                    {t("about.p2C")}
                                 </div>
                             </div>
                         </div>

@@ -7,15 +7,33 @@
     "l": "Language"
   },
 
+  "home" : {
+
+  },
 
   "about" : {
     "titleA": "About HIPPSC",
     "titleS": "Shrink Fit",
+
     "titleG": "Global Collaboration",
+    "p1G": "HIPPSC's profound collaboration with Germany highlights the importance of a globalized strategy. As a leader in advanced manufacturing, Germany offers specialized expertise in machinery, automation, and tooling technology, providing invaluable support to HIPPSC.",
+    "p2G": "Such international partnerships can help businesses quickly grasp advanced technologies and market trends, accelerating their own pace of innovation.",
+
     "titleP": "Product Breakthrough",
+    "p1P": "The brand has made breakthroughs in the development and application of shrink-fit tool holders and heat expansion machines, particularly with the introduction of a fully automatic intelligent heat expansion machine capable of heating both alloy steel and stainless steel tools.",
+    "p2P": "The advent of this technology has significantly improved efficiency and altered the industry's perceptions.",
+
     "titleT": "Technological Edge",
+    "p1T": "Being awarded numerous international and domestic patents, the fully automatic intelligent heat expansion machine introduced by HIPPSC is a revolutionary innovation in the industry.",
+    "p2T": "Not only does it enhance processing efficiency, but it also offers a more precise and stable tool installation method, which is crucial for high-precision machining.",
+
     "titleM": "Market Acumen",
-    "titleC": "Customer-centric Approach"
+    "p1M": "HIPPSC's meticulous market insight and accurate judgment keep it ahead of industry trends. They don't just settle for existing products but continually engage in research and innovation based on market demand, ensuring their products always remain at the forefront of the industry.",
+    "p2M": "",
+
+    "titleC": "Customer-centric Approach",
+    "p1C": "HIPPSC emphasizes offering excellent CNC tooling solutions for its vast clientele, indicating a customer-first mindset. By providing customized solutions to clients, HIPPSC establishes a robust customer base, ensuring the market position of its products.",
+    "p2C": ""
   }
 }
 
