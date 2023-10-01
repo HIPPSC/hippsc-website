@@ -1,6 +1,11 @@
 import React from 'react';
 import useTypingEffect from '../../hooks/useTypingEffect';
 
+
+// components
+import RequestContact from '../../components/RequestContact';
+import BrochureDownload from '../../components/BrochureDownload';
+
 // css
 import '../../css/product/ProductH6i.css';
 
@@ -14,9 +19,7 @@ const ProductH6i = () => {
     const product_h6i_text = `
     Welcome to the era of the H6i, where every task becomes an art form. 
     Beyond its compact design and powerful capabilities lies a story 
-    of innovation and relentless pursuit of perfection. 
-    The H6i is more than a machine; it's a statement, 
-    a vision, and the future of precision all rolled into one.`;
+    of innovation and relentless pursuit of perfection.`;
 
     const [productH6iTitle, invisibleProductH6iTitle, productH6iTitleref] = useTypingEffect(product_h6i_text, 1, 5);
     
@@ -26,7 +29,7 @@ const ProductH6i = () => {
             <div className="product-h6i-title">
                 <div className="product-h6i-title-left" >
                     <div className="product-h6i-title-left-top page-title-1-xxl">
-                        H6i Shrink Fit Machine
+                        H6i Air Cooling
                     </div>
                     <div className="product-h6i-title-left-bottom page-text-1" ref={productH6iTitleref}>
                         <span >{productH6iTitle}</span>
@@ -38,9 +41,10 @@ const ProductH6i = () => {
                 </div>
             </div>
 
+            {/* features */}
             <div className="product-h6i-features">
-                <div className="product-h6i-features-title">
-
+                <div className="product-h6i-features-title page-title-1">
+                    Features
                 </div>
                 <div className="product-h6i-features-body">
                     <div className="product-h6i-features-item">
@@ -50,20 +54,16 @@ const ProductH6i = () => {
                         <div className="product-h6i-features-item-body page-text-2">
                             By leveraging advanced scanning recognition, 
                             the H6i ensures impeccable accuracy, 
-                            eliminating risks associated with manual overheating. 
-                            Your operations are about to witness a revolution—where precision meets simplicity.
-                        </div>
+                            eliminating risks associated with manual overheating.                         </div>
                     </div>
                     <div className="product-h6i-features-item">
                         <div className="product-h6i-features-item-title page-text-1">
                             Rapid Coil Replacement
                         </div>
                         <div className="product-h6i-features-item-body page-text-2">
-                            Time is the essence of productivity. 
                             With our swift coil replacement feature, 
                             we introduce you to an intelligent sensing shift 
                             system designed for today's fast-paced world. 
-                            Say goodbye to delays and embrace the speed and efficiency of the H6i.
                         </div>
                     </div>
                     <div className="product-h6i-features-item">
@@ -73,9 +73,6 @@ const ProductH6i = () => {
                         <div className="product-h6i-features-item-body page-text-2">
                             Our machine guarantees exact temperature regulation, 
                             coupled with a state-of-the-art coil overheat warning system. 
-                            With the H6i, you're not just working with a tool; 
-                            you're working with a guardian that ensures optimal 
-                            performance without compromises.
                         </div>
                     </div>
                     <div className="product-h6i-features-item">
@@ -84,16 +81,99 @@ const ProductH6i = () => {
                         </div>
                         <div className="product-h6i-features-item-body page-text-2">
                             Catering to a broad spectrum of needs, 
-                            the H6i's heating range spans from D3 to D32. 
-                            But we don't just stop there. 
-                            Our built-in precise positioning 
-                            lines within the coil ensure unparalleled accuracy. 
-                            Dive into a realm where every detail is fine-tuned to perfection.
+                            the H6i's heating range spans from 3 to 32 mm, thanks to the revolutionary quick-change coils.
                         </div>
                     </div>
+                    <div className="product-h6i-features-item">
+                        <div className="product-h6i-features-item-title page-text-1">
+                            LCD Operation Panel
+                        </div>
+                        <div className="product-h6i-features-item-body page-text-2">
+                            Provides a clear, high-definition display, 
+                            allowing users to easily monitor machine performance, 
+                            adjust settings, and troubleshoot issues. 
 
+                        </div>
+                    </div>
+                    <div className="product-h6i-features-item">
+                        <div className="product-h6i-features-item-title page-text-1">
+                            Effortless Handle Adjustability
+                        </div>
+                        <div className="product-h6i-features-item-body page-text-2">
+                            The Handle Up/Down Button offers users an unparalleled 
+                            smooth experience. With its intuitive design, making 
+                            adjustments becomes second nature.
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            {/* division line  */}
+            <div className="division-line"></div>
+
+
+            {/* tech specs */}
+            <div className="product-h6i-features">
+                <div className="product-h6i-features-title page-title-1">
+                    Tech Specs
+                </div>
+                <div className="product-h6i-features-body">
+                    <div className="product-h6i-features-item">
+                        <div className="product-h6i-features-item-title product-h6i-features-tech-specs page-title-1-bold">
+                            6kw
+                        </div>
+                        <div className="product-h6i-features-item-body page-text-2">
+                            POWER                
+                        </div>
+                    </div>
+                    <div className="product-h6i-features-item">
+                        <div className="product-h6i-features-item-title product-h6i-features-tech-specs page-title-1-bold">
+                            AC220V 50/60Hz
+                        </div>
+                        <div className="product-h6i-features-item-body page-text-2">
+                            VOLTAGE
+                        </div>
+                    </div>
+                    <div className="product-h6i-features-item">
+                        <div className="product-h6i-features-item-title product-h6i-features-tech-specs page-title-1-bold">
+                            16A
+                        </div>
+                        <div className="product-h6i-features-item-body page-text-2">
+                            CURRENT
+                        </div>
+                    </div>
+                    <div className="product-h6i-features-item">
+                        <div className="product-h6i-features-item-title product-h6i-features-tech-specs page-title-1-bold">
+                            25 kg
+                        </div>
+                        <div className="product-h6i-features-item-body page-text-2">
+                            WEIGHT    
+                        </div>
+                    </div>
+                    <div className="product-h6i-features-item">
+                        <div className="product-h6i-features-item-title product-h6i-features-tech-specs page-title-1-bold">
+                            φ3 ~ φ32
+                        </div>
+                        <div className="product-h6i-features-item-body page-text-2">
+                            HEATING RANGE
+                        </div>
+                    </div>
+                    <div className="product-h6i-features-item">
+                        <div className="product-h6i-features-item-title product-h6i-features-tech-specs page-title-1-bold">
+                            540 x 400 x 780(H)
+                        </div>
+                        <div className="product-h6i-features-item-body page-text-2">
+                            DIMENSION (mm)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* brochure download */}
+            <BrochureDownload />
+
+            {/* request contact btn */}
+            <RequestContact />
         </div>
     );
 };

@@ -115,17 +115,6 @@
 }
 
 
-/* footer */
-.product-holders-footer {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--primary-text-color);
-    padding-bottom: 4rem;
-    margin-bottom: 4rem;
-}
-
 
 
 

@@ -1,99 +1,180 @@
 import React from 'react';
 import useTypingEffect from '../../hooks/useTypingEffect';
 
+// components
+import RequestContact from '../../components/RequestContact';
+import BrochureDownload from '../../components/BrochureDownload';
+
 // css
-import '../../css/product/ProductH6i.css';
+import '../../css/product/ProductF15i.css';
 
 // assets
-import H6iPic from '../../assets/svg/H6i-pic.svg';
+import F15iPic from '../../assets/svg/F15i-pic.svg';
 
 
 const ProductF15i = () => {
 
     // typing effect
-    const product_h6i_text = `
-    Welcome to the era of the H6i, where every task becomes an art form. 
-    Beyond its compact design and powerful capabilities lies a story 
-    of innovation and relentless pursuit of perfection. 
-    The H6i is more than a machine; it's a statement, 
-    a vision, and the future of precision all rolled into one.`;
+    const product_f15i_text = `
+    Experience the future of tooling with our state-of-the-art F15i machine. 
+    Designed for both alloy steel and stainless steel holders, 
+    F15i employs a quick heating principle utilizing an induction 
+    coil that generates high-frequency magnetic fields, 
+    ensuring rapid heating and tool changing.`;
 
-    const [productH6iTitle, invisibleProductH6iTitle, productH6iTitleref] = useTypingEffect(product_h6i_text, 1, 5);
+    const [productF15iTitle, invisibleProductF15iTitle, productF15iTitleref] = useTypingEffect(product_f15i_text, 1, 5);
     
 
     return (
-        <div className='product-h6i'>
-            <div className="product-h6i-title">
-                <div className="product-h6i-title-left" >
-                    <div className="product-h6i-title-left-top page-title-1-xxl">
-                        H6i Shrink Fit Machine
+        <div className='product-f15i'>
+            <div className="product-f15i-title">
+                <div className="product-f15i-title-left" >
+                    <div className="product-f15i-title-left-top page-title-1-xxl">
+                        F15i Liquid Cooling
                     </div>
-                    <div className="product-h6i-title-left-bottom page-text-1" ref={productH6iTitleref}>
-                        <span >{productH6iTitle}</span>
-                        <span style={{color: 'transparent'}}>{invisibleProductH6iTitle}</span>
+                    <div className="product-f15i-title-left-bottom page-text-1" ref={productF15iTitleref}>
+                        <span >{productF15iTitle}</span>
+                        <span style={{color: 'transparent'}}>{invisibleProductF15iTitle}</span>
                     </div>
                 </div>
-                <div className="product-h6i-title-right">
-                    <img src={H6iPic} alt="" />
+                <div className="product-f15i-title-right">
+                    <img src={F15iPic} alt="" />
                 </div>
             </div>
 
-            <div className="product-h6i-features">
-                <div className="product-h6i-features-title">
-
+            {/* features */}
+            <div className="product-f15i-features">
+                <div className="product-f15i-features-title page-title-1">
+                    Features
                 </div>
-                <div className="product-h6i-features-body">
-                    <div className="product-h6i-features-item">
-                        <div className="product-h6i-features-item-title page-text-1">
-                            Intuitive Scanning Recognition
+                <div className="product-f15i-features-body">
+                    <div className="product-f15i-features-item">
+                        <div className="product-f15i-features-item-title page-text-1">
+                            Instant Cool Down
                         </div>
-                        <div className="product-h6i-features-item-body page-text-2">
-                            By leveraging advanced scanning recognition, 
-                            the H6i ensures impeccable accuracy, 
-                            eliminating risks associated with manual overheating. 
-                            Your operations are about to witness a revolution—where precision meets simplicity.
+                        <div className="product-f15i-features-item-body page-text-2">
+                            After a heating cycle, the liquid cooling system quickly brings 
+                            down the temperature, ensuring that tools are ready for immediate use, 
+                            reducing downtime and increasing productivity.
                         </div>
                     </div>
-                    <div className="product-h6i-features-item">
-                        <div className="product-h6i-features-item-title page-text-1">
+                    <div className="product-f15i-features-item">
+                        <div className="product-f15i-features-item-title page-text-1">
+                            Intuitive Scanning Recognition
+                        </div>
+                        <div className="product-f15i-features-item-body page-text-2">
+                            By leveraging advanced scanning recognition, 
+                            the F15i ensures impeccable accuracy, 
+                            eliminating risks associated with manual overheating. 
+                        </div>
+                    </div>
+                    <div className="product-f15i-features-item">
+                        <div className="product-f15i-features-item-title page-text-1">
                             Rapid Coil Replacement
                         </div>
-                        <div className="product-h6i-features-item-body page-text-2">
-                            Time is the essence of productivity. 
+                        <div className="product-f15i-features-item-body page-text-2">
                             With our swift coil replacement feature, 
                             we introduce you to an intelligent sensing shift 
                             system designed for today's fast-paced world. 
-                            Say goodbye to delays and embrace the speed and efficiency of the H6i.
                         </div>
                     </div>
-                    <div className="product-h6i-features-item">
-                        <div className="product-h6i-features-item-title page-text-1">
+                    <div className="product-f15i-features-item">
+                        <div className="product-f15i-features-item-title page-text-1">
                             Precision Temperature Control
                         </div>
-                        <div className="product-h6i-features-item-body page-text-2">
+                        <div className="product-f15i-features-item-body page-text-2">
                             Our machine guarantees exact temperature regulation, 
-                            coupled with a state-of-the-art coil overheat warning system. 
-                            With the H6i, you're not just working with a tool; 
-                            you're working with a guardian that ensures optimal 
-                            performance without compromises.
+                            coupled with a world-class coil overheat warning system. 
                         </div>
                     </div>
-                    <div className="product-h6i-features-item">
-                        <div className="product-h6i-features-item-title page-text-1">
+                    <div className="product-f15i-features-item">
+                        <div className="product-f15i-features-item-title page-text-1">
                             Versatile Heating Range
                         </div>
-                        <div className="product-h6i-features-item-body page-text-2">
+                        <div className="product-f15i-features-item-body page-text-2">
                             Catering to a broad spectrum of needs, 
                             the H6i's heating range spans from D3 to D32. 
                             But we don't just stop there. 
-                            Our built-in precise positioning 
-                            lines within the coil ensure unparalleled accuracy. 
-                            Dive into a realm where every detail is fine-tuned to perfection.
+                        </div>
+                    </div>
+                    <div className="product-f15i-features-item">
+                        <div className="product-f15i-features-item-title page-text-1">
+                            Silent Operation
+                        </div>
+                        <div className="product-f15i-features-item-body page-text-2">
+                            Liquid cooling is not just efficient but also quiet,
+                            leading to a more focused and less disruptive workshop environment.
                         </div>
                     </div>
 
                 </div>
             </div>
+            
+            {/* division line  */}
+            <div className="division-line"></div>
+
+             {/* tech specs */}
+             <div className="product-f15i-features">
+                <div className="product-f15i-features-title page-title-1">
+                    Tech Specs
+                </div>
+                <div className="product-f15i-features-body">
+                    <div className="product-f15i-features-item">
+                        <div className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
+                            15kw
+                        </div>
+                        <div className="product-f15i-features-item-body page-text-2">
+                            POWER                
+                        </div>
+                    </div>
+                    <div className="product-f15i-features-item">
+                        <div className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
+                            380V
+                        </div>
+                        <div className="product-f15i-features-item-body page-text-2">
+                            VOLTAGE
+                        </div>
+                    </div>
+                    <div className="product-f15i-features-item">
+                        <div className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
+                            32A
+                        </div>
+                        <div className="product-f15i-features-item-body page-text-2">
+                            CURRENT
+                        </div>
+                    </div>
+                    <div className="product-f15i-features-item">
+                        <div className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
+                            215 kg
+                        </div>
+                        <div className="product-f15i-features-item-body page-text-2">
+                            WEIGHT    
+                        </div>
+                    </div>
+                    <div className="product-f15i-features-item">
+                        <div className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
+                            φ3 ~ φ32
+                        </div>
+                        <div className="product-f15i-features-item-body page-text-2">
+                            HEATING RANGE
+                        </div>
+                    </div>
+                    <div className="product-f15i-features-item">
+                        <div className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
+                            950 x 710 x 1600(H)
+                        </div>
+                        <div className="product-f15i-features-item-body page-text-2">
+                            DIMENSION (mm)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* brochure download */}
+            <BrochureDownload />
+
+            {/* request contact */}
+            <RequestContact />
         </div>
     );
 };

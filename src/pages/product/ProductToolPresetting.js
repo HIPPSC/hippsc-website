@@ -1,99 +1,81 @@
 import React from 'react';
 import useTypingEffect from '../../hooks/useTypingEffect';
 
+// components
+import RequestContact from '../../components/RequestContact';
+
 // css
-import '../../css/product/ProductH6i.css';
+import '../../css/product/ProductToolPresetting.css';
 
 // assets
-import H6iPic from '../../assets/svg/H6i-pic.svg';
+import ToolPresetterPic from '../../assets/tool-presetter-pic.png';
 
 
 const ProductToolPresetting = () => {
 
     // typing effect
-    const product_h6i_text = `
-    Welcome to the era of the H6i, where every task becomes an art form. 
-    Beyond its compact design and powerful capabilities lies a story 
-    of innovation and relentless pursuit of perfection. 
-    The H6i is more than a machine; it's a statement, 
-    a vision, and the future of precision all rolled into one.`;
+    const product_tool_presetting_text = `
+    Every measurement, every cut, every finished product now holds a 
+    new standard of excellence. Dive into a realm of unmatched 
+    accuracy with HIPPSC Tool Presetter - where exceptional is the standard.`;
 
-    const [productH6iTitle, invisibleProductH6iTitle, productH6iTitleref] = useTypingEffect(product_h6i_text, 1, 5);
+    const [productToolPresettingTitle, invisibleProductToolPresettingTitle, productToolPresettingTitleref] = useTypingEffect(product_tool_presetting_text, 1, 5);
     
 
     return (
-        <div className='product-h6i'>
-            <div className="product-h6i-title">
-                <div className="product-h6i-title-left" >
-                    <div className="product-h6i-title-left-top page-title-1-xxl">
-                        H6i Shrink Fit Machine
+        <div className='product-tool-presetting'>
+            <div className="product-tool-presetting-title">
+                <div className="product-tool-presetting-title-left" >
+                    <div className="product-tool-presetting-title-left-top page-title-1-xxl">
+                        Laser Tool Presetting
                     </div>
-                    <div className="product-h6i-title-left-bottom page-text-1" ref={productH6iTitleref}>
-                        <span >{productH6iTitle}</span>
-                        <span style={{color: 'transparent'}}>{invisibleProductH6iTitle}</span>
+                    <div className="product-tool-presetting-title-left-bottom page-text-1" ref={productToolPresettingTitleref}>
+                        <span >{productToolPresettingTitle}</span>
+                        <span style={{color: 'transparent'}}>{invisibleProductToolPresettingTitle}</span>
                     </div>
                 </div>
-                <div className="product-h6i-title-right">
-                    <img src={H6iPic} alt="" />
+                <div className="product-tool-presetting-title-right">
+                    <img src={ToolPresetterPic} alt="tool-presetter" />
                 </div>
             </div>
 
-            <div className="product-h6i-features">
-                <div className="product-h6i-features-title">
+            <div className="product-tool-presetting-features">
+                <div className="product-tool-presetting-features-title">
 
                 </div>
-                <div className="product-h6i-features-body">
-                    <div className="product-h6i-features-item">
-                        <div className="product-h6i-features-item-title page-text-1">
-                            Intuitive Scanning Recognition
+                <div className="product-tool-presetting-features-body">
+                    <div className="product-tool-presetting-features-item">
+                        <div className="product-tool-presetting-features-item-title page-text-1">
+                            Micron-Level Accuracy
                         </div>
-                        <div className="product-h6i-features-item-body page-text-2">
-                            By leveraging advanced scanning recognition, 
-                            the H6i ensures impeccable accuracy, 
-                            eliminating risks associated with manual overheating. 
-                            Your operations are about to witness a revolution—where precision meets simplicity.
+                        <div className="product-tool-presetting-features-item-body page-text-2">
+                            Achieve unparalleled precision with measurements accurate to the micron, 
+                            ensuring your projects meet the highest standards.
                         </div>
                     </div>
-                    <div className="product-h6i-features-item">
-                        <div className="product-h6i-features-item-title page-text-1">
-                            Rapid Coil Replacement
+                    <div className="product-tool-presetting-features-item">
+                        <div className="product-tool-presetting-features-item-title page-text-1">
+                            Time-Saving Operations
                         </div>
-                        <div className="product-h6i-features-item-body page-text-2">
-                            Time is the essence of productivity. 
-                            With our swift coil replacement feature, 
-                            we introduce you to an intelligent sensing shift 
-                            system designed for today's fast-paced world. 
-                            Say goodbye to delays and embrace the speed and efficiency of the H6i.
+                        <div className="product-tool-presetting-features-item-body page-text-2">
+                            Slash setup times by up to 70%, driving swift transitions
+                            from one task to the next, and elevating productivity.
                         </div>
                     </div>
-                    <div className="product-h6i-features-item">
-                        <div className="product-h6i-features-item-title page-text-1">
-                            Precision Temperature Control
+                    <div className="product-tool-presetting-features-item">
+                        <div className="product-tool-presetting-features-item-title page-text-1">
+                            Cost Efficiency
                         </div>
-                        <div className="product-h6i-features-item-body page-text-2">
-                            Our machine guarantees exact temperature regulation, 
-                            coupled with a state-of-the-art coil overheat warning system. 
-                            With the H6i, you're not just working with a tool; 
-                            you're working with a guardian that ensures optimal 
-                            performance without compromises.
-                        </div>
-                    </div>
-                    <div className="product-h6i-features-item">
-                        <div className="product-h6i-features-item-title page-text-1">
-                            Versatile Heating Range
-                        </div>
-                        <div className="product-h6i-features-item-body page-text-2">
-                            Catering to a broad spectrum of needs, 
-                            the H6i's heating range spans from D3 to D32. 
-                            But we don't just stop there. 
-                            Our built-in precise positioning 
-                            lines within the coil ensure unparalleled accuracy. 
-                            Dive into a realm where every detail is fine-tuned to perfection.
+                        <div className="product-tool-presetting-features-item-body page-text-2">
+                            Reduce tooling expenses by optimizing tool life and minimizing waste, 
+                            delivering a smart, cost-effective solution for your machining needs.
                         </div>
                     </div>
 
                 </div>
             </div>
+
+            <RequestContact />
         </div>
     );
 };
