@@ -41,11 +41,11 @@ const Contact = () => {
                         <div className="contact-locations-list-item-title page-text-2">
                             DONGGUAN, CHN (*HQ)
                         </div>
-                        <div className="contact-locations-list-item-address">
+                        {/* <div className="contact-locations-list-item-address">
                             <div>Floor 7, Building 1, No. 13 </div>
                             <div>Xinchun Road, Shangsha, Changan Town</div>
                             <div>Dongguan, Guangdong</div>
-                        </div>
+                        </div> */}
                         <div className="contact-locations-list-item-name">
                             Kevin Ye
                         </div>
@@ -62,12 +62,12 @@ const Contact = () => {
                         <div className="contact-locations-list-item-title page-text-2">
                             SHANGHAI, CHN
                         </div>
-                        <div className="contact-locations-list-item-address">
+                        {/* <div className="contact-locations-list-item-address">
                             <div>Building 19, Linda Park</div>
                             <div>No. 8 Dongjing Road</div>
                             <div>Songjiang Industrial Zone</div>
                             <div>Shanghai</div>
-                        </div>
+                        </div> */}
                         <div className="contact-locations-list-item-name">
                             Xi Zhang
                         </div>
@@ -84,12 +84,12 @@ const Contact = () => {
                         <div className="contact-locations-list-item-title page-text-2">
                             SHENZHEN, CHN
                         </div>
-                        <div className="contact-locations-list-item-address">
+                        {/* <div className="contact-locations-list-item-address">
                             <div>No. B06</div>
                             <div>Shangliao Hardware Mold City</div>
                             <div>Shajing, Shenzhen</div>
                             <div>Guangdong</div>
-                        </div>
+                        </div> */}
                         <div className="contact-locations-list-item-name">
                             Xiaohua Ye
                         </div>

@@ -48,21 +48,29 @@ const NavPage = ({ closeNav }) => {
                 <div className="nav-page-left-item">
                     Our Offerings
                 </div>
-                <div className="nav-page-left-item">
+                <Link   to='/product/holders' 
+                        className="nav-page-left-item" 
+                        onClick={() => closeNav()}>
                     ↳ Shrink Fit Holders
-                </div>
-                <div className="nav-page-left-item">
+                </Link>
+                <Link   to='/product/h6i' 
+                        className="nav-page-left-item"
+                        onClick={() => closeNav()}>
                     ↳ H6i
-                </div>
-                <div className="nav-page-left-item">
+                </Link>
+                <Link   to='/product/f15i' 
+                        className="nav-page-left-item"
+                        onClick={() => closeNav()}>
                     ↳ F15i
-                </div>
-                <div className="nav-page-left-item">
-                    ↳ Tool Setting Macine
-                </div>
-                <div className="nav-page-left-item">
+                </Link>
+                <Link   to='/product/tool_presetting' 
+                        className="nav-page-left-item"
+                        onClick={() => closeNav()}>
+                    ↳ Laser Presetting Machine
+                </Link>
+                <Link className="nav-page-left-item">
                     ↳ Intelligent Tooling Storage
-                </div>
+                </Link>
                 <Link to="/contact" className="nav-page-left-item" onClick={() => closeNav()}>
                     Contact Us
                 </Link>

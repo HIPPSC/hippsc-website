@@ -178,6 +178,61 @@
 
 
 
+/* dropdown content */
+.nav-bar-item {
+  position: relative; /* This allows absolute positioning of child elements */
+  /* Other styles */
+}
+
+/* Style for dropdown content (hidden by default) */
+.nav-bar-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -1.2rem;
+  width: calc(100vw - 2.4rem);
+  z-index: 1;
+  padding-top: 1.5rem;
+  padding-right: 2rem; 
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.nav-bar-dropdown-content-hidden {
+  display: none !important;  /* Use !important to override the hover effect */
+}
+
+/* Show the dropdown content when hovering over the dropdown */
+.dropdown:hover .nav-bar-dropdown-content {
+  display: block;
+  background-color: white;
+}
+
+/* Style for individual dropdown items (adjust as needed) */
+.nav-bar-dropdown-item {
+  display: block;
+  text-decoration: none;
+  padding-bottom: 1rem;
+  color: black;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.2s ease;
+  animation: moveUpFadeIn 0.5s forwards;
+  animation-play-state: paused;
+}
+
+/* Change color for dropdown items on hover (optional) */
+.nav-bar-dropdown-item:hover {
+  color: var(--hippsc-green);
+}
+
+
+
+
+
+
+
 /* Media queries */
 
 /* For screens smaller than 500px */
