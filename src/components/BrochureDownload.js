@@ -1,6 +1,5 @@
 import React from 'react';
 import useTypingEffect from '../hooks/useTypingEffect'; 
-import { Link } from 'react-router-dom';
 
 
 // css & assets

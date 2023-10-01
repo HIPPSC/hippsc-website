@@ -13,7 +13,6 @@ import holder1 from '../../assets/svg/holder1.svg';
 import holder2 from '../../assets/svg/holder2.svg';
 import holder3 from '../../assets/svg/holder3.svg';
 import productHolderBodyPic from '../../assets/product-holder-body-pic.jpg';
-import { BsArrowRight } from 'react-icons/bs';
 
 
 const ProductHolders = () => {

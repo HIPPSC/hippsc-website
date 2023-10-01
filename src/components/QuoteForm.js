@@ -72,13 +72,13 @@ const QuoteForm = () => {
                 credentials: 'include',
                 body: JSON.stringify({ formData }),
             });
-            // if (response.ok) {
-            //     console.log("Email sent successfully!");
-            // } else {
-            //     console.log("Error sending email.");
-            //     setNotification("Error sending email.");
-            //     return
-            // }
+            if (response.ok) {
+                console.log("Email sent successfully!");
+            } else {
+                console.log("Error sending email.");
+                setNotification("Error sending email.");
+                return
+            }
         } catch (error) {
             console.error("There was an error sending the email:", error);
             setNotification("There was an error sending the email.");
