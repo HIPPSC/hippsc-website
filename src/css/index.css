@@ -122,10 +122,22 @@ a {
   font-weight: var(--title-weight-1);
 }
 
+.page-text-1-bold {
+  font-size: var(--text-size-1);
+  color: var(--primary-text-color);
+  font-weight: var(--title-weight-3);
+}
+
 .page-text-2 {
   font-size: var(--text-size-1);
   color: var(--light-gray-text-color);
   font-weight: var(--title-weight-2);
+}
+
+.page-text-3 {
+  font-size: var(--text-size-3);
+  color: var(--primary-text-color);
+  font-weight: var(--title-weight-1);
 }
 
 
@@ -214,6 +226,15 @@ a {
 .rectangle-btn:hover .rectangle-btn-icon {
   transform: translateX(10px); /* Move right */
   color: white;
+}
+
+
+/* line  */
+.division-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--primary-text-color);
+  margin-bottom: 2%;
 }
 
 

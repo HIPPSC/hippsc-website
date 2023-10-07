@@ -13,13 +13,20 @@ import news2 from '../assets/sampleImgs/news2.jpg';
 import study1 from '../assets/sampleImgs/study1.png';
 import study2 from '../assets/sampleImgs/study2.png';
 
+//multilangual
+import { useTranslation } from 'react-i18next';
+
 
 const NavPage = ({ closeNav }) => {
 
+    //--------mutilingual part --------
+    const {t/*, i18n*/} = useTranslation("global");
+    //---------------------------------
+
     // typing effects
-    const navigation_title_text = "NAVIGATION";
-    const latest_news_title_text = "LATEST NEWS";
-    const our_studies_title_text = "OUR STUDIES";
+    const navigation_title_text = t("navbar.pageN");
+    const latest_news_title_text = t("navbar.pageL");
+    const our_studies_title_text = t("navbar.pageO");
     const [navigationTitle, invisibleNavigationTitle, navigationTitleref] = useTypingEffect(navigation_title_text);
     const [latestNewsTitle, invisibleLatestNewsTitle, latestNewsTitleref] = useTypingEffect(latest_news_title_text);
     const [ourStudiesTitle, invisibleOurStudiesTitle, ourStudiesTitleref] = useTypingEffect(our_studies_title_text);
@@ -43,31 +50,46 @@ const NavPage = ({ closeNav }) => {
                     <span style={{color: 'transparent'}}>{invisibleNavigationTitle}</span>
                 </div>
                 <Link to="/about" className="nav-page-left-item" onClick={() => closeNav()}>
-                    About HIPPSC
+                    {t("navbar.Na")}
+                    {/* About HIPPSC */}
                 </Link>
                 <div className="nav-page-left-item">
-                    Our Offerings
+                    {t("navbar.No")}
+                    {/* Our Offerings */}
                 </div>
-                <div className="nav-page-left-item">
-                    ↳ Shrink Fit Holders
-                </div>
-                <div className="nav-page-left-item">
+                <Link   to='/product/holders' 
+                        className="nav-page-left-item" 
+                        onClick={() => closeNav()}>
+                    {t("navbar.Ns")}
+                    {/* ↳ Shrink Fit Holders */}
+                </Link>
+                <Link   to='/product/h6i' 
+                        className="nav-page-left-item"
+                        onClick={() => closeNav()}>
                     ↳ H6i
-                </div>
-                <div className="nav-page-left-item">
+                </Link>
+                <Link   to='/product/f15i' 
+                        className="nav-page-left-item"
+                        onClick={() => closeNav()}>
                     ↳ F15i
-                </div>
-                <div className="nav-page-left-item">
-                    ↳ Tool Setting Macine
-                </div>
-                <div className="nav-page-left-item">
-                    ↳ Intelligent Tooling Storage
-                </div>
+                </Link>
+                <Link   to='/product/tool_presetting' 
+                        className="nav-page-left-item"
+                        onClick={() => closeNav()}>
+                    {t("navbar.Nl")}
+                    {/* ↳ Laser Presetting Machine */}
+                </Link>
+                <Link className="nav-page-left-item">
+                    {t("navbar.Ni")}
+                    {/* ↳ Intelligent Tooling Storage */}
+                </Link>
                 <Link to="/contact" className="nav-page-left-item" onClick={() => closeNav()}>
-                    Contact Us
+                    {t("navbar.Nc")}
+                    {/* Contact Us */}
                 </Link>
                 <Link to="/request_quote" className="nav-page-left-item" onClick={() => closeNav()}>
-                    Request for Quote
+                    {t("navbar.Nr")}
+                    {/* Request for Quote */}
                 </Link>
             </div>
 

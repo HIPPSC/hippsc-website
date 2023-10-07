@@ -4,11 +4,88 @@
     "p": "Product",
     "s": "Services",
     "a": "About",
-    "l": "Language"
+    "l": "Language",
+
+    "pS": "Shrink Fit Holder",
+    "pH": "H6i Shrink Fit Machine",
+    "pF": "F15i Shrink Fit Machine",
+    "pL": "Laser Presetting Machine",
+
+    "pageN": "NAVIGATION",
+    "pageL": "LATEST NEWS",
+    "pageO": "OUR STUDIES",
+    "Na": "About HIPPSC",
+    "No": "Our Offerings",
+    "Ns": "↳ Shrink Fit Holders",
+    "Nl": "↳ Laser Presetting Machine",
+    "Ni": "↳ Intelligent Tooling Storage",
+    "Nc": "Contact Us",
+    "Nr": "Request for Quote"
+  },
+
+  "footer": {
+    "of": "OFFERINGS",
+    "ofS": "Shrink Fit Holder",
+    "ofH": "H6i Shrink Fit Machine",
+    "ofF": "F15i Shrink Fit Machine",
+    "ofL": "Laser Presetting Machine",
+    "ofI": "Intelligent Tool Storage",
+
+    "co": "COMPANY",
+    "coA": "About HIPPSC",
+    "coOH": "Our History",
+    "coOT": "Our Team",
+    "coQ": "Qualification",
+    "coS": "Sustainability",
+
+    "ct": "CONTACT",
+    "ctR": "Request for Quote",
+    "ctL": "Locations"
   },
 
   "home" : {
+    "homeT": "Perrecision in Evy Cut, Shrink Fit Innovation for Modern Machining",
+    "introT": "Revolutionizing Precision Engineering — from automotive assembly lines to aerospace manufacturing.",
 
+    "homeDL": "We craft industry-leading shrink-fit holders and machines that enable machine shops to achieve unparalleled accuracy and efficiency — across diverse industrial applications.",
+    "homeDR": "We are in a time of remarkable technological advancement. Our company recognizes our customers' critical need to utilize shrink fit technology for precise, reliable cutting — and to excel in the competitive manufacturing landscape.",
+    "homePL": "Learn more about our study on Shrink Fit Technology",
+
+    "researchT": "Research & Design",
+    "precisionT": "Precision Testing",
+    "productionT": "Production",
+
+    "pT1": "Shrink Fit — Engineered for ",
+    "pT2": "Precision, Built to Last",
+
+    "r1": "From the initial concept to the final product, every stage of development is meticulously crafted to ensure unparalleled quality and precision.",
+    "r2": "Through rigorous testing and continuous refinement, we have created a range of products that not only meet but exceed industry standards.",
+    "pre1": "Our precision testing process includes real-world simulations, where the tool holders are subjected to conditions that mirror actual machining environments, allowing us to assess their resilience and functionality under various operational stresses.",
+    "pre2": "From dimensional analysis to material integrity, every aspect of the tool holder is scrutinized to detect even the slightest deviations from our stringent specifications.",
+    "pro1": "Operating within a state-of-the-art manufacturing facility, our skilled production team employs cutting-edge technology and lean manufacturing principles to optimize efficiency and responsiveness.",
+    "pro2": "Our robust supply chain management, coupled with real-time monitoring and predictive analytics, allows us to meet customers’ demand and adjust production schedules proactively.",
+
+    "storage": "Coming Soon ...",
+    "sol": "Solutions",
+
+    "learn": "Learn more about ",
+    "liq": "Liquid Cooling",
+    "air": "Air Cooling",
+    "sfm": "Shrink Fit Machine",
+
+    "F1": "The true brilliance of the F-15i resides in its groundbreaking rapid liquid cooling technology, seamlessly returning your tools to optimal temperature with unmatched speed.",
+    "F2": "Infused with quick-change heating coils and masterful temperature control, the F-15i transcends mere machinery; it's a symphony of excellence, a dynamic partner poised to transform your production landscape into a realm of unparalleled achievement.",
+    "H1": "Discover the H6i, where compact design meets robust capability.",
+    "H2": "With a sleek design weighing just 25kg and a compact footprint of 540mm x 400mm x 780mm (H), the H6i is a versatile powerhouse, perfect for spaces where efficiency meets elegance.",
+    "H3": "From its flexible heating range to its innovative scanning code recognition, the H6i is more than a machine; it's a vision of efficiency, ready to transform your workspace.",
+
+    "its": "Intelligent Tooling Storage",
+    "join": "Unlock the future - Join Us Now"
+  },
+
+  "quote": {
+    "request": "Request a Quote",
+    "gs": "Get Started"
   },
 
   "about" : {
@@ -34,6 +111,12 @@
     "titleC": "Customer-centric Approach",
     "p1C": "HIPPSC emphasizes offering excellent CNC tooling solutions for its vast clientele, indicating a customer-first mindset. By providing customized solutions to clients, HIPPSC establishes a robust customer base, ensuring the market position of its products.",
     "p2C": ""
+  },
+
+  "contact": {
+    "C": "Contact Us",
+    "A": "Asia & Pacific",
+    "N": "North America"
   }
 }
 

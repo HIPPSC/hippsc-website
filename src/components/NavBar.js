@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
+// effects
+import useSequentialEffect from '../hooks/useSequentialEffect';
 
 // components
 import NavPage from './NavPage';
@@ -18,6 +20,8 @@ import { useTranslation } from 'react-i18next';
 
 
 const NavBar = () => {
+
+    // nav page handler
     const [isNavOpen, setNavOpen] = useState(false);
 
     //--------mutilingual part --------
@@ -44,7 +48,6 @@ const NavBar = () => {
             document.body.classList.remove('no-scroll');
         }
     };
-
     const closeNavPage = () => {
         if (!isNavOpen) return;
 
@@ -54,6 +57,23 @@ const NavBar = () => {
         // disable scrolling
         document.body.classList.remove('no-scroll');
     };
+
+    
+
+    // dropdown handler
+    const [dropdownVisible, setDropdownVisible] = useState(true);
+    const handleDropdownItemClick = () => {
+        setDropdownVisible(false); // Hide the dropdown when an item is clicked
+        // wait for 0.5s
+        setTimeout(() => {
+            setDropdownVisible(true); // Show the dropdown again
+        }, 500);
+    };
+
+
+    // sequential effects
+    const dropdownRef = useRef(null);
+    useSequentialEffect(dropdownRef, '.nav-bar-dropdown-item', 100);
     
 
     return (
@@ -96,8 +116,34 @@ const NavBar = () => {
 
                 <div className="nav-bar-left">
                     {/* PRODUCTS */}
-                    <div className="nav-bar-item page-text-2">
+                    <div className="nav-bar-item dropdown page-text-2">
                         {t("navbar.p")}
+                        <div className={`nav-bar-dropdown-content ${!dropdownVisible ? 'nav-bar-dropdown-content-hidden' : ''}`} ref={dropdownRef} onMouseEnter={() => setDropdownVisible(true)}>
+                            <Link to="/product/holders" 
+                                className='nav-bar-dropdown-item page-text-2'
+                                onClick={handleDropdownItemClick}>
+                                    {t("navbar.pS")}
+                                    {/* Shrink Fit Holders */}
+                            </Link>
+                            <Link to='/product/h6i'
+                                className='nav-bar-dropdown-item page-text-2'
+                                onClick={handleDropdownItemClick}>
+                                    {t("navbar.pH")}
+                                    {/* H6i Shrink Fit Machine */}
+                            </Link>
+                            <Link to='/product/f15i'
+                                className='nav-bar-dropdown-item page-text-2'
+                                onClick={handleDropdownItemClick}>
+                                    {t("navbar.pF")}
+                                    {/* F15i Shrink Fit Machine */}
+                            </Link>
+                            <Link to='/product/tool_presetting'
+                                className='nav-bar-dropdown-item page-text-2'
+                                onClick={handleDropdownItemClick}>
+                                    {t("navbar.pL")}
+                                    {/* Laser Presetting Machine */}
+                            </Link>
+                        </div>
                     </div>
 
                     {/* SERVICES */}

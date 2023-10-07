@@ -8,12 +8,19 @@ import RequestContact from '../components/RequestContact';
 import '../css/Contact.css';
 import contactBanner from '../assets/contact-banner.jpg';
 
+//multilangual
+import { useTranslation } from 'react-i18next';
+
 const Contact = () => {
 
+    //--------mutilingual part --------
+    const {t/*, i18n*/} = useTranslation("global");
+    //---------------------------------
+
     // typing effect
-    const contact_title_text = "Contact Us";
-    const location_ap_title_text = "Asia & Pacific";
-    const location_na_title_text = "North America";
+    const contact_title_text = t("contact.C");
+    const location_ap_title_text = t("contact.A");
+    const location_na_title_text = t("contact.N");
 
     const [contacTitle, invisibleContactTitle, contactTitleref] = useTypingEffect(contact_title_text, 1, 30);
     const [locationAPTitle, invisibleLocationAPTitle, locationAPTitleref] = useTypingEffect(location_ap_title_text, 1, 30);
@@ -41,11 +48,11 @@ const Contact = () => {
                         <div className="contact-locations-list-item-title page-text-2">
                             DONGGUAN, CHN (*HQ)
                         </div>
-                        <div className="contact-locations-list-item-address">
+                        {/* <div className="contact-locations-list-item-address">
                             <div>Floor 7, Building 1, No. 13 </div>
                             <div>Xinchun Road, Shangsha, Changan Town</div>
                             <div>Dongguan, Guangdong</div>
-                        </div>
+                        </div> */}
                         <div className="contact-locations-list-item-name">
                             Kevin Ye
                         </div>
@@ -62,12 +69,12 @@ const Contact = () => {
                         <div className="contact-locations-list-item-title page-text-2">
                             SHANGHAI, CHN
                         </div>
-                        <div className="contact-locations-list-item-address">
+                        {/* <div className="contact-locations-list-item-address">
                             <div>Building 19, Linda Park</div>
                             <div>No. 8 Dongjing Road</div>
                             <div>Songjiang Industrial Zone</div>
                             <div>Shanghai</div>
-                        </div>
+                        </div> */}
                         <div className="contact-locations-list-item-name">
                             Xi Zhang
                         </div>
@@ -84,12 +91,12 @@ const Contact = () => {
                         <div className="contact-locations-list-item-title page-text-2">
                             SHENZHEN, CHN
                         </div>
-                        <div className="contact-locations-list-item-address">
+                        {/* <div className="contact-locations-list-item-address">
                             <div>No. B06</div>
                             <div>Shangliao Hardware Mold City</div>
                             <div>Shajing, Shenzhen</div>
                             <div>Guangdong</div>
-                        </div>
+                        </div> */}
                         <div className="contact-locations-list-item-name">
                             Xiaohua Ye
                         </div>
