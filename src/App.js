@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 // pages
 import Home from './pages/Home';
 import Contact from './pages/Contact';
+import Service from './pages/Service';
 import RequestQuote from './pages/RequestQuote';
 
 import ProductHolders from './pages/product/ProductHolders';
@@ -32,6 +33,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/service" element={<Service />} />
             <Route path="/request_quote" element={<RequestQuote />} />
             <Route path="/product/holders" element={<ProductHolders />} />
             <Route path="/product/h6i" element={<ProductH6i />} />

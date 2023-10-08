@@ -128,9 +128,10 @@ const NavBar = () => {
                 </div>
 
                 {/* SERVICES */}
-                <div className="nav-bar-item page-text-2">
+                <Link to="/service"
+                    className="nav-bar-item page-text-2">
                     Services
-                </div>
+                </Link>
 
                 {/* ABOUT */}
                 <div className="nav-bar-item page-text-2">
