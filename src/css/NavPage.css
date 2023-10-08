@@ -49,6 +49,8 @@
     transform: translateY(20px);
     animation: moveUpFadeIn 0.5s forwards;
     animation-play-state: paused;
+    color: inherit;
+    text-decoration: none;
 }
 
 .nav-page-left-item:hover {

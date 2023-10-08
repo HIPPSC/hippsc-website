@@ -181,7 +181,8 @@
 /* dropdown content */
 .nav-bar-item {
   position: relative; /* This allows absolute positioning of child elements */
-  /* Other styles */
+  color: var(--light-gray-text-color);
+  text-decoration: none;
 }
 
 /* Style for dropdown content (hidden by default) */

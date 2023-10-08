@@ -4,6 +4,8 @@ import { Container, Row, Col } from 'reactstrap';
 // css
 import '../css/Service.css';
 import { LiaToolsSolid}  from 'react-icons/lia';
+import { GiAutoRepair } from 'react-icons/gi';
+import { RiCustomerService2Line } from 'react-icons/ri';
 
 const Service = () => {
     return (
@@ -33,18 +35,18 @@ const Service = () => {
                 </Col>
                 <Col className="service-body-card" sm='6' md='4' lg='3'>
                     <div className="service-body-card-icon">
-                        <LiaToolsSolid />
+                        <GiAutoRepair />
                     </div>
                     <div className="service-body-card-title">
-                        Technical Support
+                        Machine Maintainance
                     </div>
                 </Col>
                 <Col className="service-body-card" sm='6' md='4' lg='3'>
                     <div className="service-body-card-icon">
-                        <LiaToolsSolid />
+                        <RiCustomerService2Line />
                     </div>
                     <div className="service-body-card-title">
-                        Technical Support
+                        General Questions
                     </div>
                 </Col>
             </Row>
