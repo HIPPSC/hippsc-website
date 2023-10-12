@@ -3,9 +3,13 @@ import { Container, Row, Col } from 'reactstrap';
 
 // css
 import '../css/Service.css';
-import { LiaToolsSolid}  from 'react-icons/lia';
-import { GiAutoRepair } from 'react-icons/gi';
-import { RiCustomerService2Line } from 'react-icons/ri';
+
+import holderIcon from '../assets/svg/icon-3holders.svg';
+import machinesIcon from '../assets/svg/icon-machines.svg';
+import customerServiceIcon from '../assets/svg/icon-customer-service.svg';
+import openBoxIcon from '../assets/svg/icon-open-box.svg';
+import videoIcon from '../assets/svg/icon-video.svg';
+import orderIcon from '../assets/svg/icon-order.svg';
 
 const Service = () => {
     return (
@@ -16,39 +20,71 @@ const Service = () => {
                     HIPPSC Services & Support
                 </div>
                 <div className="service-sub-title">
-                    HIPPSC offers a range of services to 
+                    {/* HIPPSC offers a range of services to 
                     support our tooling solutions, 
                     from help choosing the right holder and machine to 
-                    installation and training.
+                    installation and training. */}
+                    WE ARE HERE TO HELP - 24/7
                 </div>
             </div>
 
             {/* service body */}
             <Row className="service-body">
                 <Col className="service-body-card" sm='6' md='4' lg='3'>
-                    <div className="service-body-card-icon">
-                        <LiaToolsSolid />
+                    <div className="service-body-card-pic">
+                        <img src={openBoxIcon}
+                            alt="machines-icon" />
                     </div>
                     <div className="service-body-card-title">
-                        Technical Support
+                        Getting Started
                     </div>
                 </Col>
                 <Col className="service-body-card" sm='6' md='4' lg='3'>
-                    <div className="service-body-card-icon">
-                        <GiAutoRepair />
+                    <div className="service-body-card-pic">
+                        <img src={videoIcon}
+                            alt="holder-reconditioning" />
+                    </div>
+                    <div className="service-body-card-title">
+                        Video Tutorials
+                    </div>
+                </Col>
+                <Col className="service-body-card" sm='6' md='4' lg='3'>
+                    <div className="service-body-card-pic">
+                        <img src={orderIcon}
+                            alt="machines-icon" />
+                    </div>
+                    <div className="service-body-card-title">
+                        Your Orders
+                    </div>
+                </Col>
+                <Col className="service-body-card" sm='6' md='4' lg='3'>
+                    <div className="service-body-card-pic">
+                        <img src={holderIcon}
+                            alt="holder-reconditioning" />
+                    </div>
+                    <div className="service-body-card-title">
+                        Holder Reconditioning
+                    </div>
+                </Col>
+                <Col className="service-body-card" sm='6' md='4' lg='3'>
+                    <div className="service-body-card-pic">
+                        <img src={machinesIcon}
+                            alt="machines-icon" />
                     </div>
                     <div className="service-body-card-title">
                         Machine Maintainance
                     </div>
                 </Col>
                 <Col className="service-body-card" sm='6' md='4' lg='3'>
-                    <div className="service-body-card-icon">
-                        <RiCustomerService2Line />
+                    <div className="service-body-card-pic">
+                        <img src={customerServiceIcon}
+                            alt="machines-icon" />
                     </div>
                     <div className="service-body-card-title">
                         General Questions
                     </div>
                 </Col>
+                
             </Row>
         </Container>
     );
