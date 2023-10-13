@@ -6,11 +6,18 @@ import useTypingEffect from '../hooks/useTypingEffect';
 import '../css/BrochureDownload.css';
 import { BsArrowRight } from 'react-icons/bs';
 
+//multilangual
+import { useTranslation } from 'react-i18next';
+
 
 const BrochureDownload = () => {
 
+    //--------mutilingual part --------
+    const {t/*, i18n*/} = useTranslation("global");
+    //---------------------------------
+
     // typing effects
-    const footer_title_text = "Get Shrink Fit Catalog";
+    const footer_title_text = t("download.Dt");
     const [footerTitle, invisibleFooterTitle, footerTitleref] = useTypingEffect(footer_title_text);
 
 
@@ -22,7 +29,8 @@ const BrochureDownload = () => {
             </div>
             <a href="https://drive.google.com/file/d/1qBBn53mhpUQd47l99NnAry4R-Ucjoe9I/view?usp=share_link" download target='blank'>
                 <div className="product-holders-footer-btn rectangle-btn">
-                    Download
+                    {t("download.D")}
+                    {/* Download */}
                     <BsArrowRight className='rectangle-btn-icon'/>
                 </div>
             </a>
