@@ -1,0 +1,126 @@
+.service-gs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+
+/* header */
+.service-gs-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin-top: 2%;
+}
+
+.service-gs-title {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--primary-text-color); 
+    font-weight: var(--title-weight-3);
+    margin-bottom: 3%;
+}
+
+.service-gs-title-green {
+    color: var(--hippsc-green);
+    margin-left: 0.5rem;
+}
+
+.service-gs-sub-title {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.7;
+    color: var(--primary-text-color);
+}
+
+
+
+/* body */
+.service-gs-body {
+    margin-top: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-gs-section-title {
+    font-size: 1.5rem;
+    color: var(--primary-text-color); 
+    font-weight: var(--title-weight-3);
+}
+
+.service-gs-section {
+    margin-top: 2%;
+    margin-bottom: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+.service-gs-card {
+    width: 30%;
+    margin-bottom: 5%;
+}
+
+.service-gs-card-title {
+    font-size: 1.2rem;
+    color: var(--light-gray-text-color); 
+    font-weight: var(--title-weight-3);
+    margin-bottom: 3%;
+}
+
+
+
+
+/* additional design */
+.half-border {
+    position: relative;  /* Needed to position the pseudo-element correctly */
+    display: inline-block;
+    padding-bottom: 1%;
+}
+
+.half-border::after {
+    content: "";           /* Mandatory for pseudo-elements */
+    position: absolute;    /* To position it at the bottom of the div */
+    left: 0;               /* Start from the left edge of the div */
+    bottom: 0;             /* Place it at the bottom of the div */
+    width: 5%;            /* Half the length of the div */
+    height: 2px;           /* Thickness of the border */
+    background-color: var(--hippsc-green); /* Color of the border */
+}
+
+
+@media screen and (max-width: 765px) {
+    .service-gs-section {
+        margin-bottom: 20%;
+    }
+
+    .service-gs-section-title {
+        margin-bottom: 3%;
+    }
+
+    .service-gs-card {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .service-gs-card-title {
+        margin-bottom: 1%;
+    }
+
+    .half-border {
+        padding-bottom: 2%;
+    }
+
+    .half-border::after {
+        width: 10%;
+    }
+}
+
+
