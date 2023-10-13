@@ -8,12 +8,19 @@ import RequestContact from '../components/RequestContact';
 import '../css/Contact.css';
 import contactBanner from '../assets/contact-banner.jpg';
 
+//multilangual
+import { useTranslation } from 'react-i18next';
+
 const Contact = () => {
 
+    //--------mutilingual part --------
+    const {t/*, i18n*/} = useTranslation("global");
+    //---------------------------------
+
     // typing effect
-    const contact_title_text = "Contact Us";
-    const location_ap_title_text = "Asia & Pacific";
-    const location_na_title_text = "North America";
+    const contact_title_text = t("contact.C");
+    const location_ap_title_text = t("contact.A");
+    const location_na_title_text = t("contact.N");
 
     const [contacTitle, invisibleContactTitle, contactTitleref] = useTypingEffect(contact_title_text, 1, 30);
     const [locationAPTitle, invisibleLocationAPTitle, locationAPTitleref] = useTypingEffect(location_ap_title_text, 1, 30);

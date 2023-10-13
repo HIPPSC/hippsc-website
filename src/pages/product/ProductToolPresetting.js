@@ -10,14 +10,18 @@ import '../../css/product/ProductToolPresetting.css';
 // assets
 import ToolPresetterPic from '../../assets/tool-presetter-pic.png';
 
+//multilangual
+import { useTranslation } from 'react-i18next';
+
 
 const ProductToolPresetting = () => {
 
+    //--------mutilingual part --------
+    const {t/*, i18n*/} = useTranslation("global");
+    //---------------------------------
+
     // typing effect
-    const product_tool_presetting_text = `
-    Every measurement, every cut, every finished product now holds a 
-    new standard of excellence. Dive into a realm of unmatched 
-    accuracy with HIPPSC Tool Presetter - where exceptional is the standard.`;
+    const product_tool_presetting_text = t("product.Lp");
 
     const [productToolPresettingTitle, invisibleProductToolPresettingTitle, productToolPresettingTitleref] = useTypingEffect(product_tool_presetting_text, 1, 5);
     
@@ -27,7 +31,8 @@ const ProductToolPresetting = () => {
             <div className="product-tool-presetting-title">
                 <div className="product-tool-presetting-title-left" >
                     <div className="product-tool-presetting-title-left-top page-title-1-xxl">
-                        Laser Tool Presetting
+                        {t("product.Lt")}
+                        {/* Laser Tool Presetting */}
                     </div>
                     <div className="product-tool-presetting-title-left-bottom page-text-1" ref={productToolPresettingTitleref}>
                         <span >{productToolPresettingTitle}</span>
@@ -46,29 +51,35 @@ const ProductToolPresetting = () => {
                 <div className="product-tool-presetting-features-body">
                     <div className="product-tool-presetting-features-item">
                         <div className="product-tool-presetting-features-item-title page-text-1">
-                            Micron-Level Accuracy
+                            {t("product.LMt")}
+                            {/* Micron-Level Accuracy */}
                         </div>
                         <div className="product-tool-presetting-features-item-body page-text-2">
-                            Achieve unparalleled precision with measurements accurate to the micron, 
-                            ensuring your projects meet the highest standards.
+                            {t("product.LMp")}
+                            {/* Achieve unparalleled precision with measurements accurate to the micron, 
+                            ensuring your projects meet the highest standards. */}
                         </div>
                     </div>
                     <div className="product-tool-presetting-features-item">
                         <div className="product-tool-presetting-features-item-title page-text-1">
-                            Time-Saving Operations
+                            {t("product.LTt")}
+                            {/* Time-Saving Operations */}
                         </div>
                         <div className="product-tool-presetting-features-item-body page-text-2">
-                            Slash setup times by up to 70%, driving swift transitions
-                            from one task to the next, and elevating productivity.
+                            {t("product.LTp")}
+                            {/* Slash setup times by up to 70%, driving swift transitions
+                            from one task to the next, and elevating productivity. */}
                         </div>
                     </div>
                     <div className="product-tool-presetting-features-item">
                         <div className="product-tool-presetting-features-item-title page-text-1">
-                            Cost Efficiency
+                            {t("product.LCt")}
+                            {/* Cost Efficiency */}
                         </div>
                         <div className="product-tool-presetting-features-item-body page-text-2">
-                            Reduce tooling expenses by optimizing tool life and minimizing waste, 
-                            delivering a smart, cost-effective solution for your machining needs.
+                            {t("product.LCp")}
+                            {/* Reduce tooling expenses by optimizing tool life and minimizing waste, 
+                            delivering a smart, cost-effective solution for your machining needs. */}
                         </div>
                     </div>
 
