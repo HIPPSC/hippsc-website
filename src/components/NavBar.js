@@ -147,22 +147,27 @@ const NavBar = () => {
                     </div>
 
                     {/* SERVICES */}
-                    <div className="nav-bar-item page-text-2">
+                    <Link to="/service"
+                        className="nav-bar-item page-text-2">
                         {t("navbar.s")}
-                    </div>
+                    </Link>
 
                     {/* ABOUT */}
-                    <Link to="/about" className="nav-bar-item page-text-2">
+                    <Link to="/about" 
+                          className="nav-bar-item page-text-2">
                         {t("navbar.a")}
                     </Link>
+                    
                 </div>
+                
+                
                 
                 {/* SWITCH LANGUAGE */}
                 <div className="nav-bar-right">
                     <div className="nav-bar-item page-text-2 " onClick={toggleDropdown}>
                         {t("navbar.l")}
                     </div>
-
+                    
                     {/* Language Dropdown */}
                     {isDropdownOpen && (
                         <div className="language-dropdown">

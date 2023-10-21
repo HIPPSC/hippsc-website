@@ -26,10 +26,14 @@ code {
     monospace;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+body div a { 
+  text-decoration: none; 
 }
+
+a, a:visited {
+  text-decoration: none;
+}
+
 
 
 :root {
