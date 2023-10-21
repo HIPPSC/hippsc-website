@@ -5,12 +5,11 @@ import { Container, Row, Col } from 'reactstrap';
 // css
 import '../../css/services/Service.css';
 
-import holderIcon from '../../assets/svg/icon-3holders.svg';
-import machinesIcon from '../../assets/svg/icon-machines.svg';
-import customerServiceIcon from '../../assets/svg/icon-customer-service.svg';
+// import holderIcon from '../../assets/svg/icon-3holders.svg';
+// import machinesIcon from '../../assets/svg/icon-machines.svg';
+// import customerServiceIcon from '../../assets/svg/icon-customer-service.svg';
 import openBoxIcon from '../../assets/svg/icon-open-box.svg';
 import videoIcon from '../../assets/svg/icon-video.svg';
-import orderIcon from '../../assets/svg/icon-order.svg';
 
 const Service = () => {
     return (
