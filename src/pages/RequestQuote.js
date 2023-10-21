@@ -8,10 +8,16 @@ import QuoteForm from '../components/QuoteForm';
 // css
 import '../css/RequestQuote.css';
 
+//multilangual
+import { useTranslation } from 'react-i18next';
+
 const RequestQuote = () => {
 
+    //--------mutilingual part --------
+    const {t/*, i18n*/} = useTranslation("global");
+
     // typing effect
-    const request_quote_title_text = "Request a Quote";
+    const request_quote_title_text = t("quote.request");
     const [requestQuoteTitle, invisibleRequestQuoteTitle, requestQuoteTitleref] = useTypingEffect(request_quote_title_text, 1, 30);
     
     return (

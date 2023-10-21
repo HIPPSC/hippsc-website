@@ -40,7 +40,7 @@
 
     "ct": "CONTACT",
     "ctR": "Request for Quote",
-    "ctL": "Locations"
+    "ctL": "Contact Us"
   },
 
   "home" : {
@@ -83,9 +83,51 @@
     "join": "Unlock the future - Join Us Now"
   },
 
+  "services": {
+    "title": "HIPPSC Services & Support",
+    "subtitle": "WE ARE HERE TO HELP - 24/7",
+    "body_title1": "Getting Started",
+    "body_title2": "Product Videos"
+  },
+
   "quote": {
     "request": "Request a Quote",
-    "gs": "Get Started"
+    "gs": "Get Started",
+    "name": "NAME:",
+    "company": "COMPANY:",
+    "email": "EMAIL:",
+    "phone": "PHONE:",
+    "request_details": "REQUEST DETAILS:",
+    "country": "COUNTRY:",
+    "address": "ADDRESS:",
+    "industry": "INDUSTRY:",
+    "product": "PRODUCT:",
+    "submit": "Submit",
+    "placeholders": {
+      "name": "Enter Your Full Name",
+      "email": "Enter Your Email",
+      "phone": "Enter Your Phone Number",
+      "company": "Enter Your Company Name",
+      "address": "Enter Your Address",
+      "industry": "What industry are you in?",
+      "product": "Interested in a specific HIPPSC product?",
+      "request_details": "Tell Us About Your Needs ..."
+    },
+    "countries": {
+      "default": "Select Country",
+      "China": "China",
+      "Japan": "Japan",
+      "Germany": "Germany",
+      "France": "France",
+      "Italy": "Italy",
+      "USA": "United States",
+      "Canada": "Canada",
+      "India": "India",
+      "Russia": "Russia",
+      "Brazil": "Brazil",
+      "Europe": "Other European Countries",
+      "Other": "Other"
+    }
   },
 
   "product" : {
@@ -188,7 +230,21 @@
   "contact": {
     "C": "Contact Us",
     "A": "Asia & Pacific",
-    "N": "North America"
+    "N": "North America",
+    "names": {
+      "HQ": "Kevin Ye",
+      "SH": "Xi Zhang",
+      "SZ": "Xiaohua Ye",
+      "LA": "Kaisen Ye",
+      "HOU": "Jihao Ye"
+    },
+    "cities": {
+      "HQ": "DONGGUAN, CHN (*HQ)",
+      "SH": "SHANGHAI, CHN",
+      "SZ": "SHENZHEN, CHN",
+      "LA": "LOS ANGELES, CA",
+      "HOU": "HOUSTON, TX"
+    }
   }
 }
 

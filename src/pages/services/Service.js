@@ -11,20 +11,27 @@ import '../../css/services/Service.css';
 import openBoxIcon from '../../assets/svg/icon-open-box.svg';
 import videoIcon from '../../assets/svg/icon-video.svg';
 
+//multilangual
+import { useTranslation } from 'react-i18next';
+
 const Service = () => {
+    //--------mutilingual part --------
+    const {t/*, i18n*/} = useTranslation("global");
+
+
     return (
         <Container className='service'>
             {/* service header */}
             <div className="service-header">
                 <div className="service-title">
-                    HIPPSC Services & Support
+                    {t("services.title")}
                 </div>
                 <div className="service-sub-title">
                     {/* HIPPSC offers a range of services to 
                     support our tooling solutions, 
                     from help choosing the right holder and machine to 
                     installation and training. */}
-                    WE ARE HERE TO HELP - 24/7
+                    {t("services.subtitle")}
                 </div>
             </div>
 
@@ -37,7 +44,7 @@ const Service = () => {
                                 alt="machines-icon" />
                         </div>
                         <div className="service-body-card-title">
-                            Getting Started
+                            {t("services.body_title1")}
                         </div>
                     </Link>
                 </Col>
@@ -51,7 +58,7 @@ const Service = () => {
                                 alt="holder-reconditioning" />
                         </div>
                         <div className="service-body-card-title">
-                            Product Videos
+                            {t("services.body_title2")}
                         </div>
                     </a>
                 </Col>

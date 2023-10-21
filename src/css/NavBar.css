@@ -167,7 +167,6 @@
 /* dropdown content */
 .nav-bar-item {
   position: relative; /* This allows absolute positioning of child elements */
-  color: var(--light-gray-text-color);
   text-decoration: none;
 }
 
@@ -218,13 +217,14 @@
 
 /* switch language dropdown */
 .language-dropdown {
-  position: absolute;
-  right: 0;
-  top: 90%;
-  border: 1px solid #ccc;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 10;  /* Ensures dropdown is above other elements */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-bar-dropdown-icon {
+  margin-top: 1%;
+  margin-right: 0.6rem;
 }
 
 .dropdown-item {

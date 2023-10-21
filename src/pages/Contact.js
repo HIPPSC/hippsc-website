@@ -46,7 +46,7 @@ const Contact = () => {
                 <div className="contact-locations-list">
                     <div className="contact-locations-list-item">
                         <div className="contact-locations-list-item-title page-text-2">
-                            DONGGUAN, CHN (*HQ)
+                            {t("contact.cities.HQ")}
                         </div>
                         {/* <div className="contact-locations-list-item-address">
                             <div>Floor 7, Building 1, No. 13 </div>
@@ -54,7 +54,7 @@ const Contact = () => {
                             <div>Dongguan, Guangdong</div>
                         </div> */}
                         <div className="contact-locations-list-item-name">
-                            Kevin Ye
+                            {t("contact.names.HQ")}
                         </div>
                         <div className="contact-locations-list-item-phone">
                             <span>(86) 136-002-58263</span>
@@ -67,7 +67,7 @@ const Contact = () => {
                     </div>
                     <div className="contact-locations-list-item">
                         <div className="contact-locations-list-item-title page-text-2">
-                            SHANGHAI, CHN
+                            {t("contact.cities.SH")}
                         </div>
                         {/* <div className="contact-locations-list-item-address">
                             <div>Building 19, Linda Park</div>
@@ -76,7 +76,7 @@ const Contact = () => {
                             <div>Shanghai</div>
                         </div> */}
                         <div className="contact-locations-list-item-name">
-                            Xi Zhang
+                            {t("contact.names.SH")}
                         </div>
                         <div className="contact-locations-list-item-phone">
                             <span>(86) 136-818-39601</span>
@@ -89,7 +89,7 @@ const Contact = () => {
                     </div>
                     <div className="contact-locations-list-item">
                         <div className="contact-locations-list-item-title page-text-2">
-                            SHENZHEN, CHN
+                            {t("contact.cities.SZ")}
                         </div>
                         {/* <div className="contact-locations-list-item-address">
                             <div>No. B06</div>
@@ -98,7 +98,7 @@ const Contact = () => {
                             <div>Guangdong</div>
                         </div> */}
                         <div className="contact-locations-list-item-name">
-                            Xiaohua Ye
+                            {t("contact.names.SZ")}
                         </div>
                         <div className="contact-locations-list-item-phone">
                             <span>(86) 138-027-02608</span>
@@ -118,10 +118,10 @@ const Contact = () => {
                 <div className="contact-locations-list">
                     <div className="contact-locations-list-item">
                         <div className="contact-locations-list-item-title page-text-2">
-                            LOS ANGELES, CA
+                            {t("contact.cities.LA")}
                         </div>
                         <div className="contact-locations-list-item-name">
-                            Kaisen Ye
+                            {t("contact.names.LA")}
                         </div>
                         <div className="contact-locations-list-item-phone">
                             <span>(1) 346-368-1097</span>
@@ -134,10 +134,10 @@ const Contact = () => {
                     </div>
                     <div className="contact-locations-list-item">
                         <div className="contact-locations-list-item-title page-text-2">
-                            HOUSTON, TX
+                            {t("contact.cities.HOU")}
                         </div>
                         <div className="contact-locations-list-item-name">
-                            Jihao Ye
+                            {t("contact.names.HOU")}
                         </div>
                         <div className="contact-locations-list-item-phone">
                             <span>(1) 832-996-7496</span>
