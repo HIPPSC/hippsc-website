@@ -84,10 +84,12 @@ const Footer = () => {
                     {t("footer.co")}
                     {/* COMPANY */}
                 </div>
-                <div className="footer-item">
-                    {t("footer.coA")}
-                    {/* About HIPPSC */}
-                </div>
+                <Link to='/about'>
+                    <div className="footer-item">
+                        {t("footer.coA")}
+                        {/* About HIPPSC */}
+                    </div>
+                </Link>
                 <div className="footer-item">
                     {t("footer.coOH")}
                     {/* Our History */}

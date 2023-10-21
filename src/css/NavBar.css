@@ -29,7 +29,6 @@
 .nav-bar-left {
   display: flex;
   flex-direction: row;
-  gap: 20%;
 }
 
 .nav-bar-logo {
@@ -122,7 +121,7 @@
 .nav-bar-lower{
   display: flex;
   flex: row;
-  gap: 3%;
+  justify-content: space-between;
   margin-top: 1rem;
 }
 
@@ -141,17 +140,6 @@
   color:  var(--primary-text-color);
 }
 
-.nav-bar-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--light-gray-text-color);
-  cursor: pointer;
-  transition: all 0.2s ease;
-  position: relative; /* Relative positioning for the pseudo-element */
-}
-
 .nav-bar-item::before {
   content: "";
   position: absolute;
@@ -163,12 +151,12 @@
   transition: all 0.3s ease; /* Transition for the width */
 }
 
-.nav-bar-item:hover {
-  color: var(--primary-text-color);
-}
-
 .nav-bar-item:hover::before {
   width: 50%; /* Make it appear only to the half of the div */
+}
+
+.nav-bar-left-item {
+  margin-right: 2rem;
 }
 
 
@@ -261,7 +249,6 @@
   .nav-bar-left {
     display: flex;
     flex-direction: row;
-    gap: 10%;
   }
 
   .nav-bar-logo {
@@ -286,6 +273,11 @@
 
   .nav-bar-contact-btn {
     width: 8rem;
+  }
+
+
+  .nav-bar-left-item {
+    margin-right: 1.5rem;
   }
 
 }

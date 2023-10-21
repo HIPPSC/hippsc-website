@@ -116,7 +116,7 @@ const NavBar = () => {
 
                 <div className="nav-bar-left">
                     {/* PRODUCTS */}
-                    <div className="nav-bar-item dropdown page-text-2">
+                    <div className="nav-bar-item nav-bar-left-item dropdown page-text-2">
                         {t("navbar.p")}
                         <div className={`nav-bar-dropdown-content ${!dropdownVisible ? 'nav-bar-dropdown-content-hidden' : ''}`} ref={dropdownRef} onMouseEnter={() => setDropdownVisible(true)}>
                             <Link to="/product/holders" 
@@ -148,13 +148,13 @@ const NavBar = () => {
 
                     {/* SERVICES */}
                     <Link to="/service"
-                        className="nav-bar-item page-text-2">
+                        className="nav-bar-item nav-bar-left-item page-text-2">
                         {t("navbar.s")}
                     </Link>
 
                     {/* ABOUT */}
                     <Link to="/about" 
-                          className="nav-bar-item page-text-2">
+                          className="nav-bar-item nav-bar-left-item page-text-2">
                         {t("navbar.a")}
                     </Link>
                     
