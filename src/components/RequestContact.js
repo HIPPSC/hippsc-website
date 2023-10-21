@@ -7,11 +7,18 @@ import { Link } from 'react-router-dom';
 import '../css/RequestContact.css';
 import { BsArrowRight } from 'react-icons/bs';
 
+//multilangual
+import { useTranslation } from 'react-i18next';
+
 
 const RequestContact = () => {
 
+    //--------mutilingual part --------
+    const {t/*, i18n*/} = useTranslation("global");
+    //---------------------------------
+
     // typing effects
-    const request_title_text = "Request a Quote";
+    const request_title_text = t("quote.request");
     const [requestTitle, invisibleRequestTitle, requestTitleref] = useTypingEffect(request_title_text, 1, 50);
 
 
@@ -23,7 +30,8 @@ const RequestContact = () => {
             </div>
             <div className="request-contact-btn-container">
                 <Link to="/request_quote" className="request-contact-btn rectangle-btn">
-                    Get Started
+                    {t("quote.gs")}
+                    {/* Get Started */}
                     <BsArrowRight className='rectangle-btn-icon' />
                 </Link>
             </div>

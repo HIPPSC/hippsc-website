@@ -7,7 +7,15 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { AiOutlineYoutube } from 'react-icons/ai';
 import { AiOutlineLinkedin } from 'react-icons/ai';
 
+//multilangual
+import { useTranslation } from 'react-i18next';
+
 const Footer = () => {
+
+    //--------mutilingual part --------
+    const {t/*, i18n*/} = useTranslation("global");
+    //---------------------------------
+    
     return (
         <div className='footer'>
             <div className="footer-info">
@@ -39,64 +47,79 @@ const Footer = () => {
             </div>
             <div className="footer-offerings footer-section">
                 <div className="footer-offerings-title page-text-2">
-                    OFFERINGS
+                    {t("footer.of")}
+                    {/* OFFERINGS */}
                 </div>
                 <Link to='/product/holders'>
                     <div className="footer-item">
-                        Shrink Fit Holders
+                        {t("footer.ofS")}
+                        {/* Shrink Fit Holders */}
                     </div>
                 </Link>
                 <Link to='/product/h6i'>
                     <div className="footer-item">
-                        H6i Shrink Fit Machine
+                        {t("footer.ofH")}
+                        {/* H6i Shrink Fit Machine */}
                     </div>
                 </Link>
                 <Link to='/product/f15i'>
                     <div className="footer-item">
-                        F15i Shrink Fit Machine
+                        {t("footer.ofF")}
+                        {/* F15i Shrink Fit Machine */}
                     </div>
                 </Link>
                 <Link to='/product/tool_presetting'>
                     <div className="footer-item">
-                        Laser Presetting Machine
+                        {t("footer.ofL")}
+                        {/* Laser Presetting Machine */}
                     </div>
                 </Link>
                 <div className="footer-item">
-                    Intelligent Tool Storage
+                    {t("footer.ofI")}
+                    {/* Intelligent Tool Storage */}
                 </div>
             </div>
             <div className="footer-about footer-section">
                 <div className="footer-about-title page-text-2">
-                    COMPANY
+                    {t("footer.co")}
+                    {/* COMPANY */}
                 </div>
                 <div className="footer-item">
-                    About HIPPSC
+                    {t("footer.coA")}
+                    {/* About HIPPSC */}
                 </div>
                 <div className="footer-item">
-                    Our History
+                    {t("footer.coOH")}
+                    {/* Our History */}
                 </div>
                 <div className="footer-item">
-                    Our Team
+                    {t("footer.coOT")}
+                    {/* Our Team */}
                 </div>
                 <div className="footer-item">
-                    Qualification
+                    {t("footer.coQ")}
+                    {/* Qualification */}
                 </div>
                 <div className="footer-item">
-                    Sustainability
+                    {t("footer.coS")}
+                    {/* Sustainability */}
                 </div>
             </div>
             <div className="footer-contact footer-section">
                 <div className="footer-contact-title page-text-2">
-                    CONTACT
+                    {t("footer.ct")}
+                    {/* CONTACT */}
                 </div>
                 <Link to="/request_quote">
                     <div className="footer-item">
-                        Request for Quote
+                        {t("footer.ctR")}
+                        {/* Request for Quote */}
                     </div>
                 </Link>
                 <Link to="/contact">
                     <div className="footer-item">
-                        Locations
+                        {t("footer.ctL")}
+                        {/* Locations */}
                     </div>
                 </Link>
             </div>

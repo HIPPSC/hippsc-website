@@ -11,6 +11,12 @@ const useTypingEffect = (fullText, threshold = 1, speed = 20, triggerOnce = true
   });
 
   useEffect(() => {
+    setVisibleText('');
+    setInvisibleText(fullText);
+    setTextIndex(0);
+  }, [fullText]);
+
+  useEffect(() => {
     let timer;
     if (inView && textIndex < fullText.length) {
       timer = setTimeout(() => {

@@ -14,12 +14,28 @@ import { BsArrowRight } from 'react-icons/bs';
 import { CiMenuBurger } from 'react-icons/ci';
 import { RxCross1 } from 'react-icons/rx';
 
+//multilangual
+import { useTranslation } from 'react-i18next';
+
 
 
 const NavBar = () => {
 
     // nav page handler
     const [isNavOpen, setNavOpen] = useState(false);
+
+    //--------mutilingual part --------
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
+    const {t, i18n} = useTranslation("global");
+
+    const toggleDropdown = () => {
+        setDropdownOpen(prev => !prev);
+    }
+
+    const switchLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+    //---------------------------------
 
     const openNavPage = () => {
         // toggle nav page
@@ -77,7 +93,7 @@ const NavBar = () => {
                 <div className="nav-bar-right">
                     {/* CONTACT */}
                     <Link to="/contact" className={`nav-bar-contact-btn rectangle-btn ${isNavOpen ? 'active' : ''}`} onClick={() => closeNavPage()}>
-                        Contact Us
+                        {t("navbar.c")}
                         <BsArrowRight className='nav-bar-contact-btn-icon rectangle-btn-icon' />
                     </Link>
 
@@ -98,45 +114,69 @@ const NavBar = () => {
             {/* NAV_BAR_LOWER */}
             <div className="nav-bar-lower">
 
-                {/* PRODUCTS */}
-                <div className="nav-bar-item dropdown page-text-2">
-                    Products
-                    <div className={`nav-bar-dropdown-content ${!dropdownVisible ? 'nav-bar-dropdown-content-hidden' : ''}`}
-                        ref={dropdownRef}
-                        onMouseEnter={() => setDropdownVisible(true)}>
-                        <Link to="/product/holders" 
-                            className='nav-bar-dropdown-item page-text-2'
-                            onClick={handleDropdownItemClick}>
-                                Shrink Fit Holders
-                        </Link>
-                        <Link to='/product/h6i'
-                            className='nav-bar-dropdown-item page-text-2'
-                            onClick={handleDropdownItemClick}>
-                                H6i Shrink Fit Machine
-                        </Link>
-                        <Link to='/product/f15i'
-                            className='nav-bar-dropdown-item page-text-2'
-                            onClick={handleDropdownItemClick}>
-                                F15i Shrink Fit Machine
-                        </Link>
-                        <Link to='/product/tool_presetting'
-                            className='nav-bar-dropdown-item page-text-2'
-                            onClick={handleDropdownItemClick}>
-                                Laser Presetting Machine
-                        </Link>
+                <div className="nav-bar-left">
+                    {/* PRODUCTS */}
+                    <div className="nav-bar-item dropdown page-text-2">
+                        {t("navbar.p")}
+                        <div className={`nav-bar-dropdown-content ${!dropdownVisible ? 'nav-bar-dropdown-content-hidden' : ''}`} ref={dropdownRef} onMouseEnter={() => setDropdownVisible(true)}>
+                            <Link to="/product/holders" 
+                                className='nav-bar-dropdown-item page-text-2'
+                                onClick={handleDropdownItemClick}>
+                                    {t("navbar.pS")}
+                                    {/* Shrink Fit Holders */}
+                            </Link>
+                            <Link to='/product/h6i'
+                                className='nav-bar-dropdown-item page-text-2'
+                                onClick={handleDropdownItemClick}>
+                                    {t("navbar.pH")}
+                                    {/* H6i Shrink Fit Machine */}
+                            </Link>
+                            <Link to='/product/f15i'
+                                className='nav-bar-dropdown-item page-text-2'
+                                onClick={handleDropdownItemClick}>
+                                    {t("navbar.pF")}
+                                    {/* F15i Shrink Fit Machine */}
+                            </Link>
+                            <Link to='/product/tool_presetting'
+                                className='nav-bar-dropdown-item page-text-2'
+                                onClick={handleDropdownItemClick}>
+                                    {t("navbar.pL")}
+                                    {/* Laser Presetting Machine */}
+                            </Link>
+                        </div>
                     </div>
-                </div>
 
-                {/* SERVICES */}
-                <Link to="/service"
-                    className="nav-bar-item page-text-2">
-                    Services
-                </Link>
+                    {/* SERVICES */}
+                    <Link to="/service"
+                        className="nav-bar-item page-text-2">
+                        {t("navbar.s")}
+                    </Link>
 
-                {/* ABOUT */}
-                <div className="nav-bar-item page-text-2">
-                    About
+                    {/* ABOUT */}
+                    <Link to="/about" 
+                          className="nav-bar-item page-text-2">
+                        {t("navbar.a")}
+                    </Link>
+                    
                 </div>
+                
+                
+                
+                {/* SWITCH LANGUAGE */}
+                <div className="nav-bar-right">
+                    <div className="nav-bar-item page-text-2 " onClick={toggleDropdown}>
+                        {t("navbar.l")}
+                    </div>
+                    
+                    {/* Language Dropdown */}
+                    {isDropdownOpen && (
+                        <div className="language-dropdown">
+                            <div className="nav-bar-item dropdown-item" onClick={() => switchLanguage('en')}>English</div>
+                            <div className="nav-bar-item dropdown-item" onClick={() => switchLanguage('cn')}>Chinese</div>
+                        </div>
+                    )}
+                </div>
+                
             </div>
         </div>
     );

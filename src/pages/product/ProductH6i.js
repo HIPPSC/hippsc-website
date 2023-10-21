@@ -12,14 +12,18 @@ import '../../css/product/ProductH6i.css';
 // assets
 import H6iPic from '../../assets/svg/H6i-pic.svg';
 
+//multilangual
+import { useTranslation } from 'react-i18next';
+
 
 const ProductH6i = () => {
 
+    //--------mutilingual part --------
+    const {t/*, i18n*/} = useTranslation("global");
+    //---------------------------------
+
     // typing effect
-    const product_h6i_text = `
-    Welcome to the era of the H6i, where every task becomes an art form. 
-    Beyond its compact design and powerful capabilities lies a story 
-    of innovation and relentless pursuit of perfection.`;
+    const product_h6i_text = t("product.H6p");
 
     const [productH6iTitle, invisibleProductH6iTitle, productH6iTitleref] = useTypingEffect(product_h6i_text, 1, 5);
     
@@ -29,7 +33,8 @@ const ProductH6i = () => {
             <div className="product-h6i-title">
                 <div className="product-h6i-title-left" >
                     <div className="product-h6i-title-left-top page-title-1-xxl">
-                        H6i Air Cooling
+                        {t("product.H6t")}
+                        {/* H6i Air Cooling */}
                     </div>
                     <div className="product-h6i-title-left-bottom page-text-1" ref={productH6iTitleref}>
                         <span >{productH6iTitle}</span>
@@ -44,65 +49,78 @@ const ProductH6i = () => {
             {/* features */}
             <div className="product-h6i-features">
                 <div className="product-h6i-features-title page-title-1">
-                    Features
+                    {t("product.H6F")}
+                    {/* Features */}
                 </div>
                 <div className="product-h6i-features-body">
                     <div className="product-h6i-features-item">
                         <div className="product-h6i-features-item-title page-text-1">
-                            Intuitive Scanning Recognition
+                            {t("product.H6It")}
+                            {/* Intuitive Scanning Recognition */}
                         </div>
                         <div className="product-h6i-features-item-body page-text-2">
-                            By leveraging advanced scanning recognition, 
+                            {t("product.H6Ip")}
+                            {/* By leveraging advanced scanning recognition, 
                             the H6i ensures impeccable accuracy, 
-                            eliminating risks associated with manual overheating.                         </div>
+                            eliminating risks associated with manual overheating.  */}
+                        </div>
                     </div>
                     <div className="product-h6i-features-item">
                         <div className="product-h6i-features-item-title page-text-1">
-                            Rapid Coil Replacement
+                            {t("product.H6Rt")}
+                            {/* Rapid Coil Replacement */}
                         </div>
                         <div className="product-h6i-features-item-body page-text-2">
-                            With our swift coil replacement feature, 
+                            {t("product.H6Rp")}
+                            {/* With our swift coil replacement feature, 
                             we introduce you to an intelligent sensing shift 
-                            system designed for today's fast-paced world. 
+                            system designed for today's fast-paced world.  */}
                         </div>
                     </div>
                     <div className="product-h6i-features-item">
                         <div className="product-h6i-features-item-title page-text-1">
-                            Precision Temperature Control
+                            {t("product.H6Pt")}
+                            {/* Precision Temperature Control */}
                         </div>
                         <div className="product-h6i-features-item-body page-text-2">
-                            Our machine guarantees exact temperature regulation, 
-                            coupled with a state-of-the-art coil overheat warning system. 
+                            {t("product.H6Pp")}
+                            {/* Our machine guarantees exact temperature regulation, 
+                            coupled with a state-of-the-art coil overheat warning system.  */}
                         </div>
                     </div>
                     <div className="product-h6i-features-item">
                         <div className="product-h6i-features-item-title page-text-1">
-                            Versatile Heating Range
+                            {t("product.H6Vt")}
+                            {/* Versatile Heating Range */}
                         </div>
                         <div className="product-h6i-features-item-body page-text-2">
-                            Catering to a broad spectrum of needs, 
-                            the H6i's heating range spans from 3 to 32 mm, thanks to the revolutionary quick-change coils.
+                            {t("product.H6Vp")}
+                            {/* Catering to a broad spectrum of needs, 
+                            the H6i's heating range spans from 3 to 32 mm, thanks to the revolutionary quick-change coils. */}
                         </div>
                     </div>
                     <div className="product-h6i-features-item">
                         <div className="product-h6i-features-item-title page-text-1">
-                            LCD Operation Panel
+                            {t("product.H6Lt")}
+                            {/* LCD Operation Panel */}
                         </div>
                         <div className="product-h6i-features-item-body page-text-2">
-                            Provides a clear, high-definition display, 
+                            {t("product.H6Lp")}
+                            {/* Provides a clear, high-definition display, 
                             allowing users to easily monitor machine performance, 
-                            adjust settings, and troubleshoot issues. 
-
+                            adjust settings, and troubleshoot issues.  */}
                         </div>
                     </div>
                     <div className="product-h6i-features-item">
                         <div className="product-h6i-features-item-title page-text-1">
-                            Effortless Handle Adjustability
+                            {t("product.H6Et")}
+                            {/* Effortless Handle Adjustability */}
                         </div>
                         <div className="product-h6i-features-item-body page-text-2">
-                            The Handle Up/Down Button offers users an unparalleled 
+                            {t("product.H6Ep")}
+                            {/* The Handle Up/Down Button offers users an unparalleled 
                             smooth experience. With its intuitive design, making 
-                            adjustments becomes second nature.
+                            adjustments becomes second nature. */}
                         </div>
                     </div>
                 </div>
@@ -115,7 +133,8 @@ const ProductH6i = () => {
             {/* tech specs */}
             <div className="product-h6i-features">
                 <div className="product-h6i-features-title page-title-1">
-                    Tech Specs
+                    {t("product.t")}
+                    {/* Tech Specs */}
                 </div>
                 <div className="product-h6i-features-body">
                     <div className="product-h6i-features-item">
@@ -123,7 +142,8 @@ const ProductH6i = () => {
                             6kw
                         </div>
                         <div className="product-h6i-features-item-body page-text-2">
-                            POWER                
+                            {t("product.p")}
+                            {/* POWER */}
                         </div>
                     </div>
                     <div className="product-h6i-features-item">
@@ -131,7 +151,8 @@ const ProductH6i = () => {
                             AC220V 50/60Hz
                         </div>
                         <div className="product-h6i-features-item-body page-text-2">
-                            VOLTAGE
+                            {t("product.v")}
+                            {/* VOLTAGE */}
                         </div>
                     </div>
                     <div className="product-h6i-features-item">
@@ -139,7 +160,8 @@ const ProductH6i = () => {
                             16A
                         </div>
                         <div className="product-h6i-features-item-body page-text-2">
-                            CURRENT
+                            {t("product.c")}
+                            {/* CURRENT */}
                         </div>
                     </div>
                     <div className="product-h6i-features-item">
@@ -147,7 +169,8 @@ const ProductH6i = () => {
                             25 kg
                         </div>
                         <div className="product-h6i-features-item-body page-text-2">
-                            WEIGHT    
+                            {t("product.w")}
+                            {/* WEIGHT */}
                         </div>
                     </div>
                     <div className="product-h6i-features-item">
@@ -155,7 +178,8 @@ const ProductH6i = () => {
                             φ3 ~ φ32
                         </div>
                         <div className="product-h6i-features-item-body page-text-2">
-                            HEATING RANGE
+                            {t("product.h")}
+                            {/* HEATING RANGE */}
                         </div>
                     </div>
                     <div className="product-h6i-features-item">
@@ -163,7 +187,8 @@ const ProductH6i = () => {
                             540 x 400 x 780(H)
                         </div>
                         <div className="product-h6i-features-item-body page-text-2">
-                            DIMENSION (mm)
+                            {t("product.d")} (mm)
+                            {/* DIMENSION (mm) */}
                         </div>
                     </div>
                 </div>
