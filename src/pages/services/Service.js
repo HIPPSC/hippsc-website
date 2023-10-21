@@ -52,11 +52,11 @@ const Service = () => {
                                 alt="holder-reconditioning" />
                         </div>
                         <div className="service-body-card-title">
-                            Video Tutorials
+                            Product Videos
                         </div>
                     </a>
                 </Col>
-                <Col className="service-body-card" sm='6' md='4' lg='3'>
+                {/* <Col className="service-body-card" sm='6' md='4' lg='3'>
                     <div className="service-body-card-pic">
                         <img src={orderIcon}
                             alt="machines-icon" />
@@ -91,7 +91,7 @@ const Service = () => {
                     <div className="service-body-card-title">
                         Frequently Asked Questions
                     </div>
-                </Col>
+                </Col> */}
                 
             </Row>
         </Container>
