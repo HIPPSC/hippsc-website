@@ -167,6 +167,8 @@ a, a:visited {
   cursor: pointer;
   position: relative;
   overflow: hidden; /* Hide the overflow to make the border vanish effect work */
+  text-decoration: none;
+  color: inherit;
 }
 
 .page-link-btn::after {
