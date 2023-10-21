@@ -4,6 +4,7 @@ html {
   flex-direction: column;
   max-width: 1500px;
   scroll-behavior: smooth;
+  background-color: white;
 }
 
 body {
