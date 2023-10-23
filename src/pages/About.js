@@ -3,7 +3,7 @@ import useTypingEffect from '../hooks/useTypingEffect';
 
 //css & assets
 import '../css/About.css';
-import aboutBanner from '../assets/about-banner.jpg';
+import aboutBanner from '../assets/about-banner.webp';
 import {LiaHandshakeSolid} from 'react-icons/lia';
 import {MdOutlineBiotech} from 'react-icons/md';
 import {MdOutlineLeaderboard} from 'react-icons/md';
