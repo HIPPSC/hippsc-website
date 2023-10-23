@@ -14,9 +14,11 @@ import { I18nextProvider } from 'react-i18next';
 
 
 //Initializing i18next
+const userLanguage = navigator.language || navigator.userLanguage;
+console.log(userLanguage)
 i18next.init({
   interpolation: {escapeValue: false},
-  lng: "en",
+  lng: 'en',
   resources: {
     en: {
       global: global_en

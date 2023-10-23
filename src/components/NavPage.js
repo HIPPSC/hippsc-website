@@ -93,7 +93,7 @@ const NavPage = ({ closeNav }) => {
                 </Link>
             </div>
 
-            <div className="nav-page-middle" ref={navMiddleCardRef}>
+            {/* <div className="nav-page-middle" ref={navMiddleCardRef}>
                 <div className="nav-page-title" ref={latestNewsTitleref}>
                     <span>{latestNewsTitle}</span>
                     <span style={{color: 'transparent'}}>{invisibleLatestNewsTitle}</span>
@@ -151,7 +151,7 @@ const NavPage = ({ closeNav }) => {
                         Five-axis linkage machining of impeller machining cases
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

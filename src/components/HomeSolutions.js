@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useTypingEffect from '../hooks/useTypingEffect'; 
 
 
@@ -46,7 +47,7 @@ const HomeSolutions = () => {
                     <div className="home-solutions-item-pic">
                         <img src={F15iPic} alt="Tool Holder" />
                     </div>
-                    <div className="page-link-btn home-solutions-btn">
+                    <Link  to='/product/f15i' className="page-link-btn home-solutions-btn">
                         <div className="page-link-btn-text btn-text-1 ">
                             {t("home.learn")}F15i
                             {/* Learn more about F15i */}
@@ -54,7 +55,7 @@ const HomeSolutions = () => {
                         <div className="page-link-btn-icon">
                             <BsArrowRight />
                         </div>
-                    </div>
+                    </Link>
                 </div>
                 <div className="home-solutions-item-right">
                     <div className="home-solutions-item-title">
@@ -90,7 +91,7 @@ const HomeSolutions = () => {
                     <div className="home-solutions-item-pic">
                         <img src={H6iPic} alt="Tool Holder" />
                     </div>
-                    <div className="page-link-btn home-solutions-btn">
+                    <Link to='/product/h6i' className="page-link-btn home-solutions-btn">
                         <div className="page-link-btn-text btn-text-1 ">
                             {t("home.learn")}H6i
                             {/* Learn more about H6i */}
@@ -98,7 +99,7 @@ const HomeSolutions = () => {
                         <div className="page-link-btn-icon">
                             <BsArrowRight />
                         </div>
-                    </div>
+                    </Link>
                 </div>
                 <div className="home-solutions-item-right">
                     <div className="home-solutions-item-title">

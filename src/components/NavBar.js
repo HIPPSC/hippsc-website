@@ -13,6 +13,7 @@ import logo from '../assets/logo.jpg'
 import { BsArrowRight } from 'react-icons/bs';
 import { CiMenuBurger } from 'react-icons/ci';
 import { RxCross1 } from 'react-icons/rx';
+import { CiGlobe } from 'react-icons/ci';
 
 //multilangual
 import { useTranslation } from 'react-i18next';
@@ -25,18 +26,14 @@ const NavBar = () => {
     const [isNavOpen, setNavOpen] = useState(false);
 
     //--------mutilingual part --------
-    const [isDropdownOpen, setDropdownOpen] = useState(false);
     const {t, i18n} = useTranslation("global");
-
-    const toggleDropdown = () => {
-        setDropdownOpen(prev => !prev);
-    }
 
     const switchLanguage = (lng) => {
         i18n.changeLanguage(lng);
     };
     //---------------------------------
 
+    // nav page handler
     const openNavPage = () => {
         // toggle nav page
         setNavOpen(!isNavOpen);
@@ -61,19 +58,19 @@ const NavBar = () => {
     
 
     // dropdown handler
-    const [dropdownVisible, setDropdownVisible] = useState(true);
-    const handleDropdownItemClick = () => {
-        setDropdownVisible(false); // Hide the dropdown when an item is clicked
-        // wait for 0.5s
-        setTimeout(() => {
-            setDropdownVisible(true); // Show the dropdown again
-        }, 500);
+    const [productDropdownVisible, setProductDropdownVisible] = useState(true);
+    const handleProductDropdownItemClick = () => {
+        setProductDropdownVisible(!productDropdownVisible);
     };
+
+    const [lgDropdownVisible, setLgDropdownVisible] = useState(true);
 
 
     // sequential effects
-    const dropdownRef = useRef(null);
-    useSequentialEffect(dropdownRef, '.nav-bar-dropdown-item', 100);
+    const productDropdownRef = useRef(null);
+    useSequentialEffect(productDropdownRef, '.nav-bar-dropdown-item', 100);
+    const lgDropdownRef = useRef(null);
+    useSequentialEffect(lgDropdownRef, '.nav-bar-dropdown-item', 100);
     
 
     return (
@@ -116,30 +113,31 @@ const NavBar = () => {
 
                 <div className="nav-bar-left">
                     {/* PRODUCTS */}
-                    <div className="nav-bar-item nav-bar-left-item dropdown page-text-2">
-                        {t("navbar.p")}
-                        <div className={`nav-bar-dropdown-content ${!dropdownVisible ? 'nav-bar-dropdown-content-hidden' : ''}`} ref={dropdownRef} onMouseEnter={() => setDropdownVisible(true)}>
+                    <div className="nav-bar-item nav-bar-left-item dropdown page-text-2" 
+                         onClick={handleProductDropdownItemClick}>
+                            {t("navbar.p")}
+                        <div className={`nav-bar-dropdown-content ${!productDropdownVisible ? 'nav-bar-dropdown-content-hidden' : ''}`} ref={productDropdownRef}>
                             <Link to="/product/holders" 
                                 className='nav-bar-dropdown-item page-text-2'
-                                onClick={handleDropdownItemClick}>
+                                onClick={handleProductDropdownItemClick}>
                                     {t("navbar.pS")}
                                     {/* Shrink Fit Holders */}
                             </Link>
                             <Link to='/product/h6i'
                                 className='nav-bar-dropdown-item page-text-2'
-                                onClick={handleDropdownItemClick}>
+                                onClick={handleProductDropdownItemClick}>
                                     {t("navbar.pH")}
                                     {/* H6i Shrink Fit Machine */}
                             </Link>
                             <Link to='/product/f15i'
                                 className='nav-bar-dropdown-item page-text-2'
-                                onClick={handleDropdownItemClick}>
+                                onClick={handleProductDropdownItemClick}>
                                     {t("navbar.pF")}
                                     {/* F15i Shrink Fit Machine */}
                             </Link>
                             <Link to='/product/tool_presetting'
                                 className='nav-bar-dropdown-item page-text-2'
-                                onClick={handleDropdownItemClick}>
+                                onClick={handleProductDropdownItemClick}>
                                     {t("navbar.pL")}
                                     {/* Laser Presetting Machine */}
                             </Link>
@@ -164,17 +162,23 @@ const NavBar = () => {
                 
                 {/* SWITCH LANGUAGE */}
                 <div className="nav-bar-right">
-                    <div className="nav-bar-item page-text-2 " onClick={toggleDropdown}>
-                        {t("navbar.l")}
-                    </div>
                     
                     {/* Language Dropdown */}
-                    {isDropdownOpen && (
-                        <div className="language-dropdown">
-                            <div className="nav-bar-item dropdown-item" onClick={() => switchLanguage('en')}>English</div>
-                            <div className="nav-bar-item dropdown-item" onClick={() => switchLanguage('cn')}>Chinese</div>
+                    <div className="nav-bar-item dropdown page-text-2"
+                        onClick={() => setLgDropdownVisible(!lgDropdownVisible)}>
+                            <div className="language-dropdown">
+                                <CiGlobe className='nav-bar-dropdown-icon' />
+                                {t("navbar.l")}
+                            </div>
+                        <div className={`nav-bar-dropdown-content ${!lgDropdownVisible ? 'nav-bar-dropdown-content-hidden' : ''}`} ref={lgDropdownRef}>
+                            <div className="nav-bar-dropdown-item page-text-2" onClick={() => switchLanguage('en')}>
+                                English
+                            </div>
+                            <div className="nav-bar-dropdown-item page-text-2" onClick={() => switchLanguage('cn')}>
+                                中文
+                            </div>
                         </div>
-                    )}
+                    </div>
                 </div>
                 
             </div>

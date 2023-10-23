@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useTypingEffect from '../hooks/useTypingEffect'; 
 
 // css
@@ -63,7 +64,7 @@ const HomeIntro = () => {
                             reliable cutting — and to excel in the competitive manufacturing landscape. */}
                         </div>
                         
-                        <div className="page-link-btn">
+                        <Link to='/service/get_started' className="page-link-btn">
                             <div className="page-link-btn-text btn-text-1 ">
                                 {t("home.homePL")}
                                 {/* Learn more about our study on 
@@ -72,7 +73,7 @@ const HomeIntro = () => {
                             <div className="page-link-btn-icon">
                                 <BsArrowRight />
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>

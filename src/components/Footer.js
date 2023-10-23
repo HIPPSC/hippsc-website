@@ -91,19 +91,19 @@ const Footer = () => {
                     </div>
                 </Link>
                 <div className="footer-item">
-                    {t("footer.coOH")}
+                    {/* {t("footer.coOH")} */}
                     {/* Our History */}
                 </div>
                 <div className="footer-item">
-                    {t("footer.coOT")}
+                    {/* {t("footer.coOT")} */}
                     {/* Our Team */}
                 </div>
                 <div className="footer-item">
-                    {t("footer.coQ")}
+                    {/* {t("footer.coQ")} */}
                     {/* Qualification */}
                 </div>
                 <div className="footer-item">
-                    {t("footer.coS")}
+                    {/* {t("footer.coS")} */}
                     {/* Sustainability */}
                 </div>
             </div>
