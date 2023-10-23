@@ -6,7 +6,7 @@ import RequestContact from '../components/RequestContact';
 
 // css & assets
 import '../css/Contact.css';
-import contactBanner from '../assets/contact-banner.jpg';
+import contactBanner from '../assets/contact-banner.webp';
 
 //multilangual
 import { useTranslation } from 'react-i18next';
