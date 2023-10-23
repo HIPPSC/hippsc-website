@@ -8,10 +8,10 @@ import useSequentialEffect from '../hooks/useSequentialEffect';
 import '../css/NavPage.css';
 
 // assets
-import news1 from '../assets/sampleImgs/news1.jpg';
-import news2 from '../assets/sampleImgs/news2.jpg';
-import study1 from '../assets/sampleImgs/study1.png';
-import study2 from '../assets/sampleImgs/study2.png';
+// import news1 from '../assets/sampleImgs/news1.jpg';
+// import news2 from '../assets/sampleImgs/news2.jpg';
+// import study1 from '../assets/sampleImgs/study1.png';
+// import study2 from '../assets/sampleImgs/study2.png';
 
 //multilangual
 import { useTranslation } from 'react-i18next';
@@ -25,11 +25,11 @@ const NavPage = ({ closeNav }) => {
 
     // typing effects
     const navigation_title_text = t("navbar.pageN");
-    const latest_news_title_text = t("navbar.pageL");
-    const our_studies_title_text = t("navbar.pageO");
+    // const latest_news_title_text = t("navbar.pageL");
+    // const our_studies_title_text = t("navbar.pageO");
     const [navigationTitle, invisibleNavigationTitle, navigationTitleref] = useTypingEffect(navigation_title_text);
-    const [latestNewsTitle, invisibleLatestNewsTitle, latestNewsTitleref] = useTypingEffect(latest_news_title_text);
-    const [ourStudiesTitle, invisibleOurStudiesTitle, ourStudiesTitleref] = useTypingEffect(our_studies_title_text);
+    // const [latestNewsTitle, invisibleLatestNewsTitle, latestNewsTitleref] = useTypingEffect(latest_news_title_text);
+    // const [ourStudiesTitle, invisibleOurStudiesTitle, ourStudiesTitleref] = useTypingEffect(our_studies_title_text);
 
 
     const leftNavRef = useRef(null);
