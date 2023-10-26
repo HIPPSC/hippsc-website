@@ -4,11 +4,11 @@ import useTypingEffect from '../hooks/useTypingEffect';
 //css & assets
 import '../css/About.css';
 import aboutBanner from '../assets/about-banner.webp';
-import {LiaHandshakeSolid} from 'react-icons/lia';
-import {MdOutlineBiotech} from 'react-icons/md';
-import {MdOutlineLeaderboard} from 'react-icons/md';
-import {MdInsights} from 'react-icons/md';
-import {RiCustomerService2Line} from 'react-icons/ri';
+import aboutPic1 from '../assets/about-pic1.webp';
+import aboutPic2 from '../assets/about-pic2.webp';
+import aboutPic3 from '../assets/about-pic3.webp';
+import aboutPic4 from '../assets/about-pic4.webp';
+import aboutPic5 from '../assets/about-pic5.webp';
 
 //multilangual
 import { useTranslation } from 'react-i18next';
@@ -58,10 +58,10 @@ const About = () => {
                         {/* Introduction Title */}
                         <div className="about-intro-title">
                             <div className="page-title-2-bold-green">
-                                HIPPSC
+                                Since
                             </div>
                             <div className="page-title-2">
-                                {t("about.titleS")}
+                                1998
                             </div>
                         </div>
                         
@@ -69,12 +69,12 @@ const About = () => {
                         <div className="about-intro-item">
                             <div className="about-intro-item-left">
                                 <div className="about-intro-item-pic">
-                                    <LiaHandshakeSolid />
+                                     <img src={aboutPic1} alt="about-banner" />
                                 </div>
                             </div>
                             <div className="about-intro-item-right">
                                 <div className="about-intro-item-number page-title-2-bold">
-                                    01 /
+                                    1998
                                 </div>
                                 <div className="about-intro-item-title page-title-3-bold-gray" ref={collaborTitleref}>
                                     <span >{collaborTitle}</span>
@@ -91,23 +91,23 @@ const About = () => {
 
                         {/* Product Breakthrough */}
                         <div className="about-intro-item">
-                            <div className="home-process-item-left">
-                                <div className="home-process-item-pic">
-                                    <MdOutlineBiotech />
+                            <div className="about-intro-item-left">
+                                <div className="about-intro-item-pic">
+                                    <img src={aboutPic2} alt="about-banner" />
                                 </div>
                             </div>
-                            <div className="home-process-item-right">
-                                <div className="home-process-item-number page-title-2-bold">
-                                    02 /
+                            <div className="about-intro-item-right">
+                                <div className="about-intro-item-number page-title-2-bold">
+                                    2005
                                 </div>
-                                <div className="home-process-item-title page-title-3-bold-gray" ref={productTitleref}>
+                                <div className="about-intro-item-title page-title-3-bold-gray" ref={productTitleref}>
                                     <span >{productTitle}</span>
                                     <span style={{color: 'transparent'}}>{invisibleProductTitle}</span>
                                 </div>
-                                <div className="home-process-item-description page-text-1">
+                                <div className="about-intro-item-description page-text-1">
                                     {t("about.p1P")}
                                 </div>
-                                <div className="home-process-item-description page-text-1">
+                                <div className="about-intro-item-description page-text-1">
                                     {t("about.p2P")}
                                 </div>
 
@@ -116,23 +116,23 @@ const About = () => {
 
                         {/* Technological Edge */}
                         <div className="about-intro-item">
-                            <div className="home-process-item-left">
-                                <div className="home-process-item-pic">
-                                    <MdOutlineLeaderboard />
+                            <div className="about-intro-item-left">
+                                <div className="about-intro-item-pic">
+                                    <img src={aboutPic3} alt="about-banner" />
                                 </div>
                             </div>
-                            <div className="home-process-item-right">
-                                <div className="home-process-item-number page-title-2-bold">
-                                    03 /
+                            <div className="about-intro-item-right">
+                                <div className="about-intro-item-number page-title-2-bold">
+                                    2011
                                 </div>
-                                <div className="home-process-item-title page-title-3-bold-gray" ref={techTitleref}>
+                                <div className="about-intro-item-title page-title-3-bold-gray" ref={techTitleref}>
                                     <span >{techTitle}</span>
                                     <span style={{color: 'transparent'}}>{invisibleTechTitle}</span>
                                 </div>
-                                <div className="home-process-item-description page-text-1">
+                                <div className="about-intro-item-description page-text-1">
                                     {t("about.p1T")}
                                 </div>
-                                <div className="home-process-item-description page-text-1">
+                                <div className="about-intro-item-description page-text-1">
                                     {t("about.p2T")}
                                 </div>
                             </div>
@@ -140,23 +140,23 @@ const About = () => {
 
                         {/* Market Acumen */}
                         <div className="about-intro-item">
-                            <div className="home-process-item-left">
-                                <div className="home-process-item-pic">
-                                    <MdInsights />
+                            <div className="about-intro-item-left">
+                                <div className="about-intro-item-pic">
+                                    <img src={aboutPic4} alt="about-banner" />
                                 </div>
                             </div>
-                            <div className="home-process-item-right">
-                                <div className="home-process-item-number page-title-2-bold">
-                                    04 /
+                            <div className="about-intro-item-right">
+                                <div className="about-intro-item-number page-title-2-bold">
+                                    2018
                                 </div>
-                                <div className="home-process-item-title page-title-3-bold-gray" ref={marketTitleref}>
+                                <div className="about-intro-item-title page-title-3-bold-gray" ref={marketTitleref}>
                                     <span >{marketTitle}</span>
                                     <span style={{color: 'transparent'}}>{invisibleMarketTitle}</span>
                                 </div>
-                                <div className="home-process-item-description page-text-1">
+                                <div className="about-intro-item-description page-text-1">
                                     {t("about.p1M")}
                                 </div>
-                                <div className="home-process-item-description page-text-1">
+                                <div className="about-intro-item-description page-text-1">
                                     {t("about.p2M")}
                                 </div>
                             </div>
@@ -164,23 +164,23 @@ const About = () => {
 
                         {/* Customer-centric Approach */}
                         <div className="about-intro-item about-intro-item-last">
-                            <div className="home-process-item-left">
-                                <div className="home-process-item-pic">
-                                    <RiCustomerService2Line />
+                            <div className="about-intro-item-left">
+                                <div className="about-intro-item-pic">
+                                    <img src={aboutPic5} alt="about-banner" />
                                 </div>
                             </div>
-                            <div className="home-process-item-right">
-                                <div className="home-process-item-number page-title-2-bold">
-                                    05 /
+                            <div className="about-intro-item-right">
+                                <div className="about-intro-item-number page-title-2-bold">
+                                    2023
                                 </div>
-                                <div className="home-process-item-title page-title-3-bold-gray" ref={customerTitleref}>
+                                <div className="about-intro-item-title page-title-3-bold-gray" ref={customerTitleref}>
                                     <span >{customerTitle}</span>
                                     <span style={{color: 'transparent'}}>{invisibleCustomerTitle}</span>
                                 </div>
-                                <div className="home-process-item-description page-text-1">
+                                <div className="about-intro-item-description page-text-1">
                                     {t("about.p1C")}
                                 </div>
-                                <div className="home-process-item-description page-text-1">
+                                <div className="about-intro-item-description page-text-1">
                                     {t("about.p2C")}
                                 </div>
                             </div>
