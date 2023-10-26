@@ -7,6 +7,16 @@ html {
   background-color: white;
 }
 
+/* Change the color of the iPhone or other mobile devices notch area */
+@supports (padding: max(0px)) {
+  html {
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+    background-color: white;
+  }
+}
+
+
 body {
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
