@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useTypingEffect from '../../hooks/useTypingEffect';
 
 // components
@@ -8,10 +9,41 @@ import BrochureDownload from '../../components/BrochureDownload';
 // css
 import '../../css/product/ProductHolders.css';
 
-// assets
-import holder1 from '../../assets/svg/holder1.svg';
-import holder2 from '../../assets/svg/holder2.svg';
-import holder3 from '../../assets/svg/holder3.svg';
+// svg - alloy steel
+import BBT30SR from '../../assets/holders/alloySteel/BBT30-SR.svg';
+import BBT40SR from '../../assets/holders/alloySteel/BBT40-SR.svg';
+import BBT40SRC from '../../assets/holders/alloySteel/BBT40-SRC.svg';
+import BBT40SRV from '../../assets/holders/alloySteel/BBT40-SRV.svg';
+import BBT50SR from '../../assets/holders/alloySteel/BBT50-SR.svg';
+import HSK40ESR from '../../assets/holders/alloySteel/HSK40E-SR.svg';
+import HSK50ASR from '../../assets/holders/alloySteel/HSK50A-SR.svg';
+import HSK50ESR from '../../assets/holders/alloySteel/HSK50E-SR.svg';
+import HSK63ASR from '../../assets/holders/alloySteel/HSK63A-SR.svg';
+import HSK63ASRC from '../../assets/holders/alloySteel/HSK63A-SRC.svg';
+import HSK63ASRV from '../../assets/holders/alloySteel/HSK63A-SRV.svg';
+import HSK63FSR from '../../assets/holders/alloySteel/HSK63F-SR.svg';
+import HSK100ASR from '../../assets/holders/alloySteel/HSK100A-SR.svg';
+import SK40SR from '../../assets/holders/alloySteel/SK40-SR.svg';
+
+
+// svg - stainless steel
+import BBT30MRA from '../../assets/holders/stainlessSteel/BBT30-MRA.svg';
+import BBT40MRAMSB from '../../assets/holders/stainlessSteel/BBT40-MRAMSB.svg';
+import BT15MRA from '../../assets/holders/stainlessSteel/BT15-MRA.svg';
+import HSK25EMRA from '../../assets/holders/stainlessSteel/HSK25E-MRA.svg';
+import HSK32EMRA from '../../assets/holders/stainlessSteel/HSK32E-MRA.svg';
+import HSK40EMRA from '../../assets/holders/stainlessSteel/HSK40E-MRA.svg';
+import HSK50AMRAMSB from '../../assets/holders/stainlessSteel/HSK50A-MRAMSB.svg';
+import HSK50EMRAMSB from '../../assets/holders/stainlessSteel/HSK50E-MRAMSB.svg';
+import HSK63AMRAMSB from '../../assets/holders/stainlessSteel/HSK63A-MRAMSB.svg';
+import HSK63FMRAMSB from '../../assets/holders/stainlessSteel/HSK63F-MRAMSB.svg';
+import ISO20MRA from '../../assets/holders/stainlessSteel/ISO20-MRA.svg';
+import ISO25MRA from '../../assets/holders/stainlessSteel/ISO25-MRA.svg';
+import SK40MRAMSB from '../../assets/holders/stainlessSteel/SK40-MRAMSB.svg';
+
+
+
+
 import productHolderBodyPic from '../../assets/product-holder-body-pic.jpg';
 
 //multilangual
@@ -48,6 +80,9 @@ const ProductHolders = () => {
 
     const title6_text = t("product.HEt");
     const [title6, invisibleTitle6, title6Ref] = useTypingEffect(title6_text);
+
+
+
     
 
     return (
@@ -62,16 +97,98 @@ const ProductHolders = () => {
                     {/* World-Class Tool Holders for the Modern Manufacturing */}
                 </div>
             </div>
-            <div className="product-holders-banner">
-                <div className="product-holders-banner-pic">
-                    <img src={holder1} alt="holder1" />
-                </div>
-                <div className="product-holders-banner-pic">
-                    <img src={holder2} alt="holder1" />
-                </div>
-                <div className="product-holders-banner-pic">
-                    <img src={holder3} alt="holder1" />
-                </div>
+
+            <div className="product-holders-selection-title page-title-1">
+                {t("product.Hmas")} →
+            </div>
+            <div className="product-holders-selection">
+                <Link to='/product/holders/alloy-steel/BBT'
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={BBT30SR} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       BBT
+                    </div>
+                </Link>
+                <Link to='/product/holders/alloy-steel/HSK'
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={HSK50ASR} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       HSK
+                    </div>
+                </Link>
+                <Link to='/product/holders/alloy-steel/SK'
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={SK40SR} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       SK
+                    </div>
+                </Link>
+            </div>
+
+            <div className="product-holders-selection-title page-title-1">
+                {t("product.Hmss")} →
+            </div>
+            <div className="product-holders-selection">
+                <Link to='/product/holders/stainless-steel/BBT'
+                      className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={BBT30MRA} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       BBT
+                    </div>
+                </Link>
+                <Link to='/product/holders/stainless-steel/BT' 
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={BT15MRA} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       BT
+                    </div>
+                </Link>
+                <Link to='/product/holders/stainless-steel/HSK'
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={HSK25EMRA} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       HSK
+                    </div>
+                </Link>
+                <Link to='/product/holders/stainless-steel/SK'
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={SK40MRAMSB} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       SK
+                    </div>
+                </Link>
+                
+                <Link to='/product/holders/stainless-steel/ISO'
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={ISO20MRA} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       ISO
+                    </div>
+                </Link>
+                {/* <div className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={SK40SR} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       HSK-63
+                    </div>
+                </div> */}
             </div>
 
             <div className="product-holders-body">
@@ -80,12 +197,12 @@ const ProductHolders = () => {
                     <span style={{color: 'transparent'}}>{invisibleBodyTitle}</span>
                 </div>
                 <div className="product-holders-body-content">
-                    <div className="product-holders-body-left">
+                    {/* <div className="product-holders-body-left">
                         
                         <div className="product-holders-body-pic">
                             <img src={productHolderBodyPic} alt="holder1" />
                         </div>
-                    </div>
+                    </div> */}
                     <div className="product-holders-body-right">
                         <div className="product-holders-body-item">
                             <div className="product-holders-body-item-title page-text-1" ref={title1Ref}>
