@@ -26,6 +26,77 @@ const Contact = () => {
     const [locationAPTitle, invisibleLocationAPTitle, locationAPTitleref] = useTypingEffect(location_ap_title_text, 1, 30);
     const [locationNATitle, invisibleLocationNATitle, locationNATitleref] = useTypingEffect(location_na_title_text, 1, 30);
 
+
+    // location list
+    const locations = [
+        {
+            cityKey: "HQ",
+            phone: "(86) 136-002-58263",
+            email: "kevin@hippsc.com",
+        },
+        {
+            cityKey: "DGCA",
+            phone: "(86) 158-128-59138",
+            email: "yelin@hippsc.com"
+        },
+        {
+            cityKey: "DGDC",
+            phone: "(86) 185-881-19606",
+            email: "N/A"
+        },
+        {
+            cityKey: "SH",
+            phone: "(86) 136-818-39601",
+            email: "zhangxi@hippsc.com",
+        },
+        {
+            cityKey: "HZ",
+            phone: "(86) 137-119-88662",
+            email: "wangquan@hippsc.com",
+        },
+        {
+            cityKey: "SZ",
+            phone: "(86) 138-027-02608",
+            email: "mikecnc@163.com",
+        },
+        {
+            cityKey: "ZS",
+            phone: "(86) 137-119-02558",
+            email: "lhg@hippsc.com",
+        },
+        {
+            cityKey: "FS",
+            phone: "(86) 131-133-57668",
+            email: "N/A",
+        },
+        {
+            cityKey: "GZ",
+            phone: "(86) 137-117-13136",
+            email: "N/A",
+        },
+        {
+            cityKey: "ZJTZ",
+            phone: "(86) 152-569-88271",
+            email: "N/A",
+        },
+        {
+            cityKey: "ZJNB",
+            phone: "(86) 137-613-34882",
+            email: "N/A",
+        },
+        {
+            cityKey: "ZJJS",
+            phone: "(86) 135-645-39879",
+            email: "N/A",
+        },
+        {
+            cityKey: "JSGS",
+            phone: "(86) 189-526-81780",
+            email: "N/A",
+        },
+    ];
+
+
     
     return (
         <div className='contact'>
@@ -44,71 +115,24 @@ const Contact = () => {
                     <span style={{color: 'transparent'}}>{invisibleLocationAPTitle}</span>
                 </div>
                 <div className="contact-locations-list">
-                    <div className="contact-locations-list-item">
-                        <div className="contact-locations-list-item-title page-text-2">
-                            {t("contact.cities.HQ")}
+                    {locations.map((location) => (
+                        <div className="contact-locations-list-item" key={location.cityKey}>
+                            <div className="contact-locations-list-item-title page-text-2">
+                                {t(`contact.cities.${location.cityKey}`)}
+                            </div>
+                            <div className="contact-locations-list-item-name">
+                                {t(`contact.names.${location.cityKey}`)}
+                            </div>
+                            <div className="contact-locations-list-item-phone">
+                                <span>{location.phone}</span>
+                            </div>
+                            <div className="contact-locations-list-item-email">
+                                <a href={`mailto:${location.email}`}>
+                                {location.email}
+                                </a>
+                            </div>
                         </div>
-                        {/* <div className="contact-locations-list-item-address">
-                            <div>Floor 7, Building 1, No. 13 </div>
-                            <div>Xinchun Road, Shangsha, Changan Town</div>
-                            <div>Dongguan, Guangdong</div>
-                        </div> */}
-                        <div className="contact-locations-list-item-name">
-                            {t("contact.names.HQ")}
-                        </div>
-                        <div className="contact-locations-list-item-phone">
-                            <span>(86) 136-002-58263</span>
-                        </div>
-                        <div className="contact-locations-list-item-email">
-                            <a href="mailto:">
-                                kevin@hippsc.com
-                            </a>
-                        </div>
-                    </div>
-                    <div className="contact-locations-list-item">
-                        <div className="contact-locations-list-item-title page-text-2">
-                            {t("contact.cities.SH")}
-                        </div>
-                        {/* <div className="contact-locations-list-item-address">
-                            <div>Building 19, Linda Park</div>
-                            <div>No. 8 Dongjing Road</div>
-                            <div>Songjiang Industrial Zone</div>
-                            <div>Shanghai</div>
-                        </div> */}
-                        <div className="contact-locations-list-item-name">
-                            {t("contact.names.SH")}
-                        </div>
-                        <div className="contact-locations-list-item-phone">
-                            <span>(86) 136-818-39601</span>
-                        </div>
-                        <div className="contact-locations-list-item-email">
-                            <a href="mailto:">
-                                zx@hippsc.com
-                            </a>
-                        </div>
-                    </div>
-                    <div className="contact-locations-list-item">
-                        <div className="contact-locations-list-item-title page-text-2">
-                            {t("contact.cities.SZ")}
-                        </div>
-                        {/* <div className="contact-locations-list-item-address">
-                            <div>No. B06</div>
-                            <div>Shangliao Hardware Mold City</div>
-                            <div>Shajing, Shenzhen</div>
-                            <div>Guangdong</div>
-                        </div> */}
-                        <div className="contact-locations-list-item-name">
-                            {t("contact.names.SZ")}
-                        </div>
-                        <div className="contact-locations-list-item-phone">
-                            <span>(86) 138-027-02608</span>
-                        </div>
-                        <div className="contact-locations-list-item-email">
-                            <a href="mailto:">
-                                yxh@hippsc.com
-                            </a>
-                        </div>
-                    </div>
+                    ))}
                 </div>
 
                 <div className="contact-locations-title page-title-1-xl" ref={locationNATitleref}>

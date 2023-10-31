@@ -227,25 +227,47 @@
     "p2C": "We are committed to providing high-quality products and services to our customers, and we look forward to working with you to create a better future."
   },
 
+
   "contact": {
     "C": "Contact Us",
     "A": "Asia & Pacific",
     "N": "North America",
     "names": {
       "HQ": "Kevin Ye",
+      "DGCA": "Lin Ye",
+      "DGDC": "Ms. Li",
       "SH": "Xi Zhang",
-      "SZ": "Xiaohua Ye",
+      "HZ": "Quan Wang",
+      "SZ": "Mike Ye",
+      "ZS": "Haiguang Li",
+      "FS": "Junzhou Cai",
+      "GZ": "Xuran Cai",
+      "ZJTZ": "Peng Shi",
+      "ZJNB": "Xiaoxia Zhao",
+      "ZJJS": "Hefeng Chen",
+      "JSGS": "Yuan Zhou",
       "LA": "Kaisen Ye",
       "HOU": "Jihao Ye"
     },
     "cities": {
       "HQ": "DONGGUAN, CHN (*HQ)",
+      "DGCA": "DONGGUAN, CHN (Changan)",
+      "DGDC": "DONGGUAN, CHN (Dongchen)",
       "SH": "SHANGHAI, CHN",
+      "HZ": "HUIZHOU, CHN",
       "SZ": "SHENZHEN, CHN",
+      "ZS": "ZHONGSHAN, CHN",
+      "FS": "FOSHAN, CHN",
+      "GZ": "GUANGZHOU, CHN",
+      "ZJTZ": "ZHEJIANG, CHN (Taizhou)",
+      "ZJNB": "ZHEJIANG, CHN (Ningbo)",
+      "ZJJS": "ZHEJIANG, CHN (Jiaxing)",
+      "JSGS": "JIANGSU, CHN (Suzhou)",
       "LA": "LOS ANGELES, CA",
       "HOU": "HOUSTON, TX"
     }
   }
+
 }
 
 
