@@ -51,7 +51,7 @@ const Contact = () => {
         },
         {
             cityKey: "HZ",
-            phone: "(86) 137-119-88662",
+            phone: "(86) 137-119-88862",
             email: "wangquan@hippsc.com",
         },
         {
