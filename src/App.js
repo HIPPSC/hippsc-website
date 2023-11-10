@@ -23,6 +23,7 @@ import ProductF15i from './pages/product/ProductF15i';
 import ProductToolPresetting from './pages/product/ProductToolPresetting';
 
 import ProductHoldersCatalog from './pages/product/ProductHoldersCatalog';
+import ProductHoldersDetails from './pages/product/ProductHoldersDetails';
 
 import ServiceGetStarted from './pages/services/ServiceGetStarted';
 
@@ -47,6 +48,8 @@ function App() {
             <Route path="/product/tool_presetting" element={<ProductToolPresetting />} />
 
             <Route path="/product/holders/:material/:holderType" element={<ProductHoldersCatalog />} />
+            <Route path="/product/holders/:material/:holderType/:holderModel" element={<ProductHoldersDetails />} />
+            
 
             <Route path="/service/get_started" element={<ServiceGetStarted />} />
             {/* <Route path="*" element={<NotFound />} /> 404 Page */}

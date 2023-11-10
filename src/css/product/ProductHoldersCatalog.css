@@ -63,11 +63,12 @@
 
 .product-holders-catalog-selection-pic {
     height: 120%;
+    max-width: 20%;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
-    transform: rotate(45deg) translate(-1rem);
+    transform: rotate(45deg) translateX(3rem) translateY(-4rem);
 }
 
 .product-holders-catalog-selection-pic img {

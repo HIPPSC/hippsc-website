@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+
 // css
 import '../../css/product/ProductHoldersCatalog.css';
-
 
 // svg - alloy steel
 import BBT30SR from '../../assets/holders/alloySteel/BBT30-SR.svg';
@@ -90,25 +90,25 @@ const holdersCatalog = {
 
 
 const ProductHoldersCatalog = () => {
-    const { material } = useParams(); // e.g., 'alloy-steel' or 'stainless-steel'
-    const { holderType } = useParams(); // e.g., 'BBT' or 'HSK'
+    const { material, holderType } = useParams(); // e.g., 'alloy-steel' or 'stainless-steel'
     
     const renderHolders = (materialType, holderType) => {
         return (
             <div key={holderType}>
                 <div className="product-holders-catalog-selection-title page-title-1">
-                    {holderType} ({materialType}) →
+                    {holderType} ({material.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}) →
                 </div>
                 <div className="product-holders-catalog-selection">
                 {holdersCatalog[materialType][holderType].map((holder, index) => (
-                    <div key={index} className="product-holders-catalog-selection-item">
+                    <Link to={`/product/holders/${material}/${holderType}/${holder.name}`}
+                         key={index} className="product-holders-catalog-selection-item">
                         <div className="product-holders-catalog-selection-pic">
                             <img src={holder.img} alt={holder.name} />
                         </div>
                         <div className="product-holders-catalog-selection-item-title page-title-3">
                             {holder.name}
                         </div>
-                    </div>
+                    </Link>
                 ))}
                 </div>
             </div>

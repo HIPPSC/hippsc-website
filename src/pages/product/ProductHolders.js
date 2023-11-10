@@ -11,40 +11,15 @@ import '../../css/product/ProductHolders.css';
 
 // svg - alloy steel
 import BBT30SR from '../../assets/holders/alloySteel/BBT30-SR.svg';
-import BBT40SR from '../../assets/holders/alloySteel/BBT40-SR.svg';
-import BBT40SRC from '../../assets/holders/alloySteel/BBT40-SRC.svg';
-import BBT40SRV from '../../assets/holders/alloySteel/BBT40-SRV.svg';
-import BBT50SR from '../../assets/holders/alloySteel/BBT50-SR.svg';
-import HSK40ESR from '../../assets/holders/alloySteel/HSK40E-SR.svg';
 import HSK50ASR from '../../assets/holders/alloySteel/HSK50A-SR.svg';
-import HSK50ESR from '../../assets/holders/alloySteel/HSK50E-SR.svg';
-import HSK63ASR from '../../assets/holders/alloySteel/HSK63A-SR.svg';
-import HSK63ASRC from '../../assets/holders/alloySteel/HSK63A-SRC.svg';
-import HSK63ASRV from '../../assets/holders/alloySteel/HSK63A-SRV.svg';
-import HSK63FSR from '../../assets/holders/alloySteel/HSK63F-SR.svg';
-import HSK100ASR from '../../assets/holders/alloySteel/HSK100A-SR.svg';
 import SK40SR from '../../assets/holders/alloySteel/SK40-SR.svg';
-
 
 // svg - stainless steel
 import BBT30MRA from '../../assets/holders/stainlessSteel/BBT30-MRA.svg';
-import BBT40MRAMSB from '../../assets/holders/stainlessSteel/BBT40-MRAMSB.svg';
 import BT15MRA from '../../assets/holders/stainlessSteel/BT15-MRA.svg';
 import HSK25EMRA from '../../assets/holders/stainlessSteel/HSK25E-MRA.svg';
-import HSK32EMRA from '../../assets/holders/stainlessSteel/HSK32E-MRA.svg';
-import HSK40EMRA from '../../assets/holders/stainlessSteel/HSK40E-MRA.svg';
-import HSK50AMRAMSB from '../../assets/holders/stainlessSteel/HSK50A-MRAMSB.svg';
-import HSK50EMRAMSB from '../../assets/holders/stainlessSteel/HSK50E-MRAMSB.svg';
-import HSK63AMRAMSB from '../../assets/holders/stainlessSteel/HSK63A-MRAMSB.svg';
-import HSK63FMRAMSB from '../../assets/holders/stainlessSteel/HSK63F-MRAMSB.svg';
 import ISO20MRA from '../../assets/holders/stainlessSteel/ISO20-MRA.svg';
-import ISO25MRA from '../../assets/holders/stainlessSteel/ISO25-MRA.svg';
 import SK40MRAMSB from '../../assets/holders/stainlessSteel/SK40-MRAMSB.svg';
-
-
-
-
-import productHolderBodyPic from '../../assets/product-holder-body-pic.jpg';
 
 //multilangual
 import { useTranslation } from 'react-i18next';
