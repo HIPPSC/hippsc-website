@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
+// table component
+import ProductHoldersTable from '../../components/ProductHoldersTable';
+
 // css
 import '../../css/product/ProductHoldersDetails.css';
 
+// cloudfront url
 const cloudfrontUrl = process.env.REACT_APP_CLOUDFRONT_URL;
+
 
 const ProductHoldersDetails = () => {
     const {material, holderType, holderModel} = useParams();
@@ -12,7 +17,6 @@ const ProductHoldersDetails = () => {
     // get the image url from cloudfront
     const blueprintUrl = `${cloudfrontUrl}/holders/${material}/${holderType}/${holderModel}/blueprint.svg`;
     const productImageUrl = `${cloudfrontUrl}/holders/${material}/${holderType}/${holderModel}/product-image.svg`;
-
 
 
     return (
@@ -61,6 +65,11 @@ const ProductHoldersDetails = () => {
                         ↳ Handle 3000+ heating cycles
                     </div>
                 </div>
+            </div>
+
+            {/* table */}
+            <div className="product-holders-details-table">
+                <ProductHoldersTable material={material} holderType={holderType} holderModel={holderModel} />  
             </div>
 
         </div>

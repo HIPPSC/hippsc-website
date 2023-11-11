@@ -1,9 +1,11 @@
-
+.product-holders-details {
+    margin-bottom: 15%;
+}
 .product-holders-details-header {
     display: flex;
     flex-direction: row;
     margin-top: 5%;
-    margin-bottom: 1rem;
+    margin-bottom: 10%;
 }
 
 .product-holders-details-header-pic {
