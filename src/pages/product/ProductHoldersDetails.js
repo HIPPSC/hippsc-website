@@ -72,6 +72,22 @@ const ProductHoldersDetails = () => {
                 <ProductHoldersTable material={material} holderType={holderType} holderModel={holderModel} />  
             </div>
 
+            {/* Note */}
+            <div className="product-holders-details-note">
+                <div className="product-holders-details-note-item">
+                    NOTE: 
+                </div>
+                <div className="product-holders-details-note-item">
+                    ● In Stock
+                </div>
+                <div className="product-holders-details-note-item">
+                    ▲ 15 Business Days
+                </div>
+                <div className="product-holders-details-note-item">
+                    ★ 20 Business Days
+                </div>
+            </div>
+
         </div>
     );
 };

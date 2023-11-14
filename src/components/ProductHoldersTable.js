@@ -59,7 +59,11 @@ const ProductHoldersTable = ({material, holderType, holderModel}) => {
                         <td>{item.N}</td>
                         <td>{item.M}</td>
                         <td>{item.KG}</td>
-                        <td>{item.Inventory.Circle}</td>
+                        <td>
+                            {item.Inventory.Circle}
+                            {item.Inventory.Triangle}
+                            {item.Inventory.Star}
+                        </td>
                     {/* Render other data cells here */}
                     </tr>
                 ))}

@@ -1,6 +1,9 @@
 .product-holders-details {
     margin-bottom: 15%;
 }
+
+
+/* header */
 .product-holders-details-header {
     display: flex;
     flex-direction: row;
@@ -36,6 +39,22 @@
 
 .product-holders-details-header-bullet-item {
     margin-bottom: 2%;
+}
+
+
+/* table */
+.product-holders-details-table {
+    margin-bottom: 1%;
+}
+
+
+/* Note */
+.product-holders-details-note {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1%
 }
 
 
