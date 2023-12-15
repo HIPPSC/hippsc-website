@@ -203,28 +203,39 @@
   },
 
   "about" : {
-    "titleA": "About HIPPSC",
-    "titleS": "Shrink Fit",
+    "title": "About HIPPSC",
 
-    "titleG": "Founders Found",
-    "p1G": "HIPPSC was founded with the name SenHao in 1998 by a young couple with a passion for innovation of manufacturing for the future.",
-    "p2G": "The company started as a small shop in Dongguan, China, with a focus on distributing precision tool holders to local machining workshops.",
+    "subtitle1": "Founders Found",
+    "p11": "HIPPSC was founded with the name SenHao in 1998 by a young couple with a passion for innovation of manufacturing for the future.",
+    "p12": "The company started as a small shop in Dongguan, China, with a focus on distributing precision tool holders to local machining workshops.",
 
-    "titleP": "Powerhouse of Manufacturing",
-    "p1P": "As Dongguan became a powerhouse of manufacturing, SenHao grew with the city, expanding its operations and establishing a global presence.",
-    "p2P": "The founders didn't lose sight of their original vision, and they continued to innovate and develop new products to meet the needs of the ever-changing market.",
+    "subtitle2": "Powerhouse of Manufacturing",
+    "p21": "As Dongguan became a powerhouse of manufacturing, SenHao grew with the city, expanding its operations and establishing a global presence.",
+    "p22": "The founders didn't lose sight of their original vision, and they continued to innovate and develop new products to meet the needs of the ever-changing market.",
 
-    "titleT": "Renamed As HIPPSC",
-    "p1T": "In 2011, SenHao was renamed HIPPSC, which stands for High Precision Products and Services Company. The name change reflects the company's commitment to providing high-quality products and services to its customers.",
-    "p2T": "HIPPSC has since become a leading manufacturer of precision tool holders and shrink fit machines, with a global presence in over 20 countries.",
+    "subtitle3": "Renamed As HIPPSC",
+    "p31": "In 2011, SenHao was renamed HIPPSC, which stands for High Precision Products and Services Company. The name change reflects the company's commitment to providing high-quality products and services to its customers.",
+    "p32": "HIPPSC has since become a leading manufacturer of precision tool holders and shrink fit machines, with a global presence in over 20 countries.",
 
-    "titleM": "Concentration and Innovation",
-    "p1M": "HIPPSC's meticulous market insight and accurate judgment keep it ahead of industry trends.",
-    "p2M": "After realizing the advantages of shrink fit technology in modern machining, HIPPSC began to focus on the development of shrink fit products and machines.",
+    "subtitle4": "Research and Development",
+    "p41": "After years of dedicated research and development, HIPPSC has secured numerous technology patents in the tooling field and has been recognized as a Guangdong provincial high-tech enterprise.",
+    "p42": "This achievement not only highlights our commitment to innovation but also positions us at the forefront of technological advancements in the industry.",
 
-    "titleC": "Chapter Continued",
-    "p1C": "Today, HIPPSC continues to innovate and develop new products to meet the needs of the ever-changing market.",
-    "p2C": "We are committed to providing high-quality products and services to our customers, and we look forward to working with you to create a better future."
+    "subtitle5": "Concentration and Innovation",
+    "p51": "HIPPSC's meticulous market insight and accurate judgment keep it ahead of industry trends.",
+    "p52": "After realizing the advantages of shrink fit technology in modern machining, HIPPSC began to focus on the development of shrink fit products and machines.",
+
+    "subtitle6": "Unveiling the First Generation",
+    "p61": "HIPPSC introduced our first generation of automatic and intelligent liquid-cooling shrink-fit machine.",
+    "p62": "This innovation quickly gained recognition, becoming a standout star product in all exhibitions where it was featured.",
+
+    "subtitle7": "Iteration and Revolution",
+    "p71": "HIPPSC presented a new iteration of the shrink fit machines, featuring a quick-change heating coil. ",
+    "p72": "Alongside this, our SP modular type shrink fit series tools were unveiled, quickly gaining recognition and acclaim in the market.",
+
+    "subtitle8": "Future Development",
+    "p81": "Moving forward, HIPPSC is in the process of developing an automation ecosystem specifically tailored for shrink fit machining",
+    "p82": "We are committed to providing high-quality products and services to our customers, and we look forward to working with you to create a better future."
   },
 
 
@@ -232,8 +243,10 @@
     "C": "Contact Us",
     "A": "Asia & Pacific",
     "N": "North America",
+    "E": "Europe",
     "names": {
       "HQ": "Kevin Ye",
+      "HQ2": "Xiaoqi Peng",
       "DGCA": "Lin Ye",
       "DGDC": "Ms. Li",
       "SH": "Xi Zhang",
@@ -247,10 +260,12 @@
       "ZJJS": "Hefeng Chen",
       "JSGS": "Yuan Zhou",
       "LA": "Kaisen Ye",
-      "HOU": "Jihao Ye"
+      "HOU": "Jihao Ye",
+      "EU": "Frank Wang"
     },
     "cities": {
       "HQ": "DONGGUAN, CHN (*HQ)",
+      "HQ2": "DONGGUAN, CHN (*HQ)",
       "DGCA": "DONGGUAN, CHN (Changan)",
       "DGDC": "DONGGUAN, CHN (Dongchen)",
       "SH": "SHANGHAI, CHN",
@@ -264,7 +279,8 @@
       "ZJJS": "ZHEJIANG, CHN (Jiaxing)",
       "JSGS": "JIANGSU, CHN (Suzhou)",
       "LA": "LOS ANGELES, CA",
-      "HOU": "HOUSTON, TX"
+      "HOU": "HOUSTON, TX",
+      "EU": "EUROPE"
     }
   }
 

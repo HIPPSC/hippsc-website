@@ -21,10 +21,12 @@ const Contact = () => {
     const contact_title_text = t("contact.C");
     const location_ap_title_text = t("contact.A");
     const location_na_title_text = t("contact.N");
+    const location_eu_title_text = t("contact.E");
 
     const [contacTitle, invisibleContactTitle, contactTitleref] = useTypingEffect(contact_title_text, 1, 30);
     const [locationAPTitle, invisibleLocationAPTitle, locationAPTitleref] = useTypingEffect(location_ap_title_text, 1, 30);
     const [locationNATitle, invisibleLocationNATitle, locationNATitleref] = useTypingEffect(location_na_title_text, 1, 30);
+    const [locationEUTitle, invisibleLocationEUTitle, locationEUTitleref] = useTypingEffect(location_eu_title_text, 1, 30);
 
 
     // location list
@@ -33,6 +35,11 @@ const Contact = () => {
             cityKey: "HQ",
             phone: "(86) 136-002-58263",
             email: "kevin@hippsc.com",
+        },
+        {
+            cityKey: "HQ2",
+            phone: "(86) 159-899-41765",
+            email: "sales5@hippsc.com",
         },
         {
             cityKey: "DGCA",
@@ -65,23 +72,8 @@ const Contact = () => {
             email: "lhg@hippsc.com",
         },
         {
-            cityKey: "FS",
-            phone: "(86) 131-133-57668",
-            email: "N/A",
-        },
-        {
-            cityKey: "GZ",
-            phone: "(86) 137-117-13136",
-            email: "N/A",
-        },
-        {
             cityKey: "ZJTZ",
             phone: "(86) 152-569-88271",
-            email: "N/A",
-        },
-        {
-            cityKey: "ZJNB",
-            phone: "(86) 137-613-34882",
             email: "N/A",
         },
         {
@@ -109,6 +101,8 @@ const Contact = () => {
                     <img src={contactBanner} alt="contact-banner" />
                 </div>
             </div>
+
+            {/* Asia and Pacific */}
             <div className="contact-locations">
                 <div className="contact-locations-title page-title-1-xl" ref={locationAPTitleref}>
                     <span >{locationAPTitle}</span>
@@ -134,7 +128,8 @@ const Contact = () => {
                         </div>
                     ))}
                 </div>
-
+                
+                {/* North America */}
                 <div className="contact-locations-title page-title-1-xl" ref={locationNATitleref}>
                     <span >{locationNATitle}</span>
                     <span style={{color: 'transparent'}}>{invisibleLocationNATitle}</span>
@@ -173,6 +168,31 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* Europe */}
+                <div className="contact-locations-title page-title-1-xl" ref={locationEUTitleref}>
+                    <span >{locationEUTitle}</span>
+                    <span style={{color: 'transparent'}}>{invisibleLocationEUTitle}</span>
+                </div>
+                <div className="contact-locations-list">
+                    <div className="contact-locations-list-item">
+                        <div className="contact-locations-list-item-title page-text-2">
+                            {t("contact.cities.EU")}
+                        </div>
+                        <div className="contact-locations-list-item-name">
+                            {t("contact.names.EU")}
+                        </div>
+                        <div className="contact-locations-list-item-phone">
+                            <span>(86) 138-292-05323</span>
+                        </div>
+                        <div className="contact-locations-list-item-email">
+                            <a href="mailto:">
+                                sales1@hippsc.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             
             <RequestContact />
