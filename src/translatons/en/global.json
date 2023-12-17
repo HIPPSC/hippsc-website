@@ -71,13 +71,21 @@
     "learn": "Learn more about ",
     "liq": "Liquid Cooling",
     "air": "Air Cooling",
+    "m": "Machine",
     "sfm": "Shrink Fit Machine",
+    "laser": "Laser ",
+    "tps": "Tool Presetting ",
+    "indicator": "Dial Indicator",
 
     "F1": "The true brilliance of the F-15i resides in its groundbreaking rapid liquid cooling technology, seamlessly returning your tools to optimal temperature with unmatched speed.",
     "F2": "Infused with quick-change heating coils and masterful temperature control, the F-15i transcends mere machinery; it's a symphony of excellence, a dynamic partner poised to transform your production landscape into a realm of unparalleled achievement.",
     "H1": "Discover the H6i, where compact design meets robust capability.",
     "H2": "With a sleek design weighing just 25kg and a compact footprint of 540mm x 400mm x 780mm (H), the H6i is a versatile powerhouse, perfect for spaces where efficiency meets elegance.",
     "H3": "From its flexible heating range to its innovative scanning code recognition, the H6i is more than a machine; it's a vision of efficiency, ready to transform your workspace.",
+    "L1": "Experience precision at the speed of light with HIPPSC Laser Tool Presetting Machine. Engineered for excellence, it delivers unparalleled accuracy in measuring tool diameter and length with the finesse that only a laser can offer.",
+    "L2": "Embedded with intelligent system, it can seamlessly integrates with backend database, recording tool life with impeccable timing. Enhance your machining workflow with a solution designed for safety and efficiency, ensuring every cut is as perfect as your standards.",
+    "D1":"Discover precision redefined with HIPPSC state-of-the-art Dial Indicator — a fusion of sleek design and cutting-edge technology.",
+    "D2": "It delivers ultra-fine measurement accuracy down to 0.5µm, ensuring unparalleled reliability for your most critical tasks. Equipped with advanced robotics, it promises to revolutionize your measurements with its ability to perform unmanned automatic detection, embodying sophistication in both function and form. ",
 
     "its": "Intelligent Tooling Storage",
     "join": "Unlock the future - Join Us Now"

@@ -39,17 +39,17 @@
 }
 
 .home-solutions-item-pic {
-    height: 20rem;
+    height: auto;
     width: 20rem;
     object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .home-solutions-item-pic img {
-    width: 70%;
+    width: 70%;    
 }
 
 .home-solutions-item-left .home-solutions-btn {
@@ -86,6 +86,14 @@
 
 .air-cooling-text {
     background: linear-gradient(45deg, #7C4DB9, #E2A5FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.tool-presetter-text {
+    background: linear-gradient(45deg, #a08c3c, #f7f782);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

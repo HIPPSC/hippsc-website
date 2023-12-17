@@ -75,7 +75,8 @@ const About = () => {
                         <div className="about-intro-item">
                             <div className="about-intro-item-left">
                                 <div className="about-intro-item-pic">
-                                     <img src={aboutPic1} alt="about-banner" />
+                                     <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon1.svg"
+                                          alt="about-icon" />
                                 </div>
                             </div>
                             <div className="about-intro-item-right">
@@ -99,7 +100,8 @@ const About = () => {
                         <div className="about-intro-item">
                             <div className="about-intro-item-left">
                                 <div className="about-intro-item-pic">
-                                    <img src={aboutPic2} alt="about-banner" />
+                                    <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon2.svg"
+                                          alt="about-icon" />
                                 </div>
                             </div>
                             <div className="about-intro-item-right">
@@ -124,7 +126,8 @@ const About = () => {
                         <div className="about-intro-item">
                             <div className="about-intro-item-left">
                                 <div className="about-intro-item-pic">
-                                    <img src={aboutPic3} alt="about-banner" />
+                                    <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon3.svg"
+                                          alt="about-icon" />
                                 </div>
                             </div>
                             <div className="about-intro-item-right">
@@ -148,7 +151,8 @@ const About = () => {
                         <div className="about-intro-item">
                             <div className="about-intro-item-left">
                                 <div className="about-intro-item-pic">
-                                    <img src={aboutPic4} alt="about-banner" />
+                                    <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon4.svg"
+                                          alt="about-icon" />
                                 </div>
                             </div>
                             <div className="about-intro-item-right">
@@ -172,7 +176,8 @@ const About = () => {
                         <div className="about-intro-item">
                             <div className="about-intro-item-left">
                                 <div className="about-intro-item-pic">
-                                    <img src={aboutPic4} alt="about-banner" />
+                                    <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon6.svg"
+                                          alt="about-icon" />
                                 </div>
                             </div>
                             <div className="about-intro-item-right">
@@ -196,7 +201,8 @@ const About = () => {
                         <div className="about-intro-item">
                             <div className="about-intro-item-left">
                                 <div className="about-intro-item-pic">
-                                    <img src={aboutPic4} alt="about-banner" />
+                                    <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon5.svg"
+                                          alt="about-icon" />
                                 </div>
                             </div>
                             <div className="about-intro-item-right">
@@ -220,7 +226,8 @@ const About = () => {
                         <div className="about-intro-item">
                             <div className="about-intro-item-left">
                                 <div className="about-intro-item-pic">
-                                    <img src={aboutPic4} alt="about-banner" />
+                                    <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon7.svg"
+                                          alt="about-icon" />
                                 </div>
                             </div>
                             <div className="about-intro-item-right">
@@ -245,7 +252,8 @@ const About = () => {
                         <div className="about-intro-item about-intro-item-last">
                             <div className="about-intro-item-left">
                                 <div className="about-intro-item-pic">
-                                    <img src={aboutPic5} alt="about-banner" />
+                                    <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon8.svg"
+                                          alt="about-icon" />
                                 </div>
                             </div>
                             <div className="about-intro-item-right">

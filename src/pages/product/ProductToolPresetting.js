@@ -8,7 +8,7 @@ import RequestContact from '../../components/RequestContact';
 import '../../css/product/ProductToolPresetting.css';
 
 // assets
-import ToolPresetterPic from '../../assets/tool-presetter-pic.png';
+import ToolPresetterPic from '../../assets/svg/presetter-pic.svg';
 
 //multilangual
 import { useTranslation } from 'react-i18next';
