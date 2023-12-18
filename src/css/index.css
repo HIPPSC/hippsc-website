@@ -50,7 +50,7 @@ a, a:visited {
 :root {
   --primary-text-color: #2C2C2C;
   --secondary-text-color: #5E5E5E;
-  --light-gray-text-color: #a8a8a8;
+  --light-gray-text-color: #8d8d8d;
   --hippsc-green: #8CD600;
   --hippsc-light-green: #aaf71b;
 
@@ -135,6 +135,7 @@ a, a:visited {
   font-size: var(--text-size-1);
   color: var(--primary-text-color);
   font-weight: var(--title-weight-1);
+  line-height: 1.9;
 }
 
 .page-text-1-bold {

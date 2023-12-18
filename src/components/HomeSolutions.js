@@ -185,7 +185,7 @@ const HomeSolutions = () => {
                     <div className="home-solutions-item-pic">
                         <img src={DialIndicatorPic} alt="Tool Holder" />
                     </div>
-                    <Link to='/product/tool_presetting' className="page-link-btn home-solutions-btn">
+                    <Link to='/product/dial_indicator' className="page-link-btn home-solutions-btn">
                         <div className="page-link-btn-text btn-text-1 ">
                             {t("home.learn") + t("home.indicator")}
                             {/* Learn more about H6i */}
