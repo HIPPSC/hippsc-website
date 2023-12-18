@@ -3,11 +3,6 @@ import useTypingEffect from '../hooks/useTypingEffect';
 
 //css & assets
 import '../css/About.css';
-import aboutPic1 from '../assets/about-pic1.webp';
-import aboutPic2 from '../assets/about-pic2.webp';
-import aboutPic3 from '../assets/about-pic3.webp';
-import aboutPic4 from '../assets/about-pic4.webp';
-import aboutPic5 from '../assets/about-pic5.webp';
 
 //multilangual
 import { useTranslation } from 'react-i18next';
