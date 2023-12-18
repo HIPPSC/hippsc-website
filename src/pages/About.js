@@ -3,7 +3,6 @@ import useTypingEffect from '../hooks/useTypingEffect';
 
 //css & assets
 import '../css/About.css';
-import aboutBanner from '../assets/about-banner.webp';
 import aboutPic1 from '../assets/about-pic1.webp';
 import aboutPic2 from '../assets/about-pic2.webp';
 import aboutPic3 from '../assets/about-pic3.webp';
@@ -22,32 +21,39 @@ const About = () => {
     //---------------------------------
     
     //typing effect
-    const about_title_text = t("about.titleA");
-    const collabor_title_text = t("about.titleG");
-    const product_title_text = t("about.titleP");
-    const tech_title_text = t("about.titleT");
-    const market_title_text = t("about.titleM");
-    const customer_title_text = t("about.titleC");
+    const title = t("about.title");
+    const subtitle1 = t("about.subtitle1");
+    const subtitle2 = t("about.subtitle2");
+    const subtitle3 = t("about.subtitle3");
+    const subtitle4 = t("about.subtitle4");
+    const subtitle5 = t("about.subtitle5");
+    const subtitle6 = t("about.subtitle6");
+    const subtitle7 = t("about.subtitle7");
+    const subtitle8 = t("about.subtitle8");
     
 
-    const [aboutTitle, invisibleAboutTitle, aboutTitleref] = useTypingEffect(about_title_text, 1, 30);
-    const [collaborTitle, invisibleCollaborTitle, collaborTitleref] = useTypingEffect(collabor_title_text);
-    const [productTitle, invisibleProductTitle, productTitleref] = useTypingEffect(product_title_text);
-    const [techTitle, invisibleTechTitle, techTitleref] = useTypingEffect(tech_title_text);
-    const [marketTitle, invisibleMarketTitle, marketTitleref] = useTypingEffect(market_title_text);
-    const [customerTitle, invisibleCustomerTitle, customerTitleref] = useTypingEffect(customer_title_text);
+    const [mainTitle, invisibleMainTitle, mainTitleRef] = useTypingEffect(title, 1, 30);
+
+    const [subTitle1, invisibleSubTitle1, subTitle1Ref] = useTypingEffect(subtitle1);
+    const [subTitle2, invisibleSubTitle2, subTitle2Ref] = useTypingEffect(subtitle2);
+    const [subTitle3, invisibleSubTitle3, subTitle3Ref] = useTypingEffect(subtitle3);
+    const [subTitle4, invisibleSubTitle4, subTitle4Ref] = useTypingEffect(subtitle4);
+    const [subTitle5, invisibleSubTitle5, subTitle5Ref] = useTypingEffect(subtitle5);
+    const [subTitle6, invisibleSubTitle6, subTitle6Ref] = useTypingEffect(subtitle6);
+    const [subTitle7, invisibleSubTitle7, subTitle7Ref] = useTypingEffect(subtitle7);
+    const [subTitle8, invisibleSubTitle8, subTitle8Ref] = useTypingEffect(subtitle8);
     
     return (
         <div>
             <body className="about">
 
                 <header className="about-header">
-                    <div className="about-title page-title-1-xxl" ref={aboutTitleref}>
-                        <span >{aboutTitle}</span>
-                        <span style={{color: 'transparent'}}>{invisibleAboutTitle}</span>
+                    <div className="about-title page-title-1-xxl" ref={mainTitleRef}>
+                        <span >{mainTitle}</span>
+                        <span style={{color: 'transparent'}}>{invisibleMainTitle}</span>
                     </div>
                     <div className="about-banner banner-image">
-                        <img src={aboutBanner} alt="about-banner" />
+                        <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/contact-page-banner.webp" alt="about-banner" />
                     </div>
                 </header>
 
@@ -69,22 +75,23 @@ const About = () => {
                         <div className="about-intro-item">
                             <div className="about-intro-item-left">
                                 <div className="about-intro-item-pic">
-                                     <img src={aboutPic1} alt="about-banner" />
+                                     <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon1.svg"
+                                          alt="about-icon" />
                                 </div>
                             </div>
                             <div className="about-intro-item-right">
                                 <div className="about-intro-item-number page-title-2-bold">
                                     1998
                                 </div>
-                                <div className="about-intro-item-title page-title-3-bold-gray" ref={collaborTitleref}>
-                                    <span >{collaborTitle}</span>
-                                    <span style={{color: 'transparent'}}>{invisibleCollaborTitle}</span>
+                                <div className="about-intro-item-title page-title-3-bold-gray" ref={subTitle1Ref}>
+                                    <span >{subTitle1}</span>
+                                    <span style={{color: 'transparent'}}>{invisibleSubTitle1}</span>
                                 </div>
                                 <div className="about-intro-item-description page-text-1">
-                                    {t("about.p1G")}
+                                    {t("about.p11")}
                                 </div>
                                 <div className="about-intro-item-description page-text-1">
-                                    {t("about.p2G")}
+                                    {t("about.p12")}
                                 </div>
                             </div>
                         </div>
@@ -93,22 +100,23 @@ const About = () => {
                         <div className="about-intro-item">
                             <div className="about-intro-item-left">
                                 <div className="about-intro-item-pic">
-                                    <img src={aboutPic2} alt="about-banner" />
+                                    <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon2.svg"
+                                          alt="about-icon" />
                                 </div>
                             </div>
                             <div className="about-intro-item-right">
                                 <div className="about-intro-item-number page-title-2-bold">
                                     2005
                                 </div>
-                                <div className="about-intro-item-title page-title-3-bold-gray" ref={productTitleref}>
-                                    <span >{productTitle}</span>
-                                    <span style={{color: 'transparent'}}>{invisibleProductTitle}</span>
+                                <div className="about-intro-item-title page-title-3-bold-gray" ref={subTitle2Ref}>
+                                    <span >{subTitle2}</span>
+                                    <span style={{color: 'transparent'}}>{invisibleSubTitle2}</span>
                                 </div>
                                 <div className="about-intro-item-description page-text-1">
-                                    {t("about.p1P")}
+                                    {t("about.p21")}
                                 </div>
                                 <div className="about-intro-item-description page-text-1">
-                                    {t("about.p2P")}
+                                    {t("about.p22")}
                                 </div>
 
                             </div>
@@ -118,22 +126,48 @@ const About = () => {
                         <div className="about-intro-item">
                             <div className="about-intro-item-left">
                                 <div className="about-intro-item-pic">
-                                    <img src={aboutPic3} alt="about-banner" />
+                                    <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon3.svg"
+                                          alt="about-icon" />
                                 </div>
                             </div>
                             <div className="about-intro-item-right">
                                 <div className="about-intro-item-number page-title-2-bold">
                                     2011
                                 </div>
-                                <div className="about-intro-item-title page-title-3-bold-gray" ref={techTitleref}>
-                                    <span >{techTitle}</span>
-                                    <span style={{color: 'transparent'}}>{invisibleTechTitle}</span>
+                                <div className="about-intro-item-title page-title-3-bold-gray" ref={subTitle3Ref}>
+                                    <span >{subTitle3}</span>
+                                    <span style={{color: 'transparent'}}>{invisibleSubTitle3}</span>
                                 </div>
                                 <div className="about-intro-item-description page-text-1">
-                                    {t("about.p1T")}
+                                    {t("about.p31")}
                                 </div>
                                 <div className="about-intro-item-description page-text-1">
-                                    {t("about.p2T")}
+                                    {t("about.p32")}
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Milestone */}
+                        <div className="about-intro-item">
+                            <div className="about-intro-item-left">
+                                <div className="about-intro-item-pic">
+                                    <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon4.svg"
+                                          alt="about-icon" />
+                                </div>
+                            </div>
+                            <div className="about-intro-item-right">
+                                <div className="about-intro-item-number page-title-2-bold">
+                                    2015
+                                </div>
+                                <div className="about-intro-item-title page-title-3-bold-gray" ref={subTitle4Ref}>
+                                    <span >{subTitle4}</span>
+                                    <span style={{color: 'transparent'}}>{invisibleSubTitle4}</span>
+                                </div>
+                                <div className="about-intro-item-description page-text-1">
+                                    {t("about.p41")}
+                                </div>
+                                <div className="about-intro-item-description page-text-1">
+                                    {t("about.p42")}
                                 </div>
                             </div>
                         </div>
@@ -142,46 +176,99 @@ const About = () => {
                         <div className="about-intro-item">
                             <div className="about-intro-item-left">
                                 <div className="about-intro-item-pic">
-                                    <img src={aboutPic4} alt="about-banner" />
+                                    <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon6.svg"
+                                          alt="about-icon" />
                                 </div>
                             </div>
                             <div className="about-intro-item-right">
                                 <div className="about-intro-item-number page-title-2-bold">
                                     2018
                                 </div>
-                                <div className="about-intro-item-title page-title-3-bold-gray" ref={marketTitleref}>
-                                    <span >{marketTitle}</span>
-                                    <span style={{color: 'transparent'}}>{invisibleMarketTitle}</span>
+                                <div className="about-intro-item-title page-title-3-bold-gray" ref={subTitle5Ref}>
+                                    <span >{subTitle5}</span>
+                                    <span style={{color: 'transparent'}}>{invisibleSubTitle5}</span>
                                 </div>
                                 <div className="about-intro-item-description page-text-1">
-                                    {t("about.p1M")}
+                                    {t("about.p51")}
                                 </div>
                                 <div className="about-intro-item-description page-text-1">
-                                    {t("about.p2M")}
+                                    {t("about.p52")}
                                 </div>
                             </div>
                         </div>
 
-                        {/* Customer-centric Approach */}
+                        {/* Liuqid Cool Invention */}
+                        <div className="about-intro-item">
+                            <div className="about-intro-item-left">
+                                <div className="about-intro-item-pic">
+                                    <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon5.svg"
+                                          alt="about-icon" />
+                                </div>
+                            </div>
+                            <div className="about-intro-item-right">
+                                <div className="about-intro-item-number page-title-2-bold">
+                                    2020
+                                </div>
+                                <div className="about-intro-item-title page-title-3-bold-gray" ref={subTitle6Ref}>
+                                    <span >{subTitle6}</span>
+                                    <span style={{color: 'transparent'}}>{invisibleSubTitle6}</span>
+                                </div>
+                                <div className="about-intro-item-description page-text-1">
+                                    {t("about.p61")}
+                                </div>
+                                <div className="about-intro-item-description page-text-1">
+                                    {t("about.p62")}
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Quick Change Coil */}
+                        <div className="about-intro-item">
+                            <div className="about-intro-item-left">
+                                <div className="about-intro-item-pic">
+                                    <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon7.svg"
+                                          alt="about-icon" />
+                                </div>
+                            </div>
+                            <div className="about-intro-item-right">
+                                <div className="about-intro-item-number page-title-2-bold">
+                                    2022
+                                </div>
+                                <div className="about-intro-item-title page-title-3-bold-gray" ref={subTitle7Ref}>
+                                    <span >{subTitle7}</span>
+                                    <span style={{color: 'transparent'}}>{invisibleSubTitle7}</span>
+                                </div>
+                                <div className="about-intro-item-description page-text-1">
+                                    {t("about.p71")}
+                                </div>
+                                <div className="about-intro-item-description page-text-1">
+                                    {t("about.p72")}
+                                </div>
+                            </div>
+                        </div>
+
+
+                        {/* Automation */}
                         <div className="about-intro-item about-intro-item-last">
                             <div className="about-intro-item-left">
                                 <div className="about-intro-item-pic">
-                                    <img src={aboutPic5} alt="about-banner" />
+                                    <img src="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/about-page/about-icon8.svg"
+                                          alt="about-icon" />
                                 </div>
                             </div>
                             <div className="about-intro-item-right">
                                 <div className="about-intro-item-number page-title-2-bold">
                                     2023
                                 </div>
-                                <div className="about-intro-item-title page-title-3-bold-gray" ref={customerTitleref}>
-                                    <span >{customerTitle}</span>
-                                    <span style={{color: 'transparent'}}>{invisibleCustomerTitle}</span>
+                                <div className="about-intro-item-title page-title-3-bold-gray" ref={subTitle8Ref}>
+                                    <span >{subTitle8}</span>
+                                    <span style={{color: 'transparent'}}>{invisibleSubTitle8}</span>
                                 </div>
                                 <div className="about-intro-item-description page-text-1">
-                                    {t("about.p1C")}
+                                    {t("about.p81")}
                                 </div>
                                 <div className="about-intro-item-description page-text-1">
-                                    {t("about.p2C")}
+                                    {t("about.p82")}
                                 </div>
                             </div>
                         </div>

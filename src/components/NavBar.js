@@ -141,6 +141,12 @@ const NavBar = () => {
                                     {t("navbar.pL")}
                                     {/* Laser Presetting Machine */}
                             </Link>
+                            <Link to='/product/dial_indicator'
+                                className='nav-bar-dropdown-item page-text-2'
+                                onClick={handleProductDropdownItemClick}>
+                                    {t("navbar.pD")}
+                                    {/* Laser Presetting Machine */}
+                            </Link>
                         </div>
                     </div>
 

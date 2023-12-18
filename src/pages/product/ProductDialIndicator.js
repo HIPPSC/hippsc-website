@@ -8,20 +8,20 @@ import RequestContact from '../../components/RequestContact';
 import '../../css/product/ProductToolPresetting.css';
 
 // assets
-import ToolPresetterPic from '../../assets/svg/presetter-pic.svg';
+import DialIndicatorPic from '../../assets/svg/dial-indicator-pic.svg';
 
 //multilangual
 import { useTranslation } from 'react-i18next';
 
 
-const ProductToolPresetting = () => {
+const ProductDialIndicator = () => {
 
     //--------mutilingual part --------
     const {t/*, i18n*/} = useTranslation("global");
     //---------------------------------
 
     // typing effect
-    const product_tool_presetting_text = t("product.Lp");
+    const product_tool_presetting_text = t("product.Dp");
 
     const [productToolPresettingTitle, invisibleProductToolPresettingTitle, productToolPresettingTitleref] = useTypingEffect(product_tool_presetting_text, 1, 5);
     
@@ -31,7 +31,7 @@ const ProductToolPresetting = () => {
             <div className="product-tool-presetting-title">
                 <div className="product-tool-presetting-title-left" >
                     <div className="product-tool-presetting-title-left-top page-title-1-xxl">
-                        {t("product.Lt")}
+                        {t("product.Di")}
                         {/* Laser Tool Presetting */}
                     </div>
                     <div className="product-tool-presetting-title-left-bottom page-text-1" ref={productToolPresettingTitleref}>
@@ -40,7 +40,7 @@ const ProductToolPresetting = () => {
                     </div>
                 </div>
                 <div className="product-tool-presetting-title-right">
-                    <img src={ToolPresetterPic} alt="tool-presetter" />
+                    <img src={DialIndicatorPic} alt="tool-presetter" />
                 </div>
             </div>
 
@@ -51,33 +51,33 @@ const ProductToolPresetting = () => {
                 <div className="product-tool-presetting-features-body">
                     <div className="product-tool-presetting-features-item">
                         <div className="product-tool-presetting-features-item-title page-text-1">
-                            {t("product.LMt")}
+                            {t("product.DUt")}
                             {/* Micron-Level Accuracy */}
                         </div>
                         <div className="product-tool-presetting-features-item-body page-text-2">
-                            {t("product.LMp")}
+                            {t("product.DUp")}
                             {/* Achieve unparalleled precision with measurements accurate to the micron, 
                             ensuring your projects meet the highest standards. */}
                         </div>
                     </div>
                     <div className="product-tool-presetting-features-item">
                         <div className="product-tool-presetting-features-item-title page-text-1">
-                            {t("product.LTt")}
+                            {t("product.DIt")}
                             {/* Time-Saving Operations */}
                         </div>
                         <div className="product-tool-presetting-features-item-body page-text-2">
-                            {t("product.LTp")}
+                            {t("product.DIp")}
                             {/* Slash setup times by up to 70%, driving swift transitions
                             from one task to the next, and elevating productivity. */}
                         </div>
                     </div>
                     <div className="product-tool-presetting-features-item">
                         <div className="product-tool-presetting-features-item-title page-text-1">
-                            {t("product.LCt")}
+                            {t("product.DEt")}
                             {/* Cost Efficiency */}
                         </div>
                         <div className="product-tool-presetting-features-item-body page-text-2">
-                            {t("product.LCp")}
+                            {t("product.DEp")}
                             {/* Reduce tooling expenses by optimizing tool life and minimizing waste, 
                             delivering a smart, cost-effective solution for your machining needs. */}
                         </div>
@@ -91,4 +91,4 @@ const ProductToolPresetting = () => {
     );
 };
 
-export default ProductToolPresetting;
+export default ProductDialIndicator;

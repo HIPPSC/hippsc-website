@@ -79,10 +79,13 @@ const NavPage = ({ closeNav }) => {
                     {t("navbar.Nl")}
                     {/* ↳ Laser Presetting Machine */}
                 </Link>
-                <Link className="nav-page-left-item">
-                    {t("navbar.Ni")}
-                    {/* ↳ Intelligent Tooling Storage */}
+                <Link   to='/product/dial_indicator' 
+                        className="nav-page-left-item"
+                        onClick={() => closeNav()}>
+                    {t("navbar.Nd")}
+                    {/* ↳ Laser Presetting Machine */}
                 </Link>
+        
                 <Link to="/contact" className="nav-page-left-item" onClick={() => closeNav()}>
                     {t("navbar.Nc")}
                     {/* Contact Us */}

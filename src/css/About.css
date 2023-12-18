@@ -22,6 +22,7 @@
   max-height: 30rem;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
+  border-radius: 20px;
 }
 
 .about-banner img {
@@ -61,8 +62,8 @@
 }
 
 .about-intro-item-pic {
-  height: 15rem;
-  width: 15rem;
+  height: 11rem;
+  width: 11rem;
   object-fit: cover;
   display: flex;
   align-items: center;

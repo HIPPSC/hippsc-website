@@ -29,7 +29,8 @@
 }
 
 .product-tool-presetting-title-right {
-    width: 40%;
+    width: 30%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -106,7 +107,7 @@
     }
 
     .product-tool-presetting-title-right {
-        width: 100%;
+        width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: center;

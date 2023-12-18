@@ -7,7 +7,6 @@ import '../css/HomeIntro.css';
 
 // assets
 import { BsArrowRight } from 'react-icons/bs';
-import banner from '../assets/home-banner.png';
 
 //multilangual
 import { useTranslation } from 'react-i18next';
@@ -36,7 +35,7 @@ const HomeIntro = () => {
                 </div>
             </div>
             <div className="home-banner">
-                <img src={banner} 
+                <img src='https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/home-page-banner.png'
                      className="banner-image"
                      alt="banner" />
             </div>

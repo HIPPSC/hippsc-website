@@ -10,6 +10,7 @@
     "pH": "H6i Shrink Fit Machine",
     "pF": "F15i Shrink Fit Machine",
     "pL": "Laser Presetting Machine",
+    "pD": "Dial Indicator",
 
     "pageN": "NAVIGATION",
     "pageL": "LATEST NEWS",
@@ -18,6 +19,7 @@
     "No": "Our Offerings",
     "Ns": "↳ Shrink Fit Holders",
     "Nl": "↳ Laser Presetting Machine",
+    "Nd": "↳ Dial Indicator",
     "Ni": "↳ Intelligent Tooling Storage",
     "Nc": "Contact Us",
     "Nr": "Request for Quote"
@@ -71,13 +73,21 @@
     "learn": "Learn more about ",
     "liq": "Liquid Cooling",
     "air": "Air Cooling",
+    "m": "Machine",
     "sfm": "Shrink Fit Machine",
+    "laser": "Laser ",
+    "tps": "Tool Presetting ",
+    "indicator": "Dial Indicator",
 
     "F1": "The true brilliance of the F-15i resides in its groundbreaking rapid liquid cooling technology, seamlessly returning your tools to optimal temperature with unmatched speed.",
     "F2": "Infused with quick-change heating coils and masterful temperature control, the F-15i transcends mere machinery; it's a symphony of excellence, a dynamic partner poised to transform your production landscape into a realm of unparalleled achievement.",
     "H1": "Discover the H6i, where compact design meets robust capability.",
     "H2": "With a sleek design weighing just 25kg and a compact footprint of 540mm x 400mm x 780mm (H), the H6i is a versatile powerhouse, perfect for spaces where efficiency meets elegance.",
     "H3": "From its flexible heating range to its innovative scanning code recognition, the H6i is more than a machine; it's a vision of efficiency, ready to transform your workspace.",
+    "L1": "Experience precision at the speed of light with HIPPSC Laser Tool Presetting Machine. Engineered for excellence, it delivers unparalleled accuracy in measuring tool diameter and length with the finesse that only a laser can offer.",
+    "L2": "Embedded with intelligent system, it can seamlessly integrates with backend database, recording tool life with impeccable timing. Enhance your machining workflow with a solution designed for safety and efficiency, ensuring every cut is as perfect as your standards.",
+    "D1":"Discover precision redefined with HIPPSC state-of-the-art Dial Indicator — a fusion of sleek design and cutting-edge technology.",
+    "D2": "It delivers ultra-fine measurement accuracy down to 0.5µm, ensuring unparalleled reliability for your most critical tasks. Equipped with advanced robotics, it promises to revolutionize your measurements with its ability to perform unmanned automatic detection, embodying sophistication in both function and form. ",
 
     "its": "Intelligent Tooling Storage",
     "join": "Unlock the future - Join Us Now"
@@ -194,8 +204,18 @@
     "LTt": "Time-Saving Operations",
     "LTp": "Slash setup times by up to 70%, driving swift transitions from one task to the next, and elevating productivity.",
     "LCt": "Cost Efficiency",
-    "LCp": "Reduce tooling expenses by optimizing tool life and minimizing waste, delivering a smart, cost-effective solution for your machining needs."
+    "LCp": "Reduce tooling expenses by optimizing tool life and minimizing waste, delivering a smart, cost-effective solution for your machining needs.",
+
+    "Di": "Dial Indicator",
+    "Dp": "Elevate to smart precision with our Dial Indicator — where intelligent design meets meticulous accuracy. Equipped with advanced robotics, it promises to revolutionize your measurements with its ability to perform unmanned automatic detection, embodying sophistication in both function and form. Step into the future of precision with HIPPSC Dial Indicator that's not just a measurement device but a smart partner in your quest for perfection.",
+    "DUt": "Ultra-Fine Accuracy",
+    "DUp": "Achieve meticulous detail with measurements precise down to 0.5µm, setting new standards in precision.",
+    "DIt": "Intelligent Automation",
+    "DIp": "Embrace efficiency with advanced robotics capable of unmanned automatic detection, optimizing your workflow.",
+    "DEt": "Effortless Operation",
+    "DEp": "Deliver precision effortlessly with a single button, streamlining the measurement of concentricity for both external and internal tool diameters."
   },
+
 
   "download" : {
     "Dt": "Get Shrink Fit Catalog",
@@ -203,28 +223,39 @@
   },
 
   "about" : {
-    "titleA": "About HIPPSC",
-    "titleS": "Shrink Fit",
+    "title": "About HIPPSC",
 
-    "titleG": "Founders Found",
-    "p1G": "HIPPSC was founded with the name SenHao in 1998 by a young couple with a passion for innovation of manufacturing for the future.",
-    "p2G": "The company started as a small shop in Dongguan, China, with a focus on distributing precision tool holders to local machining workshops.",
+    "subtitle1": "Founders Found",
+    "p11": "HIPPSC was founded with the name SenHao in 1998 by a young couple with a passion for innovation of manufacturing for the future.",
+    "p12": "The company started as a small shop in Dongguan, China, with a focus on distributing precision tool holders to local machining workshops.",
 
-    "titleP": "Powerhouse of Manufacturing",
-    "p1P": "As Dongguan became a powerhouse of manufacturing, SenHao grew with the city, expanding its operations and establishing a global presence.",
-    "p2P": "The founders didn't lose sight of their original vision, and they continued to innovate and develop new products to meet the needs of the ever-changing market.",
+    "subtitle2": "Powerhouse of Manufacturing",
+    "p21": "As Dongguan became a powerhouse of manufacturing, SenHao grew with the city, expanding its operations and establishing a global presence.",
+    "p22": "The founders didn't lose sight of their original vision, and they continued to innovate and develop new products to meet the needs of the ever-changing market.",
 
-    "titleT": "Renamed As HIPPSC",
-    "p1T": "In 2011, SenHao was renamed HIPPSC, which stands for High Precision Products and Services Company. The name change reflects the company's commitment to providing high-quality products and services to its customers.",
-    "p2T": "HIPPSC has since become a leading manufacturer of precision tool holders and shrink fit machines, with a global presence in over 20 countries.",
+    "subtitle3": "Renamed As HIPPSC",
+    "p31": "In 2011, SenHao was renamed HIPPSC, which stands for High Precision Products and Services Company. The name change reflects the company's commitment to providing high-quality products and services to its customers.",
+    "p32": "HIPPSC has since become a leading manufacturer of precision tool holders and shrink fit machines, with a global presence in over 20 countries.",
 
-    "titleM": "Concentration and Innovation",
-    "p1M": "HIPPSC's meticulous market insight and accurate judgment keep it ahead of industry trends.",
-    "p2M": "After realizing the advantages of shrink fit technology in modern machining, HIPPSC began to focus on the development of shrink fit products and machines.",
+    "subtitle4": "Research and Development",
+    "p41": "After years of dedicated research and development, HIPPSC has secured numerous technology patents in the tooling field and has been recognized as a Guangdong provincial high-tech enterprise.",
+    "p42": "This achievement not only highlights our commitment to innovation but also positions us at the forefront of technological advancements in the industry.",
 
-    "titleC": "Chapter Continued",
-    "p1C": "Today, HIPPSC continues to innovate and develop new products to meet the needs of the ever-changing market.",
-    "p2C": "We are committed to providing high-quality products and services to our customers, and we look forward to working with you to create a better future."
+    "subtitle5": "Concentration and Innovation",
+    "p51": "HIPPSC's meticulous market insight and accurate judgment keep it ahead of industry trends.",
+    "p52": "After realizing the advantages of shrink fit technology in modern machining, HIPPSC began to focus on the development of shrink fit products and machines.",
+
+    "subtitle6": "Unveiling the First Generation",
+    "p61": "HIPPSC introduced our first generation of automatic and intelligent liquid-cooling shrink-fit machine.",
+    "p62": "This innovation quickly gained recognition, becoming a standout star product in all exhibitions where it was featured.",
+
+    "subtitle7": "Iteration and Revolution",
+    "p71": "HIPPSC presented a new iteration of the shrink fit machines, featuring a quick-change heating coil. ",
+    "p72": "Alongside this, our SP modular type shrink fit series tools were unveiled, quickly gaining recognition and acclaim in the market.",
+
+    "subtitle8": "Future Development",
+    "p81": "Moving forward, HIPPSC is in the process of developing an automation ecosystem specifically tailored for shrink fit machining",
+    "p82": "We are committed to providing high-quality products and services to our customers, and we look forward to working with you to create a better future."
   },
 
 
@@ -232,8 +263,10 @@
     "C": "Contact Us",
     "A": "Asia & Pacific",
     "N": "North America",
+    "E": "Europe",
     "names": {
       "HQ": "Kevin Ye",
+      "HQ2": "Xiaoqi Peng",
       "DGCA": "Lin Ye",
       "DGDC": "Ms. Li",
       "SH": "Xi Zhang",
@@ -247,10 +280,12 @@
       "ZJJS": "Hefeng Chen",
       "JSGS": "Yuan Zhou",
       "LA": "Kaisen Ye",
-      "HOU": "Jihao Ye"
+      "HOU": "Jihao Ye",
+      "EU": "Frank Wang"
     },
     "cities": {
       "HQ": "DONGGUAN, CHN (*HQ)",
+      "HQ2": "DONGGUAN, CHN (*HQ)",
       "DGCA": "DONGGUAN, CHN (Changan)",
       "DGDC": "DONGGUAN, CHN (Dongchen)",
       "SH": "SHANGHAI, CHN",
@@ -264,7 +299,8 @@
       "ZJJS": "ZHEJIANG, CHN (Jiaxing)",
       "JSGS": "JIANGSU, CHN (Suzhou)",
       "LA": "LOS ANGELES, CA",
-      "HOU": "HOUSTON, TX"
+      "HOU": "HOUSTON, TX",
+      "EU": "EUROPE"
     }
   }
 

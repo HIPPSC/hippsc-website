@@ -12,6 +12,7 @@
 .home-banner{
     width: 100%;
     overflow: hidden; /* Hide any overflow */
+    border-radius: 20px;
 }
 
 .banner-image {
