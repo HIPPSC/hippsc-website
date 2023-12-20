@@ -73,7 +73,7 @@
     "learn": "Learn more about ",
     "liq": "Liquid Cooling",
     "air": "Air Cooling",
-    "m": "Machine",
+    "presetter": "Machine",
     "sfm": "Shrink Fit Machine",
     "laser": "Laser ",
     "tps": "Tool Presetting ",
@@ -266,7 +266,6 @@
     "E": "Europe",
     "names": {
       "HQ": "Kevin Ye",
-      "HQ2": "Xiaoqi Peng",
       "DGCA": "Lin Ye",
       "DGDC": "Ms. Li",
       "SH": "Xi Zhang",
@@ -281,11 +280,11 @@
       "JSGS": "Yuan Zhou",
       "LA": "Kaisen Ye",
       "HOU": "Jihao Ye",
-      "EU": "Frank Wang"
+      "EU": "Frank Wang",
+      "EU2": "Xiaoqi Peng"
     },
     "cities": {
       "HQ": "DONGGUAN, CHN (*HQ)",
-      "HQ2": "DONGGUAN, CHN (*HQ)",
       "DGCA": "DONGGUAN, CHN (Changan)",
       "DGDC": "DONGGUAN, CHN (Dongchen)",
       "SH": "SHANGHAI, CHN",
@@ -300,7 +299,8 @@
       "JSGS": "JIANGSU, CHN (Suzhou)",
       "LA": "LOS ANGELES, CA",
       "HOU": "HOUSTON, TX",
-      "EU": "EUROPE"
+      "EU": "EUROPE",
+      "EU2": "EUROPE"
     }
   }
 

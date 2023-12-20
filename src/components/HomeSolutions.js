@@ -165,7 +165,7 @@ const HomeSolutions = () => {
                             {/* Air Cooling */}
                         </div>
                         <div className="page-title-1-xl">
-                            {t("home.m")}
+                            {t("home.presetter")}
                             {/* Shrink Fit Machine */}
                         </div>
                     </div>
@@ -202,7 +202,7 @@ const HomeSolutions = () => {
                             <span style={{color: 'transparent'}}>{invisibleIndicatorTitle}</span>
                         </div>
                         <div className="page-title-1-xl">
-                            {t("home.m")}
+                            {/* {t("home.m")} */}
                             {/* Shrink Fit Machine */}
                         </div>
                     </div>

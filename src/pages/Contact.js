@@ -37,11 +37,6 @@ const Contact = () => {
             email: "kevin@hippsc.com",
         },
         {
-            cityKey: "HQ2",
-            phone: "(86) 159-899-41765",
-            email: "sales5@hippsc.com",
-        },
-        {
             cityKey: "DGCA",
             phone: "(86) 158-128-59138",
             email: "yelin@hippsc.com"
@@ -188,6 +183,22 @@ const Contact = () => {
                         <div className="contact-locations-list-item-email">
                             <a href="mailto:">
                                 sales1@hippsc.com
+                            </a>
+                        </div>
+                    </div>
+                    <div className="contact-locations-list-item">
+                        <div className="contact-locations-list-item-title page-text-2">
+                            {t("contact.cities.EU2")}
+                        </div>
+                        <div className="contact-locations-list-item-name">
+                            {t("contact.names.EU2")}
+                        </div>
+                        <div className="contact-locations-list-item-phone">
+                            <span>(86) 159-899-41765</span>
+                        </div>
+                        <div className="contact-locations-list-item-email">
+                            <a href="mailto:">
+                                sales5@hippsc.com
                             </a>
                         </div>
                     </div>
