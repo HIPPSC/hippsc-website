@@ -1,0 +1,22 @@
+.product-holders-table {
+    overflow-x: auto; /* Enables horizontal scrolling */
+}
+
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Optional: for styling */
+}
+
+th, td {
+    height: 2rem;
+    padding: 8px; /* Optional: for styling */
+    text-align: left; /* Optional: for styling */
+    border: 1px solid #ccc; /* Optional: for styling */
+}
+
+
+@media screen and (max-width: 758px) {
+    th, td {
+        padding: 4px; /* Smaller padding for small screens */
+    }
+}

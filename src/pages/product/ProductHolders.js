@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useTypingEffect from '../../hooks/useTypingEffect';
 
 // components
@@ -8,11 +9,19 @@ import BrochureDownload from '../../components/BrochureDownload';
 // css
 import '../../css/product/ProductHolders.css';
 
-// assets
-import holder1 from '../../assets/svg/holder1.svg';
-import holder2 from '../../assets/svg/holder2.svg';
-import holder3 from '../../assets/svg/holder3.svg';
-import productHolderBodyPic from '../../assets/product-holder-body-pic.jpg';
+// svg - alloy steel
+import BBT30SR from '../../assets/holders/alloySteel/BBT30-SR.svg';
+import HSK50ASR from '../../assets/holders/alloySteel/HSK50A-SR.svg';
+import SK40SR from '../../assets/holders/alloySteel/SK40-SR.svg';
+
+// svg - stainless steel
+import BBT30MRA from '../../assets/holders/stainlessSteel/BBT30-MRA.svg';
+import BT15MRA from '../../assets/holders/stainlessSteel/BT15-MRA.svg';
+import HSK25EMRA from '../../assets/holders/stainlessSteel/HSK25E-MRA.svg';
+import ISO20MRA from '../../assets/holders/stainlessSteel/ISO20-MRA.svg';
+import SK40MRAMSB from '../../assets/holders/stainlessSteel/SK40-MRAMSB.svg';
+import SP25MCS from '../../assets/holders/stainlessSteel/SP25-MCS.svg';
+import ONEMICRON from '../../assets/holders/stainlessSteel/ONE-MICRON.svg';
 
 //multilangual
 import { useTranslation } from 'react-i18next';
@@ -48,6 +57,9 @@ const ProductHolders = () => {
 
     const title6_text = t("product.HEt");
     const [title6, invisibleTitle6, title6Ref] = useTypingEffect(title6_text);
+
+
+
     
 
     return (
@@ -62,16 +74,108 @@ const ProductHolders = () => {
                     {/* World-Class Tool Holders for the Modern Manufacturing */}
                 </div>
             </div>
-            <div className="product-holders-banner">
-                <div className="product-holders-banner-pic">
-                    <img src={holder1} alt="holder1" />
-                </div>
-                <div className="product-holders-banner-pic">
-                    <img src={holder2} alt="holder1" />
-                </div>
-                <div className="product-holders-banner-pic">
-                    <img src={holder3} alt="holder1" />
-                </div>
+
+            <div className="product-holders-selection-title page-title-1">
+                {t("product.Hmas")} →
+            </div>
+            <div className="product-holders-selection">
+                <Link to='/product/holders/alloy-steel/BBT'
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={BBT30SR} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       BBT
+                    </div>
+                </Link>
+                <Link to='/product/holders/alloy-steel/HSK'
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={HSK50ASR} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       HSK
+                    </div>
+                </Link>
+                <Link to='/product/holders/alloy-steel/SK'
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={SK40SR} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       SK
+                    </div>
+                </Link>
+            </div>
+
+            <div className="product-holders-selection-title page-title-1">
+                {t("product.Hmss")} →
+            </div>
+            <div className="product-holders-selection">
+                <Link to='/product/holders/stainless-steel/BBT'
+                      className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={BBT30MRA} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       BBT
+                    </div>
+                </Link>
+                <Link to='/product/holders/stainless-steel/BT' 
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={BT15MRA} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       BT
+                    </div>
+                </Link>
+                <Link to='/product/holders/stainless-steel/HSK'
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={HSK25EMRA} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       HSK
+                    </div>
+                </Link>
+                <Link to='/product/holders/stainless-steel/SK'
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={SK40MRAMSB} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       SK
+                    </div>
+                </Link>
+                
+                <Link to='/product/holders/stainless-steel/ISO'
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={ISO20MRA} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       ISO
+                    </div>
+                </Link>
+                <Link to='/product/holders/stainless-steel/SP'
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={SP25MCS} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       SP
+                    </div>
+                </Link>
+                <Link to='/product/holders/stainless-steel/Micron'
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={ONEMICRON} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       Micron
+                    </div>
+                </Link>
             </div>
 
             <div className="product-holders-body">
@@ -80,12 +184,12 @@ const ProductHolders = () => {
                     <span style={{color: 'transparent'}}>{invisibleBodyTitle}</span>
                 </div>
                 <div className="product-holders-body-content">
-                    <div className="product-holders-body-left">
+                    {/* <div className="product-holders-body-left">
                         
                         <div className="product-holders-body-pic">
                             <img src={productHolderBodyPic} alt="holder1" />
                         </div>
-                    </div>
+                    </div> */}
                     <div className="product-holders-body-right">
                         <div className="product-holders-body-item">
                             <div className="product-holders-body-item-title page-text-1" ref={title1Ref}>
@@ -94,10 +198,6 @@ const ProductHolders = () => {
                             </div>
                             <div className="product-holders-body-item-content page-text-1">
                                 {t("product.HAp")}
-                                {/* Engineered with a high-temperature resistant surface, 
-                                our tooling combats carbon accumulation, 
-                                ensuring a perennially pristine appearance 
-                                and extending the tool holder's lifespan. */}
                             </div>
                         </div>
                         <div className="product-holders-body-item">
@@ -107,9 +207,6 @@ const ProductHolders = () => {
                             </div>
                             <div className="product-holders-body-item-content page-text-1">
                                 {t("product.HPp")}
-                                {/* Leveraging precision-crafted tool holders, 
-                                we've achieved a reduction in tool wear by over 30%, 
-                                minimizing tool replacements and amplifying operational efficiency. */}
                             </div>
                         </div>
                         <div className="product-holders-body-item">
@@ -119,9 +216,6 @@ const ProductHolders = () => {
                             </div>
                             <div className="product-holders-body-item-content page-text-1">
                                 {t("product.HIp")}
-                                {/* Our innovations are the cornerstone of industries 
-                                demanding precision and reliability, 
-                                including aerospace, defense, and precision mold manufacturing. */}
                             </div>
                         </div>
                         <div className="product-holders-body-item">
@@ -131,9 +225,6 @@ const ProductHolders = () => {
                             </div>
                             <div className="product-holders-body-item-content page-text-1">
                                 {t("product.HOp")}
-                                {/* Featuring the SRS/SRV slim-wall design, 
-                                our tooling is meticulously crafted to avoid interference, 
-                                making it the go-to choice for quintessential 5-axis machining. */}
                             </div>
                         </div>
                         <div className="product-holders-body-item">
@@ -143,8 +234,6 @@ const ProductHolders = () => {
                             </div>
                             <div className="product-holders-body-item-content page-text-1">
                                 {t("product.HUp")}
-                                {/* Guaranteed 100% dust-proof design prevents the ingress of metal shavings and dust, 
-                                ensuring unparalleled tool mounting accuracy. */}
                             </div>
                         </div>
                         <div className="product-holders-body-item">
@@ -154,9 +243,6 @@ const ProductHolders = () => {
                             </div>
                             <div className="product-holders-body-item-content page-text-1">
                                 {t("product.HEp")}
-                                {/* Designed for simplicity and precision, 
-                                our tooling guarantees consistent mounting accuracy 
-                                without the need for specialists or the burdensome task of tool alignment. */}
                             </div>
                         </div>
                     </div>

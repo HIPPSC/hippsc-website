@@ -1,0 +1,96 @@
+.product-holders-details {
+    margin-bottom: 15%;
+}
+
+
+/* header */
+.product-holders-details-header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.product-holders-details-header-pic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    padding-right: 3%;
+    margin-right: 3%;
+    border-right: 1px solid gray;
+}
+
+.product-holders-details-header-pic img {
+    width: 50%; /* This will make the image responsive and cover the div's width */
+    height: auto; /* This maintains the aspect ratio of the image */
+    object-fit: cover; /* This will cover the area of the container without stretching the image */
+}
+
+.product-holders-details-hearder-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.product-holders-details-header-sub-title {
+    margin-bottom: 8%;
+}
+
+.product-holders-details-header-bullet-item {
+    margin-bottom: 2%;
+}
+
+
+/* table */
+.product-holders-details-table {
+    margin-bottom: 1%;
+}
+
+
+/* Note */
+.product-holders-details-note {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1%
+}
+
+
+
+
+/* Media queries */
+@media only screen and (max-width: 750px) {
+    .product-holders-details-header {
+        flex-direction: column;
+    }
+
+    .product-holders-details-header-pic {
+        width: 80%;
+        padding-right: 0;
+        margin-right: 0;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        border-right: none;
+        border-bottom: 1px solid gray;
+    }
+    
+    .product-holders-details-header-title {
+        font-size: 2.5rem;
+    }
+
+    .product-holders-details-header-sub-title {
+        margin-bottom: 1%;
+        font-size: 1.5rem;
+    }
+
+    .product-holders-details-header-pic img {
+        width: 80%;
+    }
+
+    .product-holders-details-hearder-info {
+        width: 100%;
+    }
+
+}

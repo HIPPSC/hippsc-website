@@ -16,11 +16,15 @@ import Contact from './pages/Contact';
 import Service from './pages/services/Service';
 import RequestQuote from './pages/RequestQuote';
 import About from './pages/About';
+
 import ProductHolders from './pages/product/ProductHolders';
 import ProductH6i from './pages/product/ProductH6i';
 import ProductF15i from './pages/product/ProductF15i';
 import ProductToolPresetting from './pages/product/ProductToolPresetting';
 import ProductDialIndicator from './pages/product/ProductDialIndicator';
+
+import ProductHoldersCatalog from './pages/product/ProductHoldersCatalog';
+import ProductHoldersDetails from './pages/product/ProductHoldersDetails';
 
 import ServiceGetStarted from './pages/services/ServiceGetStarted';
 
@@ -44,6 +48,10 @@ function App() {
             <Route path="/product/f15i" element={<ProductF15i />} />
             <Route path="/product/tool_presetting" element={<ProductToolPresetting />} />
             <Route path="/product/dial_indicator" element={<ProductDialIndicator />} />
+
+            <Route path="/product/holders/:material/:holderType" element={<ProductHoldersCatalog />} />
+            <Route path="/product/holders/:material/:holderType/:holderModel" element={<ProductHoldersDetails />} />
+            
 
             <Route path="/service/get_started" element={<ServiceGetStarted />} />
             {/* <Route path="*" element={<NotFound />} /> 404 Page */}
