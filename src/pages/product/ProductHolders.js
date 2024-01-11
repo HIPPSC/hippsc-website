@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import useTypingEffect from '../../hooks/useTypingEffect';
 
@@ -64,6 +65,19 @@ const ProductHolders = () => {
 
     return (
         <div className='product-holders'>
+            {/* metadata */}
+            <Helmet>
+                <title>Shrink Fit Holders</title>
+                <meta 
+                    name="description" 
+                    content="Engineered with a high-temperature resistant surface, 
+                    our tooling combats carbon accumulation, ensuring a perennially pristine 
+                    appearance and extending the tool holder's lifespan.." 
+                />
+                <meta name="keywords" content="shrink fit, tool holders, cnc machining" />
+            </Helmet>
+
+            {/* title */}
             <div className="product-holders-title">
                 <div className="product-holders-title-left page-title-1-xxl" ref={productHoldersTitleref}>
                     <span >{productHoldersTitle}</span>

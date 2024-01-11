@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
+import { Helmet } from 'react-helmet';
 
 // css
 import '../../css/services/Service.css';
@@ -21,6 +22,19 @@ const Service = () => {
 
     return (
         <Container className='service'>
+            {/* metadata */}
+            <Helmet>
+                <title>Services</title>
+                <meta 
+                    name="description" 
+                    content="
+                    We craft industry-leading shrink-fit holders and 
+                    machines that enable machine shops to achieve unparalleled 
+                    accuracy and efficiency — across diverse industrial applications." 
+                />
+                <meta name="keywords" content="shrink-fit, tool holders, cnc machining" />
+            </Helmet>
+
             {/* service header */}
             <div className="service-header">
                 <div className="service-title">

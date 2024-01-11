@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link, useParams } from 'react-router-dom';
 
 // css
@@ -128,6 +129,19 @@ const ProductHoldersCatalog = () => {
   
     return (
       <div className='product-holders-catalog'>
+        {/* metadata */}
+        <Helmet>
+            <title>{"Shrink Fit Holders - " + material.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') + " " + holderType}</title>
+            <meta 
+                name="description" 
+                content="Engineered with a high-temperature resistant surface, 
+                our tooling combats carbon accumulation, ensuring a perennially pristine 
+                appearance and extending the tool holder's lifespan.." 
+            />
+            <meta name="keywords" content="shrink fit holders, tool holders, cnc machining, precision" />
+        </Helmet>
+
+        {/* directory */}
         <div className="product-holders-catalog-dir">
           <Link to="/product/holders"
                 className='product-holders-catalog-dir-link'>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import useTypingEffect from '../hooks/useTypingEffect';
 
 //css & assets
@@ -40,6 +41,19 @@ const About = () => {
     
     return (
         <div>
+            {/* metadata */}
+            <Helmet>
+                <title>About HIPPSC</title>
+                <meta 
+                    name="description" 
+                    content="
+                    We craft industry-leading shrink-fit holders and 
+                    machines that enable machine shops to achieve unparalleled 
+                    accuracy and efficiency — across diverse industrial applications." 
+                />
+                <meta name="keywords" content="shrink-fit, tool holders, cnc machining" />
+            </Helmet>
+
             <body className="about">
 
                 <header className="about-header">

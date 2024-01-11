@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import useTypingEffect from '../../hooks/useTypingEffect';
 
 // components
@@ -28,6 +29,19 @@ const ProductDialIndicator = () => {
 
     return (
         <div className='product-tool-presetting'>
+            {/* metadata */}
+            <Helmet>
+                <title>Dial Indicator</title>
+                <meta 
+                    name="description" 
+                    content="Step into the future of precision with HIPPSC Dial 
+                    Indicator that's not just a measurement device but a smart 
+                    partner in your quest for perfection." 
+                />
+                <meta name="keywords" content="shrink-fit, tool holders, cnc machining" />
+            </Helmet>
+
+            {/* title */}
             <div className="product-tool-presetting-title">
                 <div className="product-tool-presetting-title-left" >
                     <div className="product-tool-presetting-title-left-top page-title-1-xxl">

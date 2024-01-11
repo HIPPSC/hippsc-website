@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import useTypingEffect from '../hooks/useTypingEffect';
 
 // components
@@ -87,6 +88,15 @@ const Contact = () => {
     
     return (
         <div className='contact'>
+
+            {/* metadata */}
+            <Helmet>
+                <title>Contact</title>
+                <meta name="description" content="Contact of HIPPSC distribution network" />
+                <meta name="keywords" content="shrink-fit, sales, distribution" />
+            </Helmet>
+
+            {/* header */}
             <div className="contact-header">
                 <div className="contact-title page-title-1-xxl" ref={contactTitleref}>
                     <span >{contacTitle}</span>

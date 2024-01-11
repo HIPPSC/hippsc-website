@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link, useParams } from 'react-router-dom';
 
 // table component
@@ -21,6 +22,19 @@ const ProductHoldersDetails = () => {
 
     return (
         <div className='product-holders-details'>
+            {/* metadata */}
+            <Helmet>
+                <title>{holderModel}</title>
+                <meta 
+                    name="description" 
+                    content="Engineered with a high-temperature resistant surface, 
+                    our tooling combats carbon accumulation, ensuring a perennially pristine 
+                    appearance and extending the tool holder's lifespan." 
+                />
+                <meta name="keywords" content="shrink fit, tool holders, cnc machining" />
+            </Helmet>
+
+
             {/* dir */}
             <div className="product-holders-catalog-dir">
                 <Link to="/product/holders"

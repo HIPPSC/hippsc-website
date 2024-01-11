@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import useTypingEffect from '../hooks/useTypingEffect';
 
 
@@ -22,6 +23,20 @@ const RequestQuote = () => {
     
     return (
         <div className='request-quote'>
+            {/* metadata */}
+            <Helmet>
+                <title>Request a Quote</title>
+                <meta 
+                    name="description" 
+                    content="
+                    We craft industry-leading shrink-fit holders and 
+                    machines that enable machine shops to achieve unparalleled 
+                    accuracy and efficiency — across diverse industrial applications." 
+                />
+                <meta name="keywords" content="shrink-fit, tool holders, cnc machining" />
+            </Helmet>
+
+            {/* Quote Form */}
             <div className="request-quote-title page-title-1-xxl" ref={requestQuoteTitleref}>
                 <span >{requestQuoteTitle}</span>
                 <span style={{color: 'transparent'}}>{invisibleRequestQuoteTitle}</span>

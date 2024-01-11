@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import useTypingEffect from '../../hooks/useTypingEffect';
 
 // components
@@ -28,6 +29,18 @@ const ProductToolPresetting = () => {
 
     return (
         <div className='product-tool-presetting'>
+            {/* metadata */}
+            <Helmet>
+                <title>Laser Tool Presetting</title>
+                <meta 
+                    name="description" 
+                    content="Achieve unparalleled precision with measurements 
+                    accurate to the micron, ensuring your projects meet the highest standards.." 
+                />
+                <meta name="keywords" content="laser tool presetting, presetter, tooling, precision, cnc machining" />
+            </Helmet>
+
+            {/* title */}
             <div className="product-tool-presetting-title">
                 <div className="product-tool-presetting-title-left" >
                     <div className="product-tool-presetting-title-left-top page-title-1-xxl">

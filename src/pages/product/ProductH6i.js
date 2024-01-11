@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import useTypingEffect from '../../hooks/useTypingEffect';
 
 
@@ -30,6 +31,19 @@ const ProductH6i = () => {
 
     return (
         <div className='product-h6i'>
+            {/* metadata */}
+            <Helmet>
+                <title>H6i Shrink Fit Machine</title>
+                <meta 
+                    name="description" 
+                    content="By leveraging advanced scanning recognition, 
+                    the H6i ensures impeccable accuracy, eliminating risks 
+                    associated with manual overheating." 
+                />
+                <meta name="keywords" content="shrink fit machine, tool holders, cnc machining" />
+            </Helmet>
+
+            {/* title */}
             <div className="product-h6i-title">
                 <div className="product-h6i-title-left" >
                     <div className="product-h6i-title-left-top page-title-1-xxl">
