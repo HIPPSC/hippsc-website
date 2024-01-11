@@ -62,7 +62,7 @@ const ProductHoldersDetails = () => {
                         ↳ For solid carbide tools
                     </div>
                     <div className="product-holders-details-header-bullet-item page-text-1">
-                        ↳ Handle 3000+ heating cycles
+                        ↳ Over 3000+ heating cycles
                     </div>
                 </div>
             </div>

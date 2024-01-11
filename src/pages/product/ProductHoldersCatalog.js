@@ -35,7 +35,10 @@ import HSK63FMRAMSB from '../../assets/holders/stainlessSteel/HSK63F-MRAMSB.svg'
 import ISO20MRA from '../../assets/holders/stainlessSteel/ISO20-MRA.svg';
 import ISO25MRA from '../../assets/holders/stainlessSteel/ISO25-MRA.svg';
 import SK40MRAMSB from '../../assets/holders/stainlessSteel/SK40-MRAMSB.svg';
-
+import SP25MCS from '../../assets/holders/stainlessSteel/SP25-MCS.svg';
+import SP25MCR from '../../assets/holders/stainlessSteel/SP25-MCR.svg';
+import ONEMICRON from '../../assets/holders/stainlessSteel/ONE-MICRON.svg';
+import SUBMICRON from '../../assets/holders/stainlessSteel/SUB-MICRON.svg';
 
 
 const holdersCatalog = {
@@ -85,6 +88,14 @@ const holdersCatalog = {
             {img: ISO20MRA, name: 'ISO20-MRA'},
             {img: ISO25MRA, name: 'ISO25-MRA'}
         ],
+        SP: [
+            {img: SP25MCR, name: 'SP25-MCR'},
+            {img: SP25MCS, name: 'SP25-MCS'}
+        ],
+        Micron : [
+            {img: ONEMICRON, name: 'One-Micron'},
+            {img: SUBMICRON, name: 'Sub-Micron'}
+        ]
     }
 }
 

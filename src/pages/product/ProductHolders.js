@@ -20,6 +20,8 @@ import BT15MRA from '../../assets/holders/stainlessSteel/BT15-MRA.svg';
 import HSK25EMRA from '../../assets/holders/stainlessSteel/HSK25E-MRA.svg';
 import ISO20MRA from '../../assets/holders/stainlessSteel/ISO20-MRA.svg';
 import SK40MRAMSB from '../../assets/holders/stainlessSteel/SK40-MRAMSB.svg';
+import SP25MCS from '../../assets/holders/stainlessSteel/SP25-MCS.svg';
+import ONEMICRON from '../../assets/holders/stainlessSteel/ONE-MICRON.svg';
 
 //multilangual
 import { useTranslation } from 'react-i18next';
@@ -156,14 +158,24 @@ const ProductHolders = () => {
                        ISO
                     </div>
                 </Link>
-                {/* <div className="product-holders-selection-item">
+                <Link to='/product/holders/stainless-steel/SP'
+                    className="product-holders-selection-item">
                     <div className="product-holders-selection-pic">
-                        <img src={SK40SR} alt="holder1" />
+                        <img src={SP25MCS} alt="holder1" />
                     </div>
                     <div className="product-holders-selection-item-title page-title-2">
-                       HSK-63
+                       SP
                     </div>
-                </div> */}
+                </Link>
+                <Link to='/product/holders/stainless-steel/Micron'
+                    className="product-holders-selection-item">
+                    <div className="product-holders-selection-pic">
+                        <img src={ONEMICRON} alt="holder1" />
+                    </div>
+                    <div className="product-holders-selection-item-title page-title-2">
+                       Micron
+                    </div>
+                </Link>
             </div>
 
             <div className="product-holders-body">
@@ -186,10 +198,6 @@ const ProductHolders = () => {
                             </div>
                             <div className="product-holders-body-item-content page-text-1">
                                 {t("product.HAp")}
-                                {/* Engineered with a high-temperature resistant surface, 
-                                our tooling combats carbon accumulation, 
-                                ensuring a perennially pristine appearance 
-                                and extending the tool holder's lifespan. */}
                             </div>
                         </div>
                         <div className="product-holders-body-item">
@@ -199,9 +207,6 @@ const ProductHolders = () => {
                             </div>
                             <div className="product-holders-body-item-content page-text-1">
                                 {t("product.HPp")}
-                                {/* Leveraging precision-crafted tool holders, 
-                                we've achieved a reduction in tool wear by over 30%, 
-                                minimizing tool replacements and amplifying operational efficiency. */}
                             </div>
                         </div>
                         <div className="product-holders-body-item">
@@ -211,9 +216,6 @@ const ProductHolders = () => {
                             </div>
                             <div className="product-holders-body-item-content page-text-1">
                                 {t("product.HIp")}
-                                {/* Our innovations are the cornerstone of industries 
-                                demanding precision and reliability, 
-                                including aerospace, defense, and precision mold manufacturing. */}
                             </div>
                         </div>
                         <div className="product-holders-body-item">
@@ -223,9 +225,6 @@ const ProductHolders = () => {
                             </div>
                             <div className="product-holders-body-item-content page-text-1">
                                 {t("product.HOp")}
-                                {/* Featuring the SRS/SRV slim-wall design, 
-                                our tooling is meticulously crafted to avoid interference, 
-                                making it the go-to choice for quintessential 5-axis machining. */}
                             </div>
                         </div>
                         <div className="product-holders-body-item">
@@ -235,8 +234,6 @@ const ProductHolders = () => {
                             </div>
                             <div className="product-holders-body-item-content page-text-1">
                                 {t("product.HUp")}
-                                {/* Guaranteed 100% dust-proof design prevents the ingress of metal shavings and dust, 
-                                ensuring unparalleled tool mounting accuracy. */}
                             </div>
                         </div>
                         <div className="product-holders-body-item">
@@ -246,9 +243,6 @@ const ProductHolders = () => {
                             </div>
                             <div className="product-holders-body-item-content page-text-1">
                                 {t("product.HEp")}
-                                {/* Designed for simplicity and precision, 
-                                our tooling guarantees consistent mounting accuracy 
-                                without the need for specialists or the burdensome task of tool alignment. */}
                             </div>
                         </div>
                     </div>
