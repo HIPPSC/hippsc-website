@@ -35,7 +35,7 @@ const HomeIntro = () => {
                 </div>
             </div>
             <div className="home-banner">
-                <img src='https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/home-page-banner.png'
+                <img src='https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/home-page-banner.webp'
                      className="banner-image"
                      alt="banner" />
             </div>
