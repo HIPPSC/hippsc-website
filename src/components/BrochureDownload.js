@@ -27,7 +27,8 @@ const BrochureDownload = () => {
                 <span>{footerTitle}</span>
                 <span style={{color: 'transparent'}}>{invisibleFooterTitle}</span>
             </div>
-            <a href="https://drive.google.com/file/d/1qBBn53mhpUQd47l99NnAry4R-Ucjoe9I/view?usp=share_link" download target='blank'>
+            <a href="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/brochures/20231207+HIPPSC+Shrink+Fit+Brochure.pdf" 
+               download target='blank'>
                 <div className="product-holders-footer-btn rectangle-btn">
                     {t("download.D")}
                     {/* Download */}
