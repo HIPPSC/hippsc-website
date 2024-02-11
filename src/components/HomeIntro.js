@@ -34,11 +34,13 @@ const HomeIntro = () => {
                     <span style={{color: 'transparent'}}>{invisibleHomeTitle}</span>
                 </div>
             </div>
-            <div className="home-banner">
+            <Link to='https://hippsc.store/password' 
+                  target='_blank'
+                  className="home-banner">
                 <img src='https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/home-page-banner.webp'
                      className="banner-image"
                      alt="banner" />
-            </div>
+            </Link>
             <div className="home-description">
                 <div className="home-description-1" ref={introTitleref}>
                     <div className="page-title-2">

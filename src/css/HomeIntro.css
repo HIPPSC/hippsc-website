@@ -13,6 +13,12 @@
     width: 100%;
     overflow: hidden; /* Hide any overflow */
     border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.home-banner:hover {
+    scale: 1.01;
 }
 
 .banner-image {
