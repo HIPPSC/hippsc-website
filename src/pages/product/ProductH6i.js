@@ -6,6 +6,7 @@ import useTypingEffect from '../../hooks/useTypingEffect';
 // components
 import RequestContact from '../../components/RequestContact';
 import BrochureDownload from '../../components/BrochureDownload';
+import VideoPlayer from '../../components/VideoPlayer';
 
 // css
 import '../../css/product/ProductH6i.css';
@@ -207,6 +208,9 @@ const ProductH6i = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Youtube Video */}
+            <VideoPlayer videoId="MNRtJfwhzu4" />
 
             {/* brochure download */}
             <BrochureDownload />

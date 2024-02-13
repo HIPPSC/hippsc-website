@@ -6,6 +6,7 @@ import useTypingEffect from '../../hooks/useTypingEffect';
 // components
 import RequestContact from '../../components/RequestContact';
 import BrochureDownload from '../../components/BrochureDownload';
+import VideoPlayer from '../../components/VideoPlayer';
 
 // css
 import '../../css/product/ProductHolders.css';
@@ -262,6 +263,9 @@ const ProductHolders = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Youtube Video */}
+            <VideoPlayer videoId="tR2mLYMYDok" />
 
             <BrochureDownload />
             <RequestContact />

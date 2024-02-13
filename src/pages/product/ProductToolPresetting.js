@@ -4,6 +4,7 @@ import useTypingEffect from '../../hooks/useTypingEffect';
 
 // components
 import RequestContact from '../../components/RequestContact';
+import VideoPlayer from '../../components/VideoPlayer';
 
 // css
 import '../../css/product/ProductToolPresetting.css';
@@ -98,6 +99,9 @@ const ProductToolPresetting = () => {
 
                 </div>
             </div>
+            
+            {/* Youtube Video */}
+            <VideoPlayer videoId="bnAidJLk6pU" />
 
             <RequestContact />
         </div>

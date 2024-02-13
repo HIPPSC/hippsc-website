@@ -1,0 +1,18 @@
+.video-player {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    /* Set padding-bottom to 56.25% for 16:9 aspect ratio */
+    padding-bottom: 56.25%;
+}
+
+.video-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
