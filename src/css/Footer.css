@@ -16,7 +16,12 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     margin-bottom: 2rem;
+}
+
+.smaller-icon {
+    font-size: 1.7rem !important;
 }
 
 .footer-info-social-media-item {

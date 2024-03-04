@@ -6,6 +6,9 @@ import '../css/Footer.css';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { AiOutlineYoutube } from 'react-icons/ai';
 import { AiOutlineLinkedin } from 'react-icons/ai';
+import { FaFacebookSquare } from "react-icons/fa";
+import { RiTwitterXLine } from "react-icons/ri";
+
 
 //multilangual
 import { useTranslation } from 'react-i18next';
@@ -35,7 +38,25 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className="footer-info-social-media-item">
-                        <AiOutlineInstagram />
+                        <a  href="https://www.instagram.com/hippsc_official/" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            <AiOutlineInstagram />
+                        </a>
+                    </div>
+                    <div className="footer-info-social-media-item smaller-icon">
+                        <a  href="https://www.facebook.com/hippscofficial" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            <FaFacebookSquare />
+                        </a>
+                    </div>
+                    <div className="footer-info-social-media-item smaller-icon">
+                        <a  href="https://twitter.com/HIPPSCUSA" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            <RiTwitterXLine />
+                        </a>
                     </div>
                 </div>
                 <div className="footer-info-license">
