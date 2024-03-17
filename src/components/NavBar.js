@@ -161,6 +161,12 @@ const NavBar = () => {
                           className="nav-bar-item nav-bar-left-item page-text-2">
                         {t("navbar.a")}
                     </Link>
+
+                    {/* BLOG */}
+                    <Link to="/blog" 
+                          className="nav-bar-item nav-bar-left-item page-text-2">
+                        {t("navbar.b")}
+                    </Link>
                     
                 </div>
                 
