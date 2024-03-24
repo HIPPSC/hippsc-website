@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+
 import AWS from 'aws-sdk';
 
 // css
@@ -24,7 +26,7 @@ const BlogPost = () => {
         });
     
         fetchBlogPost(blogId);
-    }, [blogId]);
+    });
 
     // Function to fetch the blog content from AWS DynamoDB
     const fetchBlogPost = async () => {
@@ -59,6 +61,19 @@ const BlogPost = () => {
 
     return (
         <div className='blog-post'>
+            {/* metadata */}
+            <Helmet>
+                <title>{blog.blogTitle} | HIPPSC {blog.blogType}</title>
+                <meta 
+                    name="description" 
+                    content="Welcome to HIPPSC's blog page, your gateway to 
+                    the world of precision engineering, cutting-edge technology, and manufacturing 
+                    excellence. Dive into a treasure trove of industry insights, expert advice,
+                    and practical knowledge tailored for professionals in the machining and manufacturing sectors." 
+                />
+                <meta name="keywords" content="machinery, shrink fit, tool holders, cnc machining, latest news, blog" />
+            </Helmet>
+
             <div className="blog-post-body">
                 {/* back button */}
                 <Link to='/blog' className="blog-post-back">
