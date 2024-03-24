@@ -1,0 +1,133 @@
+textarea:focus {
+    border: 2px solid #3e75e3; /* Replace with your desired color */
+}
+
+.blog-admin {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-admin-title {
+    margin-bottom: 2rem;
+}
+
+.blog-admin-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.blog-admin-form-input, 
+.blog-admin-form-section-title {
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--primary-text-color);
+}
+
+.blog-admin-form-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.blog-admin-form-section-text {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* image upload */
+.blog-admin-form-label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.blog-admin-form-image {
+    width: 100%;
+}
+
+
+/* button */
+.blog-admin-delete-section {
+    width: 10rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-text-color);
+    border: 1px solid var(--primary-text-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.blog-admin-delete-section:hover {
+    background: var(--secondary-text-color);
+    color: white;
+}
+
+.blog-admin-add-section {
+    width: 50%;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-text-color);
+    border: 1px solid var(--primary-text-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.blog-admin-add-section:hover {
+    background: var(--secondary-text-color);
+    color: white;
+}
+
+.blog-admin-submit {
+    width: 50%;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: var(--primary-text-color);
+    border: 1px solid var(--primary-text-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.blog-admin-submit:hover {
+    background: var(--hippsc-green);
+    color: white;
+}
+
+
+/* warning message */
+.blog-admin-warning {
+    width: 50%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(120, 0, 0);
+    background: var(--hippsc-red);
+    border: 1px solid var(--hippsc-red);
+    border-radius: 10px;
+    margin-top: 2rem;
+}

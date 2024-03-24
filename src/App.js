@@ -27,6 +27,9 @@ import ProductHoldersCatalog from './pages/product/ProductHoldersCatalog';
 import ProductHoldersDetails from './pages/product/ProductHoldersDetails';
 
 import ServiceGetStarted from './pages/services/ServiceGetStarted';
+import Blog from './pages/Blog/Blog';
+import BlogPost from './pages/Blog/BlogPost';
+import BlogAdmin from './pages/Blog/BlogAdmin';
 
 
 function App() {
@@ -54,6 +57,9 @@ function App() {
             
 
             <Route path="/service/get_started" element={<ServiceGetStarted />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:blogId" element={<BlogPost />} />
+            <Route path="/blog/admin" element={<BlogAdmin />} />
             {/* <Route path="*" element={<NotFound />} /> 404 Page */}
           </Routes>
         </div>
