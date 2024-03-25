@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
@@ -17,6 +17,33 @@ const BlogPost = () => {
     const { blogId } = useParams(); // Get the blogId from the URL parameter
     const [blog, setBlog] = useState('');
 
+    // Function to fetch the blog content from AWS DynamoDB
+    const fetchBlogPost = useCallback(async () => {
+        try {
+            const dynamodb = new AWS.DynamoDB.DocumentClient();
+            const params = {
+                TableName: "hippsc-blog",
+                Key: { blogID: blogId }
+            };
+    
+            const result = await dynamodb.get(params).promise();
+    
+            if (result.Item) {
+                setBlog(result.Item);
+            } else {
+                console.error('Blog post not found');
+            }
+    
+            if (blog.blogImageUrl === undefined) {
+                console.log('blogImageUrl is undefined');
+                return;
+            }
+        } catch (error) {
+            console.error('Error fetching blog posts:', error);
+            console.error('Error stack trace:', error.stack);
+        }
+    }, [blogId, blog.blogImageUrl]); 
+
     useEffect(() => {
         AWS.config.update({
             apiVersion: 'latest',
@@ -26,34 +53,9 @@ const BlogPost = () => {
         });
     
         fetchBlogPost(blogId);
-    });
+    }, [blogId, fetchBlogPost]);
 
-    // Function to fetch the blog content from AWS DynamoDB
-    const fetchBlogPost = async () => {
-        try {
-            const dynamodb = new AWS.DynamoDB.DocumentClient();
-            const params = {
-                TableName: "hippsc-blog",
-                Key: { blogID: blogId }
-              };
-        
-            const result = await dynamodb.get(params).promise();
-        
-            if (result.Item) {
-                setBlog(result.Item);
-            } else {
-                console.error('Blog post not found');
-            }
-
-            if (blog.blogImageUrl === undefined) {
-                console.log('blogImageUrl is undefined');   
-                return
-            }
-        } catch (error) {
-            console.error('Error fetching blog posts:', error);
-            console.error('Error stack trace:', error.stack);
-        }
-    };
+    
 
     if (!blog) {
         return <div>Loading...</div>;
