@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 // css
 import '../../css/services/Service.css';
@@ -24,15 +24,13 @@ const Service = () => {
         <Container className='service'>
             {/* metadata */}
             <Helmet>
-                <title>Services</title>
+                <title>Service - HIPPSC</title>
                 <meta 
                     name="description" 
-                    content="
-                    We craft industry-leading shrink-fit holders and 
-                    machines that enable machine shops to achieve unparalleled 
-                    accuracy and efficiency — across diverse industrial applications." 
+                    content="HIPPSC 24/7 at your service." 
                 />
                 <meta name="keywords" content="shrink-fit, tool holders, cnc machining" />
+                <link rel="canonical" href="https://www.hippsc.com/service" />
             </Helmet>
 
             {/* service header */}

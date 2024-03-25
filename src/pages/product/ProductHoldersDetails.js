@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 
 // table component
@@ -24,7 +24,7 @@ const ProductHoldersDetails = () => {
         <div className='product-holders-details'>
             {/* metadata */}
             <Helmet>
-                <title>{holderModel}</title>
+                <title>{"HIPPSC Shrink Fit - " + holderModel}</title>
                 <meta 
                     name="description" 
                     content="Engineered with a high-temperature resistant surface, 
@@ -32,6 +32,7 @@ const ProductHoldersDetails = () => {
                     appearance and extending the tool holder's lifespan." 
                 />
                 <meta name="keywords" content="shrink fit, tool holders, cnc machining" />
+                <link rel="canonical" href={`https://www.hippsc.com/holders/${material}/${holderType}/${holderModel}`} />
             </Helmet>
 
 

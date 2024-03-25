@@ -1,5 +1,6 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
+
 import { Link } from 'react-router-dom';
 import useTypingEffect from '../../hooks/useTypingEffect';
 
@@ -68,14 +69,14 @@ const ProductHolders = () => {
         <div className='product-holders'>
             {/* metadata */}
             <Helmet>
-                <title>Shrink Fit Holders</title>
+                <title>Shrink Fit Tool Holders - HIPPSC</title>
                 <meta 
                     name="description" 
                     content="Engineered with a high-temperature resistant surface, 
-                    our tooling combats carbon accumulation, ensuring a perennially pristine 
-                    appearance and extending the tool holder's lifespan.." 
+                    our tooling combats carbon accumulation" 
                 />
                 <meta name="keywords" content="shrink fit, tool holders, cnc machining" />
+                <link rel="canonical" href="https://www.hippsc.com/holders" />
             </Helmet>
 
             {/* title */}

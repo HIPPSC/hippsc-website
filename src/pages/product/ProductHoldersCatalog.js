@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 
 // css
@@ -131,14 +131,13 @@ const ProductHoldersCatalog = () => {
       <div className='product-holders-catalog'>
         {/* metadata */}
         <Helmet>
-            <title>{"Shrink Fit Holders - " + material.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') + " " + holderType}</title>
+            <title>{"HIPPSC Shrink Fit Holders - " + material.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') + " " + holderType}</title>
             <meta 
                 name="description" 
-                content="Engineered with a high-temperature resistant surface, 
-                our tooling combats carbon accumulation, ensuring a perennially pristine 
-                appearance and extending the tool holder's lifespan.." 
+                content="Engineered with a high-temperature resistant surface, our tooling combats carbon accumulation." 
             />
             <meta name="keywords" content="shrink fit holders, tool holders, cnc machining, precision" />
+            <link rel="canonical" href={`https://www.hippsc.com/holders/${material}/${holderType}`} />
         </Helmet>
 
         {/* directory */}

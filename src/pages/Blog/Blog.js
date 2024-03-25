@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 import AWS from 'aws-sdk';
 
@@ -39,15 +39,15 @@ const Blog = () => {
         <div className="blog">
             {/* metadata */}
             <Helmet>
-                <title>Blog | HIPPSC Shrink Fit</title>
+                <title>Blog - HIPPSC</title>
                 <meta 
                     name="description" 
                     content="Welcome to HIPPSC's blog page, your gateway to 
                     the world of precision engineering, cutting-edge technology, and manufacturing 
-                    excellence. Dive into a treasure trove of industry insights, expert advice,
-                    and practical knowledge tailored for professionals in the machining and manufacturing sectors." 
+                    excellence." 
                 />
                 <meta name="keywords" content="machinery, shrink fit, tool holders, cnc machining, latest news, blog" />
+                <link rel="canonical" href="https://www.hippsc.com/blog" />
             </Helmet>
 
 

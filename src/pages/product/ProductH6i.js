@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import useTypingEffect from '../../hooks/useTypingEffect';
 
 
@@ -34,14 +34,15 @@ const ProductH6i = () => {
         <div className='product-h6i'>
             {/* metadata */}
             <Helmet>
-                <title>H6i Shrink Fit Machine</title>
+                <title>H6i Shrink Fit Machine - HIPPSC</title>
                 <meta 
                     name="description" 
-                    content="By leveraging advanced scanning recognition, 
-                    the H6i ensures impeccable accuracy, eliminating risks 
+                    content="By leveraging advanced scanning recognition, the H6i ensures impeccable accuracy, eliminating risks 
                     associated with manual overheating." 
                 />
                 <meta name="keywords" content="shrink fit machine, tool holders, cnc machining" />
+                <link rel="canonical" href="https://www.hippsc.com/h6i" />
+
             </Helmet>
 
             {/* title */}

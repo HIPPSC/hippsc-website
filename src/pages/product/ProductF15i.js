@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import useTypingEffect from '../../hooks/useTypingEffect';
 
 // components
@@ -36,12 +36,12 @@ const ProductF15i = () => {
                 <title>F15i Shrink Fit Machine</title>
                 <meta 
                     name="description" 
-                    content="Designed for both alloy steel and stainless steel holders, 
-                    F15i employs a quick heating principle utilizing an induction coil that generates 
+                    content="F15i employs a quick heating mechanism utilizing an induction coil that generates 
                     high-frequency magnetic fields, ensuring rapid heating and tool changing.
                     " 
                 />
                 <meta name="keywords" content="shrink fit machine, tool holders, cnc machining" />
+                <link rel="canonical" href="https://www.hippsc.com/f15i" />
             </Helmet>
 
             {/* title */}
