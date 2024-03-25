@@ -13,6 +13,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.hippsc.com/blog</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.hippsc.com/request_quote</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>

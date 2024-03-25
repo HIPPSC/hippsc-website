@@ -1,5 +1,7 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
+
+// typing effect
 import useTypingEffect from '../hooks/useTypingEffect';
 
 //css & assets
@@ -46,19 +48,17 @@ const About = () => {
                 <title>About HIPPSC</title>
                 <meta 
                     name="description" 
-                    content="
-                    We craft industry-leading shrink-fit holders and 
-                    machines that enable machine shops to achieve unparalleled 
-                    accuracy and efficiency — across diverse industrial applications." 
+                    content="HIPPSC is more than just a tooling supplier. We are a global leader in precision engineering," 
                 />
-                <meta name="keywords" content="shrink-fit, tool holders, cnc machining" />
+                <meta name="keywords" content="machinery, CNC, machining, machinist, shrink fit, tool holders" />
+                <link rel='canonical' href='https://www.hippsc.com/about' />
             </Helmet>
 
             <body className="about">
 
                 <header className="about-header">
                     <div className="about-title page-title-1-xxl" ref={mainTitleRef}>
-                        <span >{mainTitle}</span>
+                        <span> {mainTitle} </span>
                         <span style={{color: 'transparent'}}>{invisibleMainTitle}</span>
                     </div>
                     <div className="about-banner banner-image">

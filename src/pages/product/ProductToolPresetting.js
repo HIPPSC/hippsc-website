@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import useTypingEffect from '../../hooks/useTypingEffect';
 
 // components
@@ -39,6 +39,7 @@ const ProductToolPresetting = () => {
                     accurate to the micron, ensuring your projects meet the highest standards.." 
                 />
                 <meta name="keywords" content="laser tool presetting, presetter, tooling, precision, cnc machining" />
+                <link rel="canonical" href="https://www.hippsc.com/tool_presetting" />
             </Helmet>
 
             {/* title */}

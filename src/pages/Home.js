@@ -1,5 +1,6 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
+
 
 // components
 import HomeIntro from '../components/HomeIntro';
@@ -16,12 +17,29 @@ const Home = () => {
                 <title>HIPPSC - Your Shrink Fit Tooling Expert</title>
                 <meta 
                     name="description" 
-                    content="
-                    We craft industry-leading shrink-fit holders and 
-                    machines that enable machine shops to achieve unparalleled 
-                    accuracy and efficiency — across diverse industrial applications." 
+                    content="We craft best value shrink fit machine tools and
+                    devices that enable machine shops to achieve unparalleled 
+                    accuracy and efficiency." 
                 />
-                <meta name="keywords" content="shrink-fit, tool holders, cnc machining" />
+                <meta name="keywords" content="machinery, CNC, machining, machinist, shrink fit, tool holders" />
+                <link rel="canonical" href="https://www.hippsc.com" />
+                
+                {/* Facebook tags */}
+                <meta property="og:type" content='article' />
+                <meta property="og:title" content='HIPPSC - Your Shrink Fit Tooling Expert' />
+                <meta property="og:description" content='We craft best value shrink fit machine tools and
+                    devices that enable machine shops to achieve unparalleled 
+                    accuracy and efficiency.' />
+                <meta property="og:url" content='https://www.hippsc.com' />
+                <meta property="og:image" content='https://www.hippsc.com/favicon.ico' />
+                
+                {/* Twitter tags */}
+                <meta name="twitter:card" content='article' />
+                <meta name="twitter:title" content='HIPPSC - Your Shrink Fit Tooling Expert' />
+                <meta name="twitter:description" content='We craft best value shrink fit machine tools and
+                    devices that enable machine shops to achieve unparalleled 
+                    accuracy and efficiency.' />
+
             </Helmet>
 
             {/* components */}

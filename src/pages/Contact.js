@@ -1,5 +1,7 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
+
+// typing effect
 import useTypingEffect from '../hooks/useTypingEffect';
 
 // components
@@ -91,9 +93,10 @@ const Contact = () => {
 
             {/* metadata */}
             <Helmet>
-                <title>Contact</title>
-                <meta name="description" content="Contact of HIPPSC distribution network" />
+                <title>Contact - HIPPSC</title>
+                <meta name="description" content="Discover HIPPSC distribution network" />
                 <meta name="keywords" content="shrink-fit, sales, distribution" />
+                <link rel='canonical' href='https://www.hippsc.com/contact' />
             </Helmet>
 
             {/* header */}

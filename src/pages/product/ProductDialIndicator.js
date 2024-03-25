@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import useTypingEffect from '../../hooks/useTypingEffect';
 
 // components
@@ -38,7 +38,8 @@ const ProductDialIndicator = () => {
                     Indicator that's not just a measurement device but a smart 
                     partner in your quest for perfection." 
                 />
-                <meta name="keywords" content="shrink-fit, tool holders, cnc machining" />
+                <meta name="keywords" content="shrink fit, tool holders, cnc machining" />
+                <link rel="canonical" href="https://www.hippsc.com/dial_indicator" />
             </Helmet>
 
             {/* title */}
