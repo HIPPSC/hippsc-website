@@ -14,6 +14,7 @@ const Blog = () => {
         fetchBlogPosts();
     }, []);
 
+    // fetch blog posts
     const fetchBlogPosts = async () => {
         try {
             AWS.config.update({
@@ -27,12 +28,27 @@ const Blog = () => {
                 TableName: "hippsc-blog",
             };
 
+            // Fetch all blog posts
             const result = await dynamodb.scan(params).promise();
-            setBlogPosts(result.Items);
+
+            // Sort the blog posts based on blogDatetime
+            const sortedPosts = result.Items.sort((a, b) => {
+                return new Date(b.blogDatetime) - new Date(a.blogDatetime);
+            });
+            
+            setBlogPosts(sortedPosts);
         } catch (error) {
             console.error('Error fetching blog posts:', error);
             console.error('Error stack trace:', error.stack);
         }
+    };
+
+    // trim subtitle
+    const trimSubtitle = (subtitle) => {
+        if (subtitle.length > 90) {
+          return `${subtitle.slice(0, 90)} ...`;
+        }
+        return subtitle;
     };
 
     return (
@@ -66,7 +82,7 @@ const Blog = () => {
                             {post.blogTitle}
                         </div>
                         <div className='blog-post-item-content'>
-                            {post.blogSubtitle}
+                            {trimSubtitle(post.blogSubtitle)}
                         </div>
                         <div className="blog-post-item-footer">
                             <div className="blog-post-item-type">

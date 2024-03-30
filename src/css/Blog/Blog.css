@@ -25,11 +25,11 @@
     margin-bottom: 2rem;
     width: 30%;
     gap: 0.5rem;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .blog-post-item:hover {
-    transform: translateY(-0.1rem);
+    transform: scale(1.02);
 }
 
 .blog-post-item-thumbnail {
