@@ -88,9 +88,11 @@ const NavBar = () => {
                 
                 {/* RIGHT PART */}
                 <div className="nav-bar-right">
-                    {/* CONTACT */}
-                    <Link to="/contact" className={`nav-bar-contact-btn rectangle-btn ${isNavOpen ? 'active' : ''}`} onClick={() => closeNavPage()}>
-                        {t("navbar.c")}
+                    {/* ONLINE STORE */}
+                    <Link to="https://hippsc.store/" 
+                          target="_blank"
+                          className={`nav-bar-contact-btn rectangle-btn ${isNavOpen ? 'active' : ''}`} onClick={() => closeNavPage()}>
+                        {t("navbar.store")}
                         <BsArrowRight className='nav-bar-contact-btn-icon rectangle-btn-icon' />
                     </Link>
 
@@ -154,6 +156,12 @@ const NavBar = () => {
                     <Link to="/service"
                         className="nav-bar-item nav-bar-left-item page-text-2">
                         {t("navbar.s")}
+                    </Link>
+
+                    {/* CONTACT */}
+                    <Link to="/contact" 
+                          className="nav-bar-item nav-bar-left-item page-text-2">
+                        {t("navbar.c")}
                     </Link>
 
                     {/* ABOUT */}

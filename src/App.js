@@ -6,6 +6,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // functions
 import ScrollToTop from './functions/ScrollToTop';
 
+// Skeleton
+import { SkeletonTheme } from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css'
+
+
 // components
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
@@ -39,29 +44,31 @@ function App() {
         <ScrollToTop />
         <NavBar />
         <div className="App-Body">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/service" element={<Service />} />
-            <Route path="/about" element={<About />} />
-                
-            <Route path="/request_quote" element={<RequestQuote />} />
-            <Route path="/product/holders" element={<ProductHolders />} />
-            <Route path="/product/h6i" element={<ProductH6i />} />
-            <Route path="/product/f15i" element={<ProductF15i />} />
-            <Route path="/product/tool_presetting" element={<ProductToolPresetting />} />
-            <Route path="/product/dial_indicator" element={<ProductDialIndicator />} />
+          <SkeletonTheme baseColor="#DCDCDC" highlightColor="#EEEEEE">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/service" element={<Service />} />
+              <Route path="/about" element={<About />} />
+                  
+              <Route path="/request_quote" element={<RequestQuote />} />
+              <Route path="/product/holders" element={<ProductHolders />} />
+              <Route path="/product/h6i" element={<ProductH6i />} />
+              <Route path="/product/f15i" element={<ProductF15i />} />
+              <Route path="/product/tool_presetting" element={<ProductToolPresetting />} />
+              <Route path="/product/dial_indicator" element={<ProductDialIndicator />} />
 
-            <Route path="/product/holders/:material/:holderType" element={<ProductHoldersCatalog />} />
-            <Route path="/product/holders/:material/:holderType/:holderModel" element={<ProductHoldersDetails />} />
-            
+              <Route path="/product/holders/:material/:holderType" element={<ProductHoldersCatalog />} />
+              <Route path="/product/holders/:material/:holderType/:holderModel" element={<ProductHoldersDetails />} />
+              
 
-            <Route path="/service/get_started" element={<ServiceGetStarted />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:blogId" element={<BlogPost />} />
-            <Route path="/blog/admin" element={<BlogAdmin />} />
-            {/* <Route path="*" element={<NotFound />} /> 404 Page */}
-          </Routes>
+              <Route path="/service/get_started" element={<ServiceGetStarted />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:blogId" element={<BlogPost />} />
+              <Route path="/blog/admin" element={<BlogAdmin />} />
+              {/* <Route path="*" element={<NotFound />} /> 404 Page */}
+            </Routes>
+          </SkeletonTheme>
         </div>
         <Footer />
       </div>

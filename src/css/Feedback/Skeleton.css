@@ -1,0 +1,40 @@
+/* blog list */
+.blog-list-skeleton {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+.blog-list-skeleton-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 30%;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+/* blog post */
+.blog-post-skeleton-item {
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+
+/* mobile view */
+@media (max-width: 1100px) {
+    .blog-list-skeleton {
+        gap: 5%;
+    }
+    .blog-list-skeleton-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 680px) {
+    .blog-list-skeleton {
+        gap: 5%;
+    }
+    .blog-list-skeleton-item {
+        width: 100%;
+    }
+}
