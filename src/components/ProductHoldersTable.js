@@ -46,30 +46,29 @@ const ProductHoldersTable = ({material, holderType, holderModel}) => {
                     </tr>
                 </thead>
                 <tbody>
-                {tableData.map((item, index) => (
-                    <tr key={index}>
-                        <td>{item.CatNo}</td>
-                        <td>{item.D1}</td>
-                        <td>{item.D2}</td>
-                        <td>{item.t}</td>
-                        <td>{item.D3}</td>
-                        <td>{item.L1}</td>
-                        <td>{item.L2}</td>
-                        <td>{item.L3}</td>
-                        <td>{item.N}</td>
-                        <td>{item.M}</td>
-                        <td>{item.KG}</td>
-                        <td>
-                            {item.Inventory.Circle}
-                            {item.Inventory.Triangle}
-                            {item.Inventory.Star}
-                        </td>
-                    {/* Render other data cells here */}
-                    </tr>
-                ))}
-            </tbody>
-      </table>
-            
+                    {tableData.map((item, index) => (
+                        <tr key={index}>
+                            <td>{item.CatNo}</td>
+                            <td>{item.D1}</td>
+                            <td>{item.D2}</td>
+                            <td>{item.t}</td>
+                            <td>{item.D3}</td>
+                            <td>{item.L1}</td>
+                            <td>{item.L2}</td>
+                            <td>{item.L3}</td>
+                            <td>{item.N}</td>
+                            <td>{item.M}</td>
+                            <td>{item.KG}</td>
+                            <td>
+                                {item.Inventory.Circle}
+                                {item.Inventory.Triangle}
+                                {item.Inventory.Star}
+                            </td>
+                        {/* Render other data cells here */}
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
         </div>
     );
 };

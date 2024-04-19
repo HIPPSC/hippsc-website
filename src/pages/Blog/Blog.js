@@ -7,8 +7,12 @@ import AWS from 'aws-sdk';
 // css
 import '../../css/Blog/Blog.css';
 
+// Skeleton
+import { BlogListSkeleton } from '../../components/Feedback/Skeleton';
+
 const Blog = () => {
     const [blogPosts, setBlogPosts] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         fetchBlogPosts();
@@ -16,6 +20,7 @@ const Blog = () => {
 
     // fetch blog posts
     const fetchBlogPosts = async () => {
+        setLoading(true);
         try {
             AWS.config.update({
                 apiVersion: 'latest',
@@ -37,6 +42,7 @@ const Blog = () => {
             });
             
             setBlogPosts(sortedPosts);
+            setLoading(false);
         } catch (error) {
             console.error('Error fetching blog posts:', error);
             console.error('Error stack trace:', error.stack);
@@ -70,34 +76,39 @@ const Blog = () => {
             <div className="blog-title page-title-1-xxl">
                 Blog
             </div>
-            <div className="blog-post-list">
-                {blogPosts.map((post) => (
-                    <Link key={post.blogID} 
-                        to={`/blog/${post.blogID}`}
-                        className="blog-post-item">
-                        <div className="blog-post-item-thumbnail">
-                            <img src={post.blogImageUrl} alt="blog-thumbnail" />
-                        </div>
-                        <div className='blog-post-item-title page-title-1'>
-                            {post.blogTitle}
-                        </div>
-                        <div className='blog-post-item-content'>
-                            {trimSubtitle(post.blogSubtitle)}
-                        </div>
-                        <div className="blog-post-item-footer">
-                            <div className="blog-post-item-type">
-                                {post.blogType}
+
+            {loading ? 
+                <BlogListSkeleton /> 
+                : 
+                <div className="blog-post-list">
+                    {blogPosts.map((post) => (
+                        <Link key={post.blogID} 
+                            to={`/blog/${post.blogID}`}
+                            className="blog-post-item">
+                            <div className="blog-post-item-thumbnail">
+                                <img src={post.blogImageUrl} alt="blog-thumbnail" />
                             </div>
-                            <div className="divider">
-                                | 
+                            <div className='blog-post-item-title page-title-1'>
+                                {post.blogTitle}
                             </div>
-                            <div className='blog-post-item-date'>
-                                {post.blogDatetime}
+                            <div className='blog-post-item-content'>
+                                {trimSubtitle(post.blogSubtitle)}
                             </div>
-                        </div>
-                    </Link>
-                ))}
-            </div>
+                            <div className="blog-post-item-footer">
+                                <div className="blog-post-item-type">
+                                    {post.blogType}
+                                </div>
+                                <div className="divider">
+                                    | 
+                                </div>
+                                <div className='blog-post-item-date'>
+                                    {post.blogDatetime}
+                                </div>
+                            </div>
+                        </Link>
+                    ))}
+                </div>
+            }
         </div>
     );
 };

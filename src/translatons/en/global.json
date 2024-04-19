@@ -1,11 +1,12 @@
 {
   "navbar" : {
-    "c": "Contact Us",
+    "c": "Contact",
     "p": "Product",
     "s": "Services",
     "a": "About",
     "b": "Blog",
     "l": "Language",
+    "store": "Online Store",
 
     "pS": "Shrink Fit Holder",
     "pH": "H6i Shrink Fit Machine",

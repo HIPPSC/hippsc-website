@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect }from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 
@@ -13,12 +13,30 @@ const cloudfrontUrl = process.env.REACT_APP_CLOUDFRONT_URL;
 
 
 const ProductHoldersDetails = () => {
-    const {material, holderType, holderModel} = useParams();
+    const { material, holderType, holderModel } = useParams();
+    const [isLoading, setIsLoading] = useState(true);
+    const [imageUrls, setImageUrls] = useState({ blueprintUrl: '', productImageUrl: '' });
 
-    // get the image url from cloudfront
-    const blueprintUrl = `${cloudfrontUrl}/holders/${material}/${holderType}/${holderModel}/blueprint.svg`;
-    const productImageUrl = `${cloudfrontUrl}/holders/${material}/${holderType}/${holderModel}/product-image.svg`;
+    useEffect(() => {
+        const fetchUrls = async () => {
+            try {
+                // Replace with your S3 bucket fetching logic
+                const blueprintUrl = `${cloudfrontUrl}/holders/${material}/${holderType}/${holderModel}/blueprint.svg`;
+                const productImageUrl = `${cloudfrontUrl}/holders/${material}/${holderType}/${holderModel}/product-image.svg`;
+                setImageUrls({ blueprintUrl, productImageUrl });
+            } catch (err) {
+                console.error(err);
+            } finally {
+                setIsLoading(false);
+            }
+        };
 
+        fetchUrls();
+    }, [material, holderType, holderModel]);
+
+    if (isLoading) {
+        return <div>Loading...</div>;
+    }
 
     return (
         <div className='product-holders-details'>
@@ -60,8 +78,8 @@ const ProductHoldersDetails = () => {
             {/* header */}
             <div className="product-holders-details-header">
                 <div className="product-holders-details-header-pic">
-                    <img src={productImageUrl} alt={holderModel} />
-                    <img src={blueprintUrl} alt={holderModel} />
+                    <img src={imageUrls.productImageUrl} alt={holderModel} />
+                    <img src={imageUrls.blueprintUrl} alt={holderModel} />
                 </div>
                 <div className="product-holders-details-hearder-info">
                     <div className="product-holders-details-header-title page-title-1">
