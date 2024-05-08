@@ -14,31 +14,31 @@ const Home = () => {
         <div>
             {/* metadata */}
             <Helmet>
-                <title>HIPPSC - Your Shrink Fit Tooling Expert</title>
+                <title>HIPPSC | Shrink Fit Tool Holder and Machine</title>
                 <meta 
                     name="description" 
-                    content="We craft best value shrink fit machine tools and
-                    devices that enable machine shops to achieve unparalleled 
-                    accuracy and efficiency." 
+                    content="We craft best value shrink fit tool holders and machine
+                    devices that enable CNC machine shops to achieve unparalleled 
+                    precision and efficiency — across diverse industrial applications." 
                 />
-                <meta name="keywords" content="machinery, CNC, machining, machinist, shrink fit, tool holders" />
+                <meta name="keywords" content="shrink fit, tool holder, collet, collets, face mill, er collet, tool holder, tool chuck" />
                 <link rel="canonical" href="https://www.hippsc.com" />
                 
                 {/* Facebook tags */}
                 <meta property="og:type" content='article' />
-                <meta property="og:title" content='HIPPSC - Your Shrink Fit Tooling Expert' />
-                <meta property="og:description" content='We craft best value shrink fit machine tools and
-                    devices that enable machine shops to achieve unparalleled 
-                    accuracy and efficiency.' />
+                <meta property="og:title" content='HIPPSC | Shrink Fit Tool Holder and Machine' />
+                <meta property="og:description"  content="We craft best value shrink fit tool holders and machine
+                                                            devices that enable CNC machine shops to achieve unparalleled 
+                                                            precision and efficiency — across diverse industrial applications."  />
                 <meta property="og:url" content='https://www.hippsc.com' />
                 <meta property="og:image" content='https://www.hippsc.com/favicon.ico' />
                 
                 {/* Twitter tags */}
                 <meta name="twitter:card" content='article' />
                 <meta name="twitter:title" content='HIPPSC - Your Shrink Fit Tooling Expert' />
-                <meta name="twitter:description" content='We craft best value shrink fit machine tools and
-                    devices that enable machine shops to achieve unparalleled 
-                    accuracy and efficiency.' />
+                <meta name="twitter:description"  content="We craft best value shrink fit tool holders and machine
+                                                            devices that enable CNC machine shops to achieve unparalleled 
+                                                            precision and efficiency — across diverse industrial applications."  />
 
             </Helmet>
 
