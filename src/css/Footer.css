@@ -1,6 +1,6 @@
 .footer {
-    margin-top: 20rem;
-    margin-bottom: 8rem;
+    margin-top: 10rem;
+    margin-bottom: 20rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -52,6 +52,13 @@
 .footer-offerings-title, .footer-about-title, .footer-contact-title {
     margin-bottom: 1rem;
     font-size: 0.8rem;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
 }
 
 .footer-item {

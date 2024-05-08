@@ -57,18 +57,18 @@ const NavPage = ({ closeNav }) => {
                     {t("navbar.No")}
                     {/* Our Offerings */}
                 </div>
-                <Link   to='/product/holders' 
+                <Link   to='/product/shrink-fit-tool-holders' 
                         className="nav-page-left-item" 
                         onClick={() => closeNav()}>
                     {t("navbar.Ns")}
                     {/* ↳ Shrink Fit Holders */}
                 </Link>
-                <Link   to='/product/h6i' 
+                <Link   to='/product/shrink-fit-machines/h6i' 
                         className="nav-page-left-item"
                         onClick={() => closeNav()}>
                     ↳ H6i
                 </Link>
-                <Link   to='/product/f15i' 
+                <Link   to='/product/shrink-fit-machines/f15i' 
                         className="nav-page-left-item"
                         onClick={() => closeNav()}>
                     ↳ F15i

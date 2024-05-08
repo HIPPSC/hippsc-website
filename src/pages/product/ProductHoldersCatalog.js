@@ -112,7 +112,7 @@ const ProductHoldersCatalog = () => {
                 </div>
                 <div className="product-holders-catalog-selection">
                 {holdersCatalog[materialType][holderType].map((holder, index) => (
-                    <Link to={`/product/holders/${material}/${holderType}/${holder.name}`}
+                    <Link to={`/product/shrink-fit-tool-holders/${material}/${holderType}/${holder.name}`}
                          key={index} className="product-holders-catalog-selection-item">
                         <div className="product-holders-catalog-selection-pic">
                             <img src={holder.img} alt={holder.name} />
@@ -131,6 +131,7 @@ const ProductHoldersCatalog = () => {
       <div className='product-holders-catalog'>
         {/* metadata */}
         <Helmet>
+
             <title>{"HIPPSC Shrink Fit Holders - " + material.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') + " " + holderType}</title>
             <meta 
                 name="description" 
@@ -142,7 +143,7 @@ const ProductHoldersCatalog = () => {
 
         {/* directory */}
         <div className="product-holders-catalog-dir">
-          <Link to="/product/holders"
+          <Link to="/product/shrink-fit-tool-holders"
                 className='product-holders-catalog-dir-link'>
             Shrink Fit Holders
           </Link> 

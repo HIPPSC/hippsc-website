@@ -52,14 +52,14 @@ function App() {
               <Route path="/about" element={<About />} />
                   
               <Route path="/request_quote" element={<RequestQuote />} />
-              <Route path="/product/holders" element={<ProductHolders />} />
-              <Route path="/product/h6i" element={<ProductH6i />} />
-              <Route path="/product/f15i" element={<ProductF15i />} />
+              <Route path="/product/shrink-fit-tool-holders" element={<ProductHolders />} />
+              <Route path="/product/shrink-fit-machines/h6i" element={<ProductH6i />} />
+              <Route path="/product/shrink-fit-machines/f15i" element={<ProductF15i />} />
               <Route path="/product/tool_presetting" element={<ProductToolPresetting />} />
               <Route path="/product/dial_indicator" element={<ProductDialIndicator />} />
 
-              <Route path="/product/holders/:material/:holderType" element={<ProductHoldersCatalog />} />
-              <Route path="/product/holders/:material/:holderType/:holderModel" element={<ProductHoldersDetails />} />
+              <Route path="/product/shrink-fit-tool-holders/:material/:holderType" element={<ProductHoldersCatalog />} />
+              <Route path="/product/shrink-fit-tool-holders/:material/:holderType/:holderModel" element={<ProductHoldersDetails />} />
               
 
               <Route path="/service/get_started" element={<ServiceGetStarted />} />

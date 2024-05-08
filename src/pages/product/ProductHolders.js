@@ -72,11 +72,11 @@ const ProductHolders = () => {
                 <title>Shrink Fit Tool Holders - HIPPSC</title>
                 <meta 
                     name="description" 
-                    content="Engineered with a high-temperature resistant surface, 
-                    our tooling combats carbon accumulation" 
+                    content="HIPPSC shrink fit tool holders are engineered with a high-temperature resistant surface, ensuring
+                    fast CNC machining setup and high precision tool holding." 
                 />
                 <meta name="keywords" content="shrink fit, tool holders, cnc machining" />
-                <link rel="canonical" href="https://www.hippsc.com/holders" />
+                <link rel="canonical" href="https://www.hippsc.com/oroduct/shrink-fit-tool-holders" />
             </Helmet>
 
             {/* title */}
@@ -95,7 +95,7 @@ const ProductHolders = () => {
                 {t("product.Hmas")} →
             </div>
             <div className="product-holders-selection">
-                <Link to='/product/holders/alloy-steel/BBT'
+                <Link to='/product/shrink-fit-tool-holders/alloy-steel/BBT'
                     className="product-holders-selection-item">
                     <div className="product-holders-selection-pic">
                         <img src={BBT30SR} alt="holder1" />
@@ -104,7 +104,7 @@ const ProductHolders = () => {
                        BBT
                     </div>
                 </Link>
-                <Link to='/product/holders/alloy-steel/HSK'
+                <Link to='/product/shrink-fit-tool-holders/alloy-steel/HSK'
                     className="product-holders-selection-item">
                     <div className="product-holders-selection-pic">
                         <img src={HSK50ASR} alt="holder1" />
@@ -113,7 +113,7 @@ const ProductHolders = () => {
                        HSK
                     </div>
                 </Link>
-                <Link to='/product/holders/alloy-steel/SK'
+                <Link to='/product/shrink-fit-tool-holders/alloy-steel/SK'
                     className="product-holders-selection-item">
                     <div className="product-holders-selection-pic">
                         <img src={SK40SR} alt="holder1" />
@@ -128,7 +128,7 @@ const ProductHolders = () => {
                 {t("product.Hmss")} →
             </div>
             <div className="product-holders-selection">
-                <Link to='/product/holders/stainless-steel/BBT'
+                <Link to='/product/shrink-fit-tool-holders/stainless-steel/BBT'
                       className="product-holders-selection-item">
                     <div className="product-holders-selection-pic">
                         <img src={BBT30MRA} alt="holder1" />
@@ -137,7 +137,7 @@ const ProductHolders = () => {
                        BBT
                     </div>
                 </Link>
-                <Link to='/product/holders/stainless-steel/BT' 
+                <Link to='/product/shrink-fit-tool-holders/stainless-steel/BT' 
                     className="product-holders-selection-item">
                     <div className="product-holders-selection-pic">
                         <img src={BT15MRA} alt="holder1" />
@@ -146,7 +146,7 @@ const ProductHolders = () => {
                        BT
                     </div>
                 </Link>
-                <Link to='/product/holders/stainless-steel/HSK'
+                <Link to='/product/shrink-fit-tool-holders/stainless-steel/HSK'
                     className="product-holders-selection-item">
                     <div className="product-holders-selection-pic">
                         <img src={HSK25EMRA} alt="holder1" />
@@ -155,7 +155,7 @@ const ProductHolders = () => {
                        HSK
                     </div>
                 </Link>
-                <Link to='/product/holders/stainless-steel/SK'
+                <Link to='/product/shrink-fit-tool-holders/stainless-steel/SK'
                     className="product-holders-selection-item">
                     <div className="product-holders-selection-pic">
                         <img src={SK40MRAMSB} alt="holder1" />
@@ -165,7 +165,7 @@ const ProductHolders = () => {
                     </div>
                 </Link>
                 
-                <Link to='/product/holders/stainless-steel/ISO'
+                <Link to='/product/shrink-fit-tool-holders/stainless-steel/ISO'
                     className="product-holders-selection-item">
                     <div className="product-holders-selection-pic">
                         <img src={ISO20MRA} alt="holder1" />
@@ -174,7 +174,7 @@ const ProductHolders = () => {
                        ISO
                     </div>
                 </Link>
-                <Link to='/product/holders/stainless-steel/SP'
+                <Link to='/product/shrink-fit-tool-holders/stainless-steel/SP'
                     className="product-holders-selection-item">
                     <div className="product-holders-selection-pic">
                         <img src={SP25MCS} alt="holder1" />
@@ -183,7 +183,7 @@ const ProductHolders = () => {
                        SP
                     </div>
                 </Link>
-                <Link to='/product/holders/stainless-steel/Micron'
+                <Link to='/product/shrink-fit-tool-holders/stainless-steel/Micron'
                     className="product-holders-selection-item">
                     <div className="product-holders-selection-pic">
                         <img src={ONEMICRON} alt="holder1" />

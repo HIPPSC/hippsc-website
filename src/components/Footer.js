@@ -71,19 +71,19 @@ const Footer = () => {
                     {t("footer.of")}
                     {/* OFFERINGS */}
                 </div>
-                <Link to='/product/holders'>
+                <Link to='/product/shrink-fit-tool-holders'>
                     <div className="footer-item">
                         {t("footer.ofS")}
                         {/* Shrink Fit Holders */}
                     </div>
                 </Link>
-                <Link to='/product/h6i'>
+                <Link to='/product/shrink-fit-machines/h6i'>
                     <div className="footer-item">
                         {t("footer.ofH")}
                         {/* H6i Shrink Fit Machine */}
                     </div>
                 </Link>
-                <Link to='/product/f15i'>
+                <Link to='/product/shrink-fit-machines/f15i'>
                     <div className="footer-item">
                         {t("footer.ofF")}
                         {/* F15i Shrink Fit Machine */}
