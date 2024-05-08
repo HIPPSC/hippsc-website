@@ -56,14 +56,14 @@ const ProductHoldersDetails = () => {
 
             {/* dir */}
             <div className="product-holders-catalog-dir">
-                <Link to="/product/holders"
+                <Link to="/product/shrink-fit-tool-holders"
                         className='product-holders-catalog-dir-link'>
                     Shrink Fit Holders
                 </Link> 
                 <span className='product-holders-catalog-dir-separator'>
                     /
                 </span>
-                <Link to={`/product/holders/${material}/${holderType}`}
+                <Link to={`/product/shrink-fit-tool-holders/${material}/${holderType}`}
                     className='product-holders-catalog-dir-link'>
                     {material.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') + "-" + holderType}
                 </Link> 

@@ -37,11 +37,11 @@ const ProductH6i = () => {
                 <title>H6i Shrink Fit Machine - HIPPSC</title>
                 <meta 
                     name="description" 
-                    content="By leveraging advanced scanning recognition, the H6i ensures impeccable accuracy, eliminating risks 
+                    content="By leveraging advanced scanning recognition, the H6i shrink fit machine ensures impeccable accuracy, eliminating risks 
                     associated with manual overheating." 
                 />
                 <meta name="keywords" content="shrink fit machine, tool holders, cnc machining" />
-                <link rel="canonical" href="https://www.hippsc.com/h6i" />
+                <link rel="canonical" href="https://www.hippsc.com/product/shrink-fit-machines/h6i" />
 
             </Helmet>
 

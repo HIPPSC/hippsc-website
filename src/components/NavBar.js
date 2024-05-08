@@ -9,7 +9,7 @@ import NavPage from './NavPage';
 
 //css
 import '../css/NavBar.css'
-import logo from '../assets/logo.jpg'
+import logo from '../assets/logo.webp'
 import { BsArrowRight } from 'react-icons/bs';
 import { CiMenuBurger } from 'react-icons/ci';
 import { RxCross1 } from 'react-icons/rx';
@@ -82,7 +82,7 @@ const NavBar = () => {
                 <div className="nav-bar-left">
                     {/* LOGO */}
                     <Link to="/" className="nav-bar-logo">
-                        <img src={logo} alt="logo" />
+                        <img src={logo} alt="HIPPSC LOGO" />
                     </Link>
                 </div>
                 
@@ -119,19 +119,19 @@ const NavBar = () => {
                          onClick={handleProductDropdownItemClick}>
                             {t("navbar.p")}
                         <div className={`nav-bar-dropdown-content ${!productDropdownVisible ? 'nav-bar-dropdown-content-hidden' : ''}`} ref={productDropdownRef}>
-                            <Link to="/product/holders" 
+                            <Link to="/product/shrink-fit-tool-holders" 
                                 className='nav-bar-dropdown-item page-text-2'
                                 onClick={handleProductDropdownItemClick}>
                                     {t("navbar.pS")}
                                     {/* Shrink Fit Holders */}
                             </Link>
-                            <Link to='/product/h6i'
+                            <Link to='/product/shrink-fit-machines/h6i'
                                 className='nav-bar-dropdown-item page-text-2'
                                 onClick={handleProductDropdownItemClick}>
                                     {t("navbar.pH")}
                                     {/* H6i Shrink Fit Machine */}
                             </Link>
-                            <Link to='/product/f15i'
+                            <Link to='/product/shrink-fit-machines/f15i'
                                 className='nav-bar-dropdown-item page-text-2'
                                 onClick={handleProductDropdownItemClick}>
                                     {t("navbar.pF")}

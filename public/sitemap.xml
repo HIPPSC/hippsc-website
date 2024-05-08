@@ -1,45 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://www.hippsc.com/</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
     <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.hippsc.com/contact</loc>
-    <lastmod>2024-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.hippsc.com/blog</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.hippsc.com/request_quote</loc>
-    <lastmod>2024-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.hippsc.com/about</loc>
-    <lastmod>2024-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.hippsc.com/products/holders</loc>
-    <lastmod>2024-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.hippsc.com/service</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.hippsc.com/product/h6i</loc>
-    <lastmod>2024-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.hippsc.com/service/get_started</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hippsc.com/product/shrink-fit-tool-holders/</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hippsc.com/product/shrink-fit-tool-holders/alloy-steel/HSK</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hippsc.com/product/shrink-fit-tool-holders/alloy-steel/BBT</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hippsc.com/product/shrink-fit-tool-holders/alloy-steel/SK</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hippsc.com/product/shrink-fit-tool-holders/stainless-steel/BBT</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hippsc.com/product/shrink-fit-tool-holders/stainless-steel/BT</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hippsc.com/product/shrink-fit-tool-holders/stainless-steel/HSK</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hippsc.com/product/shrink-fit-tool-holders/stainless-steel/SK</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hippsc.com/product/shrink-fit-tool-holders/stainless-steel/ISO</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hippsc.com/product/shrink-fit-tool-holders/stainless-steel/SP</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hippsc.com/product/shrink-fit-tool-holders/stainless-steel/Micron</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hippsc.com/product/shrink-fit-machines/h6i</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hippsc.com/product/shrink-fit-machines/f15i</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hippsc.com/product/tool_presetting</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hippsc.com/product/dial_indicator</loc>
+    <lastmod>2024-05-07T15:01:12.099Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
