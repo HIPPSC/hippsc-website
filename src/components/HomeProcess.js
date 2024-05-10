@@ -56,10 +56,10 @@ const HomeProcess = () => {
                     <div className="home-process-item-number page-title-2-bold">
                         01 /
                     </div>
-                    <div className="home-process-item-title page-title-3-bold-gray" ref={researchTitleref}>
+                    <h2 className="home-process-item-title page-title-3-bold-gray" ref={researchTitleref}>
                         <span >{researchTitle}</span>
                         <span style={{color: 'transparent'}}>{invisibleResearchTitle}</span>
-                    </div>
+                    </h2>
                     <div className="home-process-item-description page-text-1">
                         {t("home.r1")}
                         {/* From the initial concept to the final product, 
@@ -83,10 +83,10 @@ const HomeProcess = () => {
                     <div className="home-process-item-number page-title-2-bold">
                         02 /
                     </div>
-                    <div className="home-process-item-title page-title-3-bold-gray" ref={precisionTitleref}>
+                    <h2 className="home-process-item-title page-title-3-bold-gray" ref={precisionTitleref}>
                         <span >{precisionTitle}</span>
                         <span style={{color: 'transparent'}}>{invisiblePrecisionTitle}</span>
-                    </div>
+                    </h2>
                     <div className="home-process-item-description page-text-1">
                         {t("home.pre1")}
                         {/* Our precision testing process includes real-world simulations, 
@@ -112,10 +112,10 @@ const HomeProcess = () => {
                     <div className="home-process-item-number page-title-2-bold">
                         03 /
                     </div>
-                    <div className="home-process-item-title page-title-3-bold-gray" ref={productionTitleref}>
+                    <h2 className="home-process-item-title page-title-3-bold-gray" ref={productionTitleref}>
                         <span >{productionTitle}</span>
                         <span style={{color: 'transparent'}}>{invisibleProductionTitle}</span>
-                    </div>
+                    </h2>
                     <div className="home-process-item-description page-text-1">
                         {t("home.pro1")}
                         {/* Operating within a state-of-the-art manufacturing facility, 

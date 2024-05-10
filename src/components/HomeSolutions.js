@@ -55,10 +55,10 @@ const HomeSolutions = () => {
                         <img src={F15iPic} alt="Tool Holder" />
                     </div>
                     <Link  to='/product/shrink-fit-machines/f15i' className="page-link-btn home-solutions-btn">
-                        <div className="page-link-btn-text btn-text-1 ">
+                        <h2 className="page-link-btn-text btn-text-1 ">
                             {t("home.learn")}F15i
                             {/* Learn more about F15i */}
-                        </div>
+                        </h2>
                         <div className="page-link-btn-icon">
                             <BsArrowRight />
                         </div>
@@ -66,10 +66,10 @@ const HomeSolutions = () => {
                 </div>
                 <div className="home-solutions-item-right">
                     <div className="home-solutions-item-title">
-                        <div className="page-title-1-xl" ref={f15iTitleref}>
+                        <h2 className="page-title-1-xl" ref={f15iTitleref}>
                             <span >{f15iTitle}</span>
                             <span style={{color: 'transparent'}}>{invisibleF15iTitle}</span>
-                        </div>
+                        </h2>
                         <div className="page-title-1-xl liquid-cooling-text">
                             {t("home.liq")}
                             {/* Liquid Cooling */}
@@ -112,10 +112,10 @@ const HomeSolutions = () => {
                 </div>
                 <div className="home-solutions-item-right">
                     <div className="home-solutions-item-title">
-                        <div className="page-title-1-xl" ref={h6iTitleref}>
+                        <h2 className="page-title-1-xl" ref={h6iTitleref}>
                             <span >{h6iTitle}</span>
                             <span style={{color: 'transparent'}}>{invisibleH6iTitle}</span>
-                        </div>
+                        </h2>
                         <div className="page-title-1-xl air-cooling-text">
                             {t("home.air")}
                             {/* Air Cooling */}
@@ -156,10 +156,10 @@ const HomeSolutions = () => {
                 </div>
                 <div className="home-solutions-item-right">
                     <div className="home-solutions-item-title">
-                        <div className="page-title-1-xl" ref={presetterTitleref}>
+                        <h2 className="page-title-1-xl" ref={presetterTitleref}>
                             <span >{presetterTitle}</span>
                             <span style={{color: 'transparent'}}>{invisiblePresetterTitle}</span>
-                        </div>
+                        </h2>
                         <div className="page-title-1-xl tool-presetter-text">
                             {t("home.tps")}
                             {/* Air Cooling */}
@@ -197,10 +197,10 @@ const HomeSolutions = () => {
                 </div>
                 <div className="home-solutions-item-right">
                     <div className="home-solutions-item-title">
-                        <div className="page-title-1-xl" ref={indicatorTitleref}>
+                        <h2 className="page-title-1-xl" ref={indicatorTitleref}>
                             <span >{indicatorTitle}</span>
                             <span style={{color: 'transparent'}}>{invisibleIndicatorTitle}</span>
-                        </div>
+                        </h2>
                         <div className="page-title-1-xl">
                             {/* {t("home.m")} */}
                             {/* Shrink Fit Machine */}
@@ -228,10 +228,10 @@ const HomeSolutions = () => {
                         <div className="page-title-1-xl">
                             HIPPSC
                         </div>
-                        <div className="page-title-1-xl intelligent-storage-text">
+                        <h2 className="page-title-1-xl intelligent-storage-text">
                             {t("home.its")}
                             {/* Intelligent Tooling Storage */}
-                        </div>
+                        </h2>
                         <div className="page-title-2-gray" ref={storageTitleref}>
                             <span >{storageTitle}</span>
                             <span style={{color: 'transparent'}}>{invisibleStorageTitle}</span>

@@ -29,10 +29,10 @@ const HomeIntro = () => {
     return (
         <div className='home-intro'>
             <div className="home-title" ref={homeTitleref}>
-                <div className="page-title-1-xxl">
+                <h1 className="page-title-1-xxl">
                     <span >{homeTitle}</span>
                     <span style={{color: 'transparent'}}>{invisibleHomeTitle}</span>
-                </div>
+                </h1>
             </div>
             <Link to='https://hippsc.store/password' 
                   target='_blank'
