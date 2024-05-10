@@ -23,10 +23,10 @@ const BrochureDownload = () => {
 
     return (
         <div className="brochure-download">
-            <div className="product-holders-footer-title page-title-1" ref={footerTitleref}>
+            <h3 className="product-holders-footer-title page-title-1" ref={footerTitleref}>
                 <span>{footerTitle}</span>
                 <span style={{color: 'transparent'}}>{invisibleFooterTitle}</span>
-            </div>
+            </h3>
             <a href="https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/brochures/20231207+HIPPSC+Shrink+Fit+Brochure.pdf" 
                download target='blank'>
                 <div className="product-holders-footer-btn rectangle-btn">

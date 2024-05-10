@@ -64,7 +64,7 @@ function App() {
 
               <Route path="/service/get_started" element={<ServiceGetStarted />} />
               <Route path="/blog" element={<Blog />} />
-              <Route path="/blog/:blogId" element={<BlogPost />} />
+              <Route path="/blog/:blogTitle" element={<BlogPost />} />
               <Route path="/blog/admin" element={<BlogAdmin />} />
               {/* <Route path="*" element={<NotFound />} /> 404 Page */}
             </Routes>

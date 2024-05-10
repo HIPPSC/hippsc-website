@@ -13,6 +13,9 @@ import '../../css/product/ProductF15i.css';
 // assets
 import F15iPic from '../../assets/svg/F15i-pic.svg';
 
+// schema
+import { f15iSchema } from '../../schema/schema';
+
 //multilangual
 import { useTranslation } from 'react-i18next';
 
@@ -33,46 +36,70 @@ const ProductF15i = () => {
         <div className='product-f15i'>
             {/* metadata */}
             <Helmet>
-                <title>F15i Shrink Fit Machine</title>
+                <title>F15i Liquid Cooling Shrink Fit Machine - HIPPSC</title>
                 <meta 
                     name="description" 
-                    content="F15i employs a quick heating mechanism utilizing an induction coil that generates 
-                    high-frequency magnetic fields, ensuring rapid heating and tool changing.
+                    content="HIPPSC F15i shrink fit machine employs a quick heating mechanism utilizing quick-change induction coil, 
+                             ensuring rapid heating, cooling, and tool changing.
                     " 
                 />
                 <meta name="keywords" content="shrink fit machine, tool holders, cnc machining" />
-                <link rel="canonical" href="https://www.hippsc.com/f15i" />
+                <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+                <link rel="canonical" href="https://www.hippsc.com/product/shrink-fit-machines/f15i" />
+
+                 {/* schema */}
+                 <script type="application/ld+json">
+                    {JSON.stringify(f15iSchema)}
+                </script>
+
+                {/* Facebook tags */}
+                <meta property="og:locale" content="en_US" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="F15i Liquid-cooling Shrink Fit Machine - HIPPSC" />
+                <meta property="og:description" content="HIPPSC F15i shrink fit machine employs a quick heating mechanism utilizing an induction coil that generates 
+                                                         high-frequency magnetic fields, ensuring rapid heating and tool changing." />
+                <meta property="og:url" content="https://www.hippsc.com/product/shrink-fit-machines/f15i/" />
+                <meta property="og:site_name" content="HIPPSC" />
+                <meta property="og:image" content="http://www.hippsc.com/static/media/F15i-pic.1919980f6588ffbd0476cf82f1602b43.svg" />
+                <meta property="og:image:type" content="image/svg" />
+                
+                {/* Twitter tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@HIPPSCUSA" />
+                <meta name="twitter:card" content='website' />
+                <meta name="twitter:title" content='F15i Liquid-cooling Shrink Fit Machine - HIPPSC' />
+                <meta name="twitter:description"  content="Find high-quality shrink machine for your CNC machine shops. Achieve unparalleled precision and efficiency with our shrink fit products."  />
             </Helmet>
 
             {/* title */}
             <div className="product-f15i-title">
                 <div className="product-f15i-title-left" >
-                    <div className="product-f15i-title-left-top page-title-1-xxl">
+                    <h1 className="product-f15i-title-left-top page-title-1-xxl">
                         {t("product.F15t")}
                         {/* F15i Liquid Cooling */}
-                    </div>
+                    </h1>
                     <div className="product-f15i-title-left-bottom page-text-1" ref={productF15iTitleref}>
                         <span >{productF15iTitle}</span>
                         <span style={{color: 'transparent'}}>{invisibleProductF15iTitle}</span>
                     </div>
                 </div>
                 <div className="product-f15i-title-right">
-                    <img src={F15iPic} alt="" />
+                    <img src={F15iPic} alt="HIPPSC F15i Shrink Fit Machine" title='HIPPSC F15i Shrink Fit Machine' />
                 </div>
             </div>
 
             {/* features */}
             <div className="product-f15i-features">
-                <div className="product-f15i-features-title page-title-1">
+                <h2 className="product-f15i-features-title page-title-1">
                     {t("product.F15F")}
                     {/* Features */}
-                </div>
+                </h2>
                 <div className="product-f15i-features-body">
                     <div className="product-f15i-features-item">
-                        <div className="product-f15i-features-item-title page-text-1">
+                        <h3 className="product-f15i-features-item-title page-text-1">
                             {t("product.F15ICt")}
                             {/* Instant Cool Down */}
-                        </div>
+                        </h3>
                         <div className="product-f15i-features-item-body page-text-2">
                             {t("product.F15ICp")}
                             {/* After a heating cycle, the liquid cooling system quickly brings 
@@ -81,10 +108,10 @@ const ProductF15i = () => {
                         </div>
                     </div>
                     <div className="product-f15i-features-item">
-                        <div className="product-f15i-features-item-title page-text-1">
+                        <h3 className="product-f15i-features-item-title page-text-1">
                             {t("product.F15ISt")}
                             {/* Intuitive Scanning Recognition */}
-                        </div>
+                        </h3>
                         <div className="product-f15i-features-item-body page-text-2">
                             {t("product.F15ISp")}
                             {/* By leveraging advanced scanning recognition, 
@@ -93,10 +120,10 @@ const ProductF15i = () => {
                         </div>
                     </div>
                     <div className="product-f15i-features-item">
-                        <div className="product-f15i-features-item-title page-text-1">
+                        <h3 className="product-f15i-features-item-title page-text-1">
                             {t("product.F15Rt")}
                             {/* Rapid Coil Replacement */}
-                        </div>
+                        </h3>
                         <div className="product-f15i-features-item-body page-text-2">
                             {t("product.F15Rp")}
                             {/* With our swift coil replacement feature, 
@@ -105,10 +132,10 @@ const ProductF15i = () => {
                         </div>
                     </div>
                     <div className="product-f15i-features-item">
-                        <div className="product-f15i-features-item-title page-text-1">
+                        <h3 className="product-f15i-features-item-title page-text-1">
                             {t("product.F15Pt")}
                             {/* Precision Temperature Control */}
-                        </div>
+                        </h3>
                         <div className="product-f15i-features-item-body page-text-2">
                             {t("product.F15Pp")}
                             {/* Our machine guarantees exact temperature regulation, 
@@ -116,10 +143,10 @@ const ProductF15i = () => {
                         </div>
                     </div>
                     <div className="product-f15i-features-item">
-                        <div className="product-f15i-features-item-title page-text-1">
+                        <h3 className="product-f15i-features-item-title page-text-1">
                             {t("product.F15Vt")}
                             {/* Versatile Heating Range */}
-                        </div>
+                        </h3>
                         <div className="product-f15i-features-item-body page-text-2">
                             {t("product.F15Vp")}
                             {/* Catering to a broad spectrum of needs, 
@@ -128,10 +155,10 @@ const ProductF15i = () => {
                         </div>
                     </div>
                     <div className="product-f15i-features-item">
-                        <div className="product-f15i-features-item-title page-text-1">
+                        <h3 className="product-f15i-features-item-title page-text-1">
                             {t("product.F15St")}
                             {/* Silent Operation */}
-                        </div>
+                        </h3>
                         <div className="product-f15i-features-item-body page-text-2">
                             {t("product.F15Sp")}
                             {/* Liquid cooling is not just efficient but also quiet,
@@ -147,60 +174,60 @@ const ProductF15i = () => {
 
              {/* tech specs */}
              <div className="product-f15i-features">
-                <div className="product-f15i-features-title page-title-1">
+                <h2 className="product-f15i-features-title page-title-1">
                     {t("product.t")}
                     {/* Tech Specs */}
-                </div>
+                </h2>
                 <div className="product-f15i-features-body">
                     <div className="product-f15i-features-item">
-                        <div className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
+                        <h3 className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
                             15kw
-                        </div>
+                        </h3>
                         <div className="product-f15i-features-item-body page-text-2">
                             {t("product.p")}
                             {/* POWER */}
                         </div>
                     </div>
                     <div className="product-f15i-features-item">
-                        <div className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
+                        <h3 className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
                             380V
-                        </div>
+                        </h3>
                         <div className="product-f15i-features-item-body page-text-2">
                             {t("product.v")}
                             {/* VOLTAGE */}
                         </div>
                     </div>
                     <div className="product-f15i-features-item">
-                        <div className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
+                        <h3 className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
                             32A
-                        </div>
+                        </h3>
                         <div className="product-f15i-features-item-body page-text-2">
                             {t("product.c")}
                             {/* CURRENT */}
                         </div>
                     </div>
                     <div className="product-f15i-features-item">
-                        <div className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
+                        <h3 className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
                             215 kg
-                        </div>
+                        </h3>
                         <div className="product-f15i-features-item-body page-text-2">
                             {t("product.w")}
                             {/* WEIGHT */}
                         </div>
                     </div>
                     <div className="product-f15i-features-item">
-                        <div className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
+                        <h3 className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
                             φ3 ~ φ32
-                        </div>
+                        </h3>
                         <div className="product-f15i-features-item-body page-text-2">
                             {t("product.h")}
                             {/* HEATING RANGE */}
                         </div>
                     </div>
                     <div className="product-f15i-features-item">
-                        <div className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
+                        <h3 className="product-f15i-features-item-title product-f15i-features-tech-specs page-title-1-bold">
                             950 x 710 x 1600(H)
-                        </div>
+                        </h3>
                         <div className="product-f15i-features-item-body page-text-2">
                             {t("product.d")} (mm)
                             {/* DIMENSION (mm) */}

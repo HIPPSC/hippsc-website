@@ -18,7 +18,7 @@ const Blog = () => {
         fetchBlogPosts();
     }, []);
 
-    // fetch blog posts
+    // fetch blog posts =====================================================
     const fetchBlogPosts = async () => {
         setLoading(true);
         try {
@@ -49,51 +49,84 @@ const Blog = () => {
         }
     };
 
-    // trim subtitle
+    // trim subtitle =====================================================
     const trimSubtitle = (subtitle) => {
-        if (subtitle.length > 90) {
-          return `${subtitle.slice(0, 90)} ...`;
+        if (subtitle.length > 80) {
+          return `${subtitle.slice(0, 80)} ...`;
         }
         return subtitle;
     };
+
+    // slugify ============================================================
+    function slugify(text) {
+        return text.toString().toLowerCase()
+          .replace(/\s+/g, '-')        // Replace spaces with -
+          .replace(/[^\w\-]+/g, '')    // Remove all non-word chars
+          .replace(/\-\-+/g, '-')      // Replace multiple - with single -
+          .replace(/^-+/, '')          // Trim - from start of text
+          .replace(/-+$/, '');         // Trim - from end of text
+    }
 
     return (
         <div className="blog">
             {/* metadata */}
             <Helmet>
-                <title>Blog - HIPPSC</title>
+                <title>Blog - HIPPSC Shrink Fit</title>
                 <meta 
                     name="description" 
-                    content="Welcome to HIPPSC's blog page, your gateway to 
-                    the world of precision engineering, cutting-edge technology, and manufacturing 
-                    excellence." 
+                    content="HIPPSC blogs are our home for HIPPSC news and machinery technical tips. 
+                             Follow us on Facebook, Linkedin, Instagram, and YouTube!" 
                 />
                 <meta name="keywords" content="machinery, shrink fit, tool holders, cnc machining, latest news, blog" />
+                <meta name="publisher" content="HIPPSC Team" />
+                <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
                 <link rel="canonical" href="https://www.hippsc.com/blog" />
+
+                 {/* schema */}
+                 <script type="application/ld+json">
+                    {/* {JSON.stringify(f15iSchema)} */}
+                </script>
+
+                {/* Facebook tags */}
+                <meta property="og:locale" content="en_US" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Blog - HIPPSC Shrink Fit" />
+                <meta property="og:description" content="HIPPSC blogs are our home for HIPPSC news and machinery technical tips. 
+                                                         Follow us on Facebook, Linkedin, Instagram, and YouTube!" />
+                <meta property="og:url" content="https://www.hippsc.com/blog" />
+                <meta property="og:site_name" content="HIPPSC" />
+                
+                {/* Twitter tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@HIPPSCUSA" />
+                <meta name="twitter:card" content='website' />
+                <meta name="twitter:title" content='Blog - HIPPSC Shrink Fit' />
+                <meta name="twitter:description"  content="Find high-quality shrink machine for your CNC machine shops. Achieve unparalleled precision and efficiency with our shrink fit products."  />
             </Helmet>
 
 
-            <div className="blog-title page-title-1-xxl">
+            <h1 className="blog-title page-title-1-xxl">
                 Blog
-            </div>
+            </h1>
 
             {loading ? 
                 <BlogListSkeleton /> 
                 : 
                 <div className="blog-post-list">
                     {blogPosts.map((post) => (
-                        <Link key={post.blogID} 
-                            to={`/blog/${post.blogID}`}
+                        <Link key={post.blogID}
+                            to={ `/blog/${slugify(post.blogTitle)}`}
+                            state={{ blogID: post.blogID }}
                             className="blog-post-item">
                             <div className="blog-post-item-thumbnail">
-                                <img src={post.blogImageUrl} alt="blog-thumbnail" />
+                                <img src={post.blogImageUrl} alt={post.blogTitle} title={post.blogTitle}/>
                             </div>
-                            <div className='blog-post-item-title page-title-1'>
+                            <h2 className='blog-post-item-title page-title-2'>
                                 {post.blogTitle}
-                            </div>
-                            <div className='blog-post-item-content'>
+                            </h2>
+                            <h3 className='blog-post-item-content page-text-2'>
                                 {trimSubtitle(post.blogSubtitle)}
-                            </div>
+                            </h3>
                             <div className="blog-post-item-footer">
                                 <div className="blog-post-item-type">
                                     {post.blogType}
