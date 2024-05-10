@@ -2,7 +2,7 @@ html {
   margin: auto;
   display: flex;
   flex-direction: column;
-  max-width: 1400px;
+  max-width: 1300px;
   scroll-behavior: smooth;
   background-color: white;
 }
@@ -148,6 +148,7 @@ a, a:visited {
   font-size: var(--text-size-1);
   color: var(--light-gray-text-color);
   font-weight: var(--title-weight-2);
+  line-height: 1.5;
 }
 
 .page-text-3 {

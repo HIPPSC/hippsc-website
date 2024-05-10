@@ -24,10 +24,10 @@ const RequestContact = () => {
 
     return (
         <div className='request-contact'>
-            <div className="request-contact-title page-title-1" ref={requestTitleref}>
+            <h3 className="request-contact-title page-title-1" ref={requestTitleref}>
                 <span >{requestTitle}</span>
                 <span style={{color: 'transparent'}}>{invisibleRequestTitle}</span>
-            </div>
+            </h3>
             <div className="request-contact-btn-container">
                 <Link to="/request_quote" className="request-contact-btn rectangle-btn">
                     {t("quote.gs")}

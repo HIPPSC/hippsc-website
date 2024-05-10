@@ -82,7 +82,7 @@ const NavBar = () => {
                 <div className="nav-bar-left">
                     {/* LOGO */}
                     <Link to="/" className="nav-bar-logo">
-                        <img src={logo} alt="HIPPSC LOGO" />
+                        <img src={logo} alt="HIPPSC LOGO" title='HIPPSC Shrink Fit Logo'/>
                     </Link>
                 </div>
                 

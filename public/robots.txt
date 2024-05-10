@@ -1,5 +1,11 @@
-# https://www.robotstxt.org/robotstxt.html
-
 User-agent: *
 Allow: /
 
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Host
+Host: https://www.hippsc.com
+
+# Sitemap
+Sitemap: https://www.techniksusa.com/sitemap.xml

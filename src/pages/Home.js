@@ -25,7 +25,7 @@ const Home = () => {
                 <link rel="canonical" href="https://www.hippsc.com" />
                 
                 {/* Facebook tags */}
-                <meta property="og:type" content='article' />
+                <meta property="og:type" content='website' />
                 <meta property="og:title" content='HIPPSC | Shrink Fit Tool Holder and Machine' />
                 <meta property="og:description"  content="We craft best value shrink fit tool holders and machine
                                                             devices that enable CNC machine shops to achieve unparalleled 
@@ -34,7 +34,7 @@ const Home = () => {
                 <meta property="og:image" content='https://www.hippsc.com/favicon.ico' />
                 
                 {/* Twitter tags */}
-                <meta name="twitter:card" content='article' />
+                <meta name="twitter:card" content='website' />
                 <meta name="twitter:title" content='HIPPSC - Your Shrink Fit Tooling Expert' />
                 <meta name="twitter:description"  content="We craft best value shrink fit tool holders and machine
                                                             devices that enable CNC machine shops to achieve unparalleled 
