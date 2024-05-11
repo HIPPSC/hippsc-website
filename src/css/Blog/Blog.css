@@ -53,6 +53,9 @@
 }
 
 .blog-post-item-content {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
     color: var(--light-gray-text-color);
     margin-bottom: 0.5rem;
 }

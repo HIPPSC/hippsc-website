@@ -121,10 +121,10 @@ const Blog = () => {
                             <div className="blog-post-item-thumbnail">
                                 <img src={post.blogImageUrl} alt={post.blogTitle} title={post.blogTitle}/>
                             </div>
-                            <h2 className='blog-post-item-title page-title-2'>
+                            <h2 className='blog-post-item-title page-title-3'>
                                 {post.blogTitle}
                             </h2>
-                            <h3 className='blog-post-item-content page-text-2'>
+                            <h3 className='blog-post-item-content'>
                                 {trimSubtitle(post.blogSubtitle)}
                             </h3>
                             <div className="blog-post-item-footer">

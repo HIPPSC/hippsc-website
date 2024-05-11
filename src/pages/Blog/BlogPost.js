@@ -12,7 +12,7 @@ import { IoArrowBack } from "react-icons/io5";
 import { BlogPostSkeleton } from '../../components/Feedback/Skeleton';
 
 // define blog post sections style 
-const Subtitle = ({ content }) => <h2 className='blog-post-subtitle page-title-1-bold'>{content}</h2>;
+const Subtitle = ({ content }) => <h2 className='blog-post-subtitle page-title-2'>{content}</h2>;
 const Text = ({ content }) => <div className='blog-post-text'>{content}</div>;
 
 

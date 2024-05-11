@@ -31,7 +31,7 @@
 
 .blog-post-body {
     width: 70%;
-    max-width: 800px;
+    max-width: 720px;
     display: flex;
     flex-direction: column;
 }
@@ -51,7 +51,7 @@
 
 .blog-post-image {
     width: 100%;
-    height: 30rem;
+    height: 25rem;
     object-fit: cover;
     margin-bottom: 1rem;
     border-radius: 10px;
@@ -68,14 +68,14 @@
 /* blog section styles */
 .blog-post-subtitle {
     font-weight: 500;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 .blog-post-text {
     font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
 }
 
 @media (max-width: 1100px) {
