@@ -60,11 +60,11 @@ const Blog = () => {
     // slugify ============================================================
     function slugify(text) {
         return text.toString().toLowerCase()
-          .replace(/\s+/g, '-')        // Replace spaces with -
-          .replace(/[^\w\-]+/g, '')    // Remove all non-word chars
-          .replace(/\-\-+/g, '-')      // Replace multiple - with single -
-          .replace(/^-+/, '')          // Trim - from start of text
-          .replace(/-+$/, '');         // Trim - from end of text
+          .replace(/\s+/g, '-')          // Replace spaces with -
+          .replace(/[^\w-]+/g, '')       // Remove all non-word chars, hyphen does not need escaping here
+          .replace(/--+/g, '-')          // Replace multiple - with single -, hyphen does not need escaping
+          .replace(/^-+/, '')            // Trim - from start of text, hyphen does not need escaping
+          .replace(/-+$/, '');           // Trim - from end of text, hyphen does not need escaping
     }
 
     return (
