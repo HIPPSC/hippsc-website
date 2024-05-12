@@ -115,8 +115,7 @@ const Blog = () => {
                 <div className="blog-post-list">
                     {blogPosts.map((post) => (
                         <Link key={post.blogID}
-                            to={ `/blog/${slugify(post.blogTitle)}`}
-                            state={{ blogID: post.blogID }}
+                            to={ `/blog/${slugify(post.blogTitle)}/${post.blogID}`}
                             className="blog-post-item">
                             <div className="blog-post-item-thumbnail">
                                 <img src={post.blogImageUrl} alt={post.blogTitle} title={post.blogTitle}/>

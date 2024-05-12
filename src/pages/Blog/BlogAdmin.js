@@ -131,10 +131,6 @@ const BlogAdmin = () => {
             return;
         }
 
-        
-        
-        
-
         // Show a success message
         setMessage('Blog submitted successfully!');
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import { useLocation, Link, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 import AWS from 'aws-sdk';
@@ -17,13 +17,11 @@ const Text = ({ content }) => <div className='blog-post-text'>{content}</div>;
 
 
 const BlogPost = () => {
-    // Get the blogId from state
-    const location = useLocation();
-    const { blogID } = location.state;
 
     // Get url blogTitle
     const params = useParams();
     const blogTitle = params.blogTitle;
+    const blogID = params.blogID;
 
     // State variables
     const [blog, setBlog] = useState('');
@@ -80,8 +78,7 @@ const BlogPost = () => {
                 : "HIPPSC"}
                 <meta 
                     name="description" 
-                    content="HIPPSC blogs are our home for HIPPSC news and machinery technical tips. 
-                             Follow us on Facebook, Linkedin, Instagram, and YouTube!" 
+                    content={blog.blogSubtitle} 
                 />
                 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
                 <meta name="publisher" content={blog.blogAuthor} />
@@ -92,8 +89,7 @@ const BlogPost = () => {
                 <meta property="og:locale" content="en_US" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Blog - HIPPSC Shrink Fit" />
-                <meta property="og:description" content="HIPPSC blogs are our home for HIPPSC news and machinery technical tips. 
-                                                         Follow us on Facebook, Linkedin, Instagram, and YouTube!" />
+                <meta property="og:description" content={blog.blogSubtitle} />
                 <meta property="og:url" content={`https://www.hippsc.com/blog/${blogTitle}`} />
                 <meta property="og:site_name" content="HIPPSC" />
                 <meta property="og:image" content={blog.blogImageUrl} />
