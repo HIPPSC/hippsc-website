@@ -83,14 +83,14 @@ const BlogPost = () => {
                 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
                 <meta name="publisher" content={blog.blogAuthor} />
                 <meta name="keywords" content="machinery, shrink fit, tool holders, cnc machining, latest news, blog" />
-                <link rel="canonical" href={`https://www.hippsc.com/blog/${blogTitle}`} />
+                <link rel="canonical" href={`https://www.hippsc.com/blog/${blogTitle}/${blogID}`} />
 
                 {/* Facebook tags */}
                 <meta property="og:locale" content="en_US" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Blog - HIPPSC Shrink Fit" />
                 <meta property="og:description" content={blog.blogSubtitle} />
-                <meta property="og:url" content={`https://www.hippsc.com/blog/${blogTitle}`} />
+                <meta property="og:url" content={`https://www.hippsc.com/blog/${blogTitle}/${blogID}`} />
                 <meta property="og:site_name" content="HIPPSC" />
                 <meta property="og:image" content={blog.blogImageUrl} />
                 <meta property="og:image:type" content="image/png" />
@@ -100,8 +100,7 @@ const BlogPost = () => {
                 <meta name="twitter:site" content="@HIPPSCUSA" />
                 <meta name="twitter:card" content='website' />
                 <meta name="twitter:title" content='Blog - HIPPSC Shrink Fit' />
-                <meta name="twitter:description"  content="HIPPSC blogs are our home for HIPPSC news and machinery technical tips. 
-                                                           Follow us on Facebook, Linkedin, Instagram, and YouTube!"  />
+                <meta name="twitter:description"  content={blog.blogSubtitle}  />
             </Helmet>
 
             <div className="blog-post-body">
