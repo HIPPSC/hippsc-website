@@ -8,4 +8,5 @@ Allow: /
 Host: https://www.hippsc.com
 
 # Sitemap
-Sitemap: https://www.techniksusa.com/sitemap.xml
+Sitemap: https://www.hippsc.com/sitemap.xml
+Sitemap: https://www.hippsc.com/sitemap-blog.xml
