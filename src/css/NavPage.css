@@ -1,11 +1,9 @@
 .nav-page {
     margin: 8rem 2rem 0 2rem;
-    width: 100%;
-    color: white;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1400px;
     scrollbar-width: none; /* for Firefox */
     -ms-overflow-style: none;  /* for Internet Explorer and Edge */
 }
@@ -16,7 +14,7 @@
 
 .nav-page-title {
     font-size: var(--text-size-2);
-    color: var(--light-gray-text-color);
+    color: var(--primary-text-color);
     font-weight: var(--title-weight-1);
     margin-bottom: 3rem;
 }
@@ -25,7 +23,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 1.5rem;
-    border-top: 0.5px solid white;
+    border-top: 0.5px solid rgb(45, 45, 45);
     margin-right: 2rem;
 }
 
@@ -43,6 +41,7 @@
 
 .nav-page-left-item {
     font-size: var(--title-size-2);
+    color: var(--secondary-text-color);
     margin-bottom: 1rem;
     cursor: pointer;
     opacity: 0;
@@ -51,10 +50,12 @@
     animation-play-state: paused;
     color: inherit;
     text-decoration: none;
+    transition: all 0.2s ease;
 }
 
 .nav-page-left-item:hover {
-    color: var(--secondary-text-color);
+    color: var(--hippsc-green);
+    transform: translate(0, -5px);
 }
 
 
@@ -74,7 +75,7 @@
 
 .nav-page-card-date {
     font-size: var(--text-size-2);
-    color: white;
+    color: var(--primary-text-color);
     font-weight: var(--title-weight-1);
     margin-bottom: 0.5rem;
 }
@@ -94,7 +95,7 @@
 
 .nav-page-card-title {
     font-size: var(--text-size-1) * 0.8;
-    color: white;
+    color: var(--primary-text-color);
     font-weight: var(--title-weight-1);
 }
 
@@ -108,7 +109,7 @@
     .nav-page {
         margin: 8rem 2rem 0 2rem;
         width: 100%;
-        color: white;
+        color: var(--primary-text-color);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -128,7 +129,7 @@
         display: flex;
         flex-direction: column;
         padding-top: 1.5rem;
-        border-top: 0.5px solid white;
+        border-top: 0.5px solid var(--primary-text-color);
         margin-right: 2rem;
         margin-bottom: 3rem;
     }

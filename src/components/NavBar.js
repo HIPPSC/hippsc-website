@@ -21,7 +21,6 @@ import { useTranslation } from 'react-i18next';
 
 
 const NavBar = () => {
-
     // nav page handler
     const [isNavOpen, setNavOpen] = useState(false);
 
