@@ -34,7 +34,7 @@ const HomeIntro = () => {
                     <span style={{color: 'transparent'}}>{invisibleHomeTitle}</span>
                 </h1>
             </div>
-            <Link to='https://hippsc.store/password' 
+            <Link to='https://forms.gle/47ZgH4VQZYjzbEYYA' 
                   target='_blank'
                   className="home-banner">
                 <img src='https://hippsc-2023.s3.us-west-1.amazonaws.com/assets/home-page-banner.webp'
